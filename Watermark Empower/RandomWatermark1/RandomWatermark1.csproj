@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A0477A61-FF41-40EA-9BA8-0971AE9CC93B}</ProjectGuid>
+    <ProjectGuid>{DFD45A62-FBC7-4651-8297-E0E026F3553D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Watermark_Empower</RootNamespace>
-    <AssemblyName>Watermark Empower</AssemblyName>
+    <RootNamespace>RandomWatermark1</RootNamespace>
+    <AssemblyName>RandomWatermark1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GeneratorPattern1\MethodsLibrary.csproj">
-      <Project>{23877789-13ad-43ae-a4b9-7591d1423fc2}</Project>
-      <Name>MethodsLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

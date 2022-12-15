@@ -5,6 +5,10 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watermark Empower", "Watermark Empower\Watermark Empower.csproj", "{A0477A61-FF41-40EA-9BA8-0971AE9CC93B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomWatermark1", "RandomWatermark1\RandomWatermark1.csproj", "{DFD45A62-FBC7-4651-8297-E0E026F3553D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsLibrary", "GeneratorPattern1\MethodsLibrary.csproj", "{23877789-13AD-43AE-A4B9-7591D1423FC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A0477A61-FF41-40EA-9BA8-0971AE9CC93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0477A61-FF41-40EA-9BA8-0971AE9CC93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0477A61-FF41-40EA-9BA8-0971AE9CC93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD45A62-FBC7-4651-8297-E0E026F3553D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD45A62-FBC7-4651-8297-E0E026F3553D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD45A62-FBC7-4651-8297-E0E026F3553D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD45A62-FBC7-4651-8297-E0E026F3553D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23877789-13AD-43AE-A4B9-7591D1423FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23877789-13AD-43AE-A4B9-7591D1423FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23877789-13AD-43AE-A4B9-7591D1423FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23877789-13AD-43AE-A4B9-7591D1423FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

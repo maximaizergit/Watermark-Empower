@@ -1,0 +1,7 @@
+D:\c#\course\Watermark Empower\GeneratorPattern1\bin\Debug\GeneratorPattern1.exe.config
+D:\c#\course\Watermark Empower\GeneratorPattern1\bin\Debug\GeneratorPattern1.exe
+D:\c#\course\Watermark Empower\GeneratorPattern1\bin\Debug\GeneratorPattern1.pdb
+D:\c#\course\Watermark Empower\GeneratorPattern1\obj\Debug\MethodsLibrary.csproj.AssemblyReference.cache
+D:\c#\course\Watermark Empower\GeneratorPattern1\obj\Debug\MethodsLibrary.csproj.CoreCompileInputs.cache
+D:\c#\course\Watermark Empower\GeneratorPattern1\obj\Debug\GeneratorPattern1.exe
+D:\c#\course\Watermark Empower\GeneratorPattern1\obj\Debug\GeneratorPattern1.pdb
