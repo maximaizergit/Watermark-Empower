@@ -14,17 +14,11 @@ namespace WatermarkGenerator
         static void Main(string[] args)
         {
 
-            Generator p = new Generator();
-            p.GenPatternFullfill("Maxim");
-            p.GenPatternFullfill("Maxim", "Comic Sans MS", 48, 255, 40);
-            p.GenPatternFullfill("Maxim", "Arial", 56, 128, 40, 100, 100, FontStyle.Regular);
-            p.RandomWatermarkA3("Maxim", 100, 5, true, true);
-            p.GenPatternChess("Maxim");
-            Console.ReadKey();
+            
 
         }
 
-        public void GenPatternFullfill(string text)
+        public void GenPatternFullfill(string text, int operation)
         {
             Image image = Image.FromFile("input.jpg");
             using (Graphics graphics = Graphics.FromImage(image))
@@ -72,10 +66,23 @@ namespace WatermarkGenerator
             }
 
             // Save the output image to a file
-            image.Save("outputfulfillm1.png", ImageFormat.Png);
+            
+                if (operation == 0)
+                {
+                    image.Save("tempinput2.jpg", ImageFormat.Png);
+                    image.Dispose();
+                }
+                else
+                {
+                    image.Save("tempinput.jpg", ImageFormat.Png);
+                    image.Dispose();
+                }
+                
+            
+            
         }
 
-        public void GenPatternFullfill(string text, string fontname, int fontsize, int alpha, int angle)
+        public void GenPatternFullfill(string text, string fontname, int fontsize, int alpha, int angle,int operation)
         {
             Image image = Image.FromFile("input.jpg");
             using (Graphics graphics = Graphics.FromImage(image))
@@ -132,10 +139,20 @@ namespace WatermarkGenerator
             }
 
             // Save the output image to a file
-            image.Save("outputfullfillm2.png", ImageFormat.Png);
+
+            if (operation == 0)
+            {
+                image.Save("tempinput2.jpg", ImageFormat.Png);
+                image.Dispose();
+            }
+            else
+            {
+                image.Save("tempinput.jpg", ImageFormat.Png);
+                image.Dispose();
+            }
         }
 
-        public void GenPatternFullfill(string text, string fontname, int fontsize, int alpha, int angle, int widthbetween, int heightbetween, FontStyle fontstyle)
+        public void GenPatternFullfill(string text, string fontname, int fontsize, int alpha, int angle, int widthbetween, int heightbetween, FontStyle fontstyle, int operation)
         {
             Image image = Image.FromFile("input.jpg");
             using (Graphics graphics = Graphics.FromImage(image))
@@ -149,7 +166,7 @@ namespace WatermarkGenerator
                 // Set the font, color, and position of the watermark text
                 Font font = new Font(fontname, fontsize, fontstyle);
                 Brush brush = new SolidBrush(Color.FromArgb(alpha, 255, 255, 255));
-                PointF position = new PointF(10, 10);
+                PointF position = new PointF(image.Width/2, image.Height/2);
 
                 // Set the rotation angle of the watermark
 
@@ -169,9 +186,9 @@ namespace WatermarkGenerator
                 int columns = (int)Math.Ceiling(image.Width / size.Width);
 
                 // Draw the watermark text on the image
-                for (int row = 0; row < rows + 10; row++)
+                for (int row = 0; row < rows*3; row++)
                 {
-                    for (int column = 0; column < columns; column++)
+                    for (int column = 0; column < columns*2; column++)
                     {
                         // Calculate the position of the watermark
                         position.X = column * size.Width;
@@ -184,7 +201,17 @@ namespace WatermarkGenerator
             }
 
             // Save the output image to a file
-            image.Save("outputfullfillm3.png", ImageFormat.Png);
+
+            if (operation == 0)
+            {
+                image.Save("tempinput2.jpg", ImageFormat.Png);
+                image.Dispose();
+            }
+            else
+            {
+                image.Save("tempinput.jpg", ImageFormat.Png);
+                image.Dispose();
+            }
         }
         public void RandomWatermarkA1(string text)
         {
@@ -479,7 +506,7 @@ namespace WatermarkGenerator
         public void RandomWatermarkA2(string text, int iterations, int sizing, bool randangle, int randbegin, int randend)
         {
             Image image = Image.FromFile("input.jpg");
-
+            
             try
             {
                 //create graphics object
@@ -490,7 +517,7 @@ namespace WatermarkGenerator
                 SolidBrush brush = new SolidBrush(Color.FromArgb(170, 0, 0, 0));
                 //set random generator
                 Random random = new Random();
-
+                int angle = 0;
                 int x = 0;
                 int y = 0;
                 int sizex = image.Width / iterations;
@@ -508,20 +535,21 @@ namespace WatermarkGenerator
                         while (!(x > sizex * i && x < sizex * (i + 1)));
 
                         Console.WriteLine("Passed" + x + " " + y);
-                        
-
-
-
-
-                        //rotate 60 degrees
-                        graphics.TranslateTransform(x, y);
-                        int angle = 0;
                         if (randangle == true)
                         {
                             angle = random.Next(randbegin, randend);
-                            graphics.RotateTransform(angle);
+
+                            do
+                            {
+                                angle = random.Next(randend - randbegin) + randbegin;//getting random angle
+
+                            } while (angle > randend);
+                            Console.WriteLine("angle res " + angle);
                         }
-                        graphics.RotateTransform(30);
+                        graphics.RotateTransform(angle); //rotate
+
+                        graphics.TranslateTransform(x, y);
+                                                          
                         //draw text 
                         graphics.DrawString(text, font, brush, 0, 0);
                         //reset to origin
@@ -550,9 +578,22 @@ namespace WatermarkGenerator
                         graphics.TranslateTransform(x, y);
                         if (randangle == true)
                         {
-                            graphics.RotateTransform(random.Next(randbegin,randend));
-                            
+                            angle = random.Next(randbegin, randend);
+
+                            do
+                            {
+                                angle = random.Next(randend - randbegin) + randbegin;//getting random angle
+
+                            } while (angle > randend);
+                            Console.WriteLine("angle res " + angle);
+
+
+
+
+
+
                         }
+                        graphics.RotateTransform(angle);
                        
                         //draw text 
                         graphics.DrawString(text, font, brush, 0, 0);
@@ -582,9 +623,22 @@ namespace WatermarkGenerator
                         graphics.TranslateTransform(x, y);
                         if (randangle == true)
                         {
-                            graphics.RotateTransform(random.Next(randbegin, randend));
+                            angle = random.Next(randbegin, randend);
+
+                            do
+                            {
+                                angle = random.Next(randend - randbegin) + randbegin;//getting random angle
+
+                            } while (angle > randend);
+                            Console.WriteLine("angle res " + angle);
+
+
+
+
+
 
                         }
+                        graphics.RotateTransform(angle);
                         //draw text 
                         graphics.DrawString(text, font, brush, 0, 0);
                         //reset to origin
@@ -688,6 +742,7 @@ namespace WatermarkGenerator
         }
         public void RandomWatermarkA3(string text, int frequency, int marksperrow, bool adjacentcol, bool adjacentrow, int angle, int widthbetween, int heightbetween)
         {
+           
             Image image = Image.FromFile("input.jpg");
             using (Graphics graphics = Graphics.FromImage(image))
             {
@@ -794,11 +849,8 @@ namespace WatermarkGenerator
                 int angle = 0;
                 // Set the transformation matrix for the watermark
                 Matrix transform = new Matrix();
-                if (randangle == true)
-                {
-                    angle = rand.Next(randbegin, randend);//getting random angle
-                }
-                transform.RotateAt(angle, position);
+             
+
                 graphics.Transform = transform;
 
                 // Calculate the number of rows and columns of watermarks
@@ -818,7 +870,7 @@ namespace WatermarkGenerator
 
                         // Calculate the position of the watermark
                         position.X = column * size.Width;
-                        position.Y = row * size.Height;// - image.Height;
+                        position.Y = row * size.Height-size.Height*4;// - image.Height;
                         int rnd = random.Next(0, 100);
                         if (adjacentrow == true)//if adjacentrow is true, fill watermarks in chess pattern
                         {
@@ -844,11 +896,17 @@ namespace WatermarkGenerator
                         {
                             if (randangle == true)
                             {
-                                angle = rand.Next(0, 0);
-                                
-                                angle = rand.Next(randbegin, randend);//getting random angle
+                                transform.Reset();
+                                graphics.Transform = transform;
+                                do
+                                {
+                                    angle = rand.Next(randend - randbegin) + randbegin;//getting random angle
+                                    
+                                } while (angle > randend);
+                               
                             }
                             transform.RotateAt(angle, position);
+
                             graphics.Transform = transform;
                             graphics.DrawString(text, font, brush, position);
                             marks++;//inc counter for limit per row
@@ -865,7 +923,7 @@ namespace WatermarkGenerator
             image.Save("outputA3m3.png", ImageFormat.Png);
         }
 
-        public void GenPatternChess(string text)
+        public void GenPatternChess(string text, int operation)
         {
             Image image = Image.FromFile("input.jpg");
             using (Graphics graphics = Graphics.FromImage(image))
@@ -899,7 +957,7 @@ namespace WatermarkGenerator
                 
 
                 // Draw the watermark text on the image
-                for (int row = 0; row < rows; row++)
+                for (int row = 0; row < rows*2; row++)
                 {
                     
 
@@ -908,7 +966,7 @@ namespace WatermarkGenerator
 
                         // Calculate the position of the watermark
                         position.X = column * size.Width;
-                        position.Y = row * size.Height;// - image.Height;
+                        position.Y = row * size.Height;
                         
                         
                             if ((row + column) % 2 == 0)
@@ -926,7 +984,17 @@ namespace WatermarkGenerator
             }
 
             // Save the output image to a file
-            image.Save("outputchessm1.png", ImageFormat.Png);
+            if (operation == 0)
+            {
+                image.Save("tempinput2.jpg", ImageFormat.Png);
+                image.Dispose();
+            }
+            else
+            {
+                image.Save("tempinput.jpg", ImageFormat.Png);
+                image.Dispose();
+            }
+
         }
         public void GenPatternChess(string text, string fontname, int fontsize,FontStyle fontstyle)
         {
@@ -962,7 +1030,7 @@ namespace WatermarkGenerator
 
 
                 // Draw the watermark text on the image
-                for (int row = 0; row < rows; row++)
+                for (int row = 0; row < rows*2; row++)
                 {
 
 
@@ -989,7 +1057,7 @@ namespace WatermarkGenerator
             }
 
             // Save the output image to a file
-            image.Save("outputchessm2.png", ImageFormat.Png);
+            image.Save("input.png", ImageFormat.Png);
         }
         public void GenPatternChess(string text, int angle, int alpha, int widthbetween,int heightbetween)
         {
@@ -1027,7 +1095,7 @@ namespace WatermarkGenerator
 
 
                 // Draw the watermark text on the image
-                for (int row = 0; row < rows; row++)
+                for (int row = 0; row < rows*2; row++)
                 {
 
 
@@ -1036,7 +1104,7 @@ namespace WatermarkGenerator
 
                         // Calculate the position of the watermark
                         position.X = column * size.Width;
-                        position.Y = row * size.Height;// - image.Height;
+                        position.Y = row * size.Height-size.Height/2;
 
 
                         if ((row + column) % 2 == 0)
@@ -1092,7 +1160,7 @@ namespace WatermarkGenerator
 
 
                 // Draw the watermark text on the image
-                for (int row = 0; row < rows; row++)
+                for (int row = 0; row < rows*2; row++)
                 {
 
 

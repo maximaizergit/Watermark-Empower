@@ -1,0 +1,14 @@
+D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\Watermark Empower.exe.config
+D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\Watermark Empower.exe
+D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\Watermark Empower.pdb
+D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.csproj.AssemblyReference.cache
+D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark_Empower.Form1.resources
+D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark_Empower.Properties.Resources.resources
+D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.csproj.GenerateResource.cache
+D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.csproj.CoreCompileInputs.cache
+D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.exe
+D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.pdb
+D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\GeneratorPattern1.exe
+D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\GeneratorPattern1.pdb
+D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\GeneratorPattern1.exe.config
+D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.csproj.CopyComplete
