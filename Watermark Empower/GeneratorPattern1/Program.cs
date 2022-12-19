@@ -79,7 +79,8 @@ namespace WatermarkGenerator
                 }
          }
 
-        public void GenPatternFullfill(string text, string fontname, int fontsize, int alpha, int angle, int widthbetween, int heightbetween, FontStyle fontstyle,Color color, int operation)
+        public void GenPatternFullfill(string text, string fontname, int fontsize, int alpha, int angle, int widthbetween, int heightbetween, 
+            FontStyle fontstyle,Color color, int operation, string effect)
         {
             Image image = Image.FromFile("input.jpg");
             using (Graphics graphics = Graphics.FromImage(image))
@@ -93,23 +94,12 @@ namespace WatermarkGenerator
                 // Set the font, color, and position of the watermark text
                 Font font = new Font(fontname, fontsize, fontstyle);
                 ColorBlend blend = new ColorBlend();
-               
+                Color[] gltchColors = new Color[] { Color.FromArgb(128, Color.Red), Color.FromArgb(128, Color.Green), Color.FromArgb(128, Color.Blue), };
 
-                // TODO (create overload for method and expand options)Create a gradient brush with the ColorBlend
-                if (false)
-                {
-                    blend.Positions = new float[] { 0, 1 };
-                    blend.Colors = new Color[] { Color.FromArgb(alpha, Color.Red), Color.FromArgb(alpha, Color.Blue) };
-                    LinearGradientBrush gradientBrush = new LinearGradientBrush(new Point(0, 0), new Point(300, 100), Color.Red, Color.Blue);
-                    gradientBrush.InterpolationColors = blend;
-               
-                gradientBrush.RotateTransform(angle-50);
-                }
-                
                 Brush brush = new SolidBrush(Color.FromArgb(alpha, color));
                 PointF position = new PointF(image.Width/2, image.Height/2);
                
-                // Set the rotation angle of the watermark
+                
 
 
                 // Set the transformation matrix for the watermark
@@ -134,9 +124,54 @@ namespace WatermarkGenerator
                         // Calculate the position of the watermark
                         position.X = column * size.Width;
                         position.Y = row * size.Height - image.Height;
+                        switch (effect)
+                        {
+                            case ("None"):
+                                graphics.DrawString(text, font, brush, position);
+                                break;
+                            case ("Glitch"):
 
+                                position.X = position.X - 6;
+                                position.Y = position.Y - 6;
+                                foreach (Color c in gltchColors)
+                                {
+                                   
+                                    Brush gltchbrush = new SolidBrush(c);
+                                    graphics.DrawString(text, font, gltchbrush, position);
+                                    position.X = position.X + 2;
+                                    position.Y = position.Y + 2;
+                                }
+                                // Draw the text at the specified position
+                                graphics.DrawString(text, font, brush, position);
+                                break;
+                            case ("HardGlitch"):
+                                position.X = position.X - 6;
+                                position.Y = position.Y - 6;
+                                foreach (Color c in gltchColors)
+                                {
+
+                                    Brush gltchbrush = new SolidBrush(c);
+                                    graphics.DrawString(text, font, gltchbrush, position);
+                                    position.X = position.X + 2;
+                                    position.Y = position.Y + 2;
+                                }
+                                // Draw the text at the specified position
+                                graphics.DrawString(text, font, brush, position);
+                                foreach (Color c in gltchColors)
+                                {
+                                    Brush gltchbrush = new SolidBrush(c);
+                                    graphics.DrawString(text, font, gltchbrush, position);
+                                    position.X = position.X + 2;
+                                    position.Y = position.Y + 2;
+                                }
+                                position.X = position.X - 6;
+                                position.Y= position.Y - 6;
+                                break;
+                            default:
+                                break;
+                        }
                         // Draw the watermark text on the image
-                        graphics.DrawString(text, font, brush, position);
+                        
                     }
                 }
             }
@@ -169,9 +204,6 @@ namespace WatermarkGenerator
                 Font font = new Font(fontname, fontsize, fontstyle);
                 ColorBlend blend = new ColorBlend();
 
-
-               
-                
                     blend.Positions = new float[] { 0, 0.5f,1 };
                     blend.Colors = new Color[] { Color.FromArgb(alpha, color1), Color.FromArgb(alpha, color2),Color.FromArgb(alpha,color3) };
                     LinearGradientBrush gradientBrush = new LinearGradientBrush(new Point(colorstart, 0), new Point(colorend, 100), Color.Red, Color.Blue);
@@ -801,8 +833,9 @@ namespace WatermarkGenerator
             }
 
         }
-        //TODO NEEDS UPDATE
-        public void GenPatternChess(string text, string fontname, int fontsize, FontStyle fontstyle, int widthbetween, int heightbetween, int angle, int alpha)
+        //TODO NEEDS gradient
+        public void GenPatternChess(string text, string fontname, int fontsize, int alpha, int angle, int widthbetween, int heightbetween,
+            FontStyle fontstyle, Color color, int operation, string effect)
         {
             Image image = Image.FromFile("input.jpg");
             using (Graphics graphics = Graphics.FromImage(image))
@@ -815,7 +848,11 @@ namespace WatermarkGenerator
 
                 // Set the font, color, and position of the watermark text
                 Font font = new Font(fontname, fontsize, fontstyle);
-                Brush brush = new SolidBrush(Color.FromArgb(alpha, 255, 255, 255));
+                ColorBlend blend = new ColorBlend();
+                Color[] gltchColors = new Color[] { Color.FromArgb(128, Color.Red), Color.FromArgb(128, Color.Green), Color.FromArgb(128, Color.Blue), };
+
+                Brush brush = new SolidBrush(Color.FromArgb(alpha, color));
+                
                 // Measure the size of the watermark text
                 SizeF size = graphics.MeasureString(text, font);
                 size.Width = size.Width + widthbetween;
@@ -847,26 +884,76 @@ namespace WatermarkGenerator
 
                         // Calculate the position of the watermark
                         position.X = column * size.Width;
-                        position.Y = row * size.Height;// - image.Height;
+                        position.Y = row * size.Height - image.Height;
 
 
                         if ((row + column) % 2 == 0)
                         {
                             continue;
                         }
+                        switch (effect)
+                        {
+                            case ("None"):
+                                graphics.DrawString(text, font, brush, position);
+                                break;
+                            case ("Glitch"):
 
-                        // Draw the watermark text on the image
+                                position.X = position.X - 6;
+                                position.Y = position.Y - 6;
+                                foreach (Color c in gltchColors)
+                                {
 
-                        graphics.DrawString(text, font, brush, position);
+                                    Brush gltchbrush = new SolidBrush(c);
+                                    graphics.DrawString(text, font, gltchbrush, position);
+                                    position.X = position.X + 2;
+                                    position.Y = position.Y + 2;
+                                }
+                                // Draw the text at the specified position
+                                graphics.DrawString(text, font, brush, position);
+                                break;
+                            case ("HardGlitch"):
+                                position.X = position.X - 6;
+                                position.Y = position.Y - 6;
+                                foreach (Color c in gltchColors)
+                                {
+
+                                    Brush gltchbrush = new SolidBrush(c);
+                                    graphics.DrawString(text, font, gltchbrush, position);
+                                    position.X = position.X + 2;
+                                    position.Y = position.Y + 2;
+                                }
+                                // Draw the text at the specified position
+                                graphics.DrawString(text, font, brush, position);
+                                foreach (Color c in gltchColors)
+                                {
+                                    Brush gltchbrush = new SolidBrush(c);
+                                    graphics.DrawString(text, font, gltchbrush, position);
+                                    position.X = position.X + 2;
+                                    position.Y = position.Y + 2;
+                                }
+                                position.X = position.X - 6;
+                                position.Y = position.Y - 6;
+                                break;
+                            default:
+                                break;
+                        }                                                                   
                     }
-
-
                 }
             }
-
             // Save the output image to a file
-            image.Save("outputchessm4.png", ImageFormat.Png);
+
+            if (operation == 0)
+            {
+                image.Save("tempinput2.jpg", ImageFormat.Png);
+                image.Dispose();
+            }
+            else
+            {
+                image.Save("tempinput.jpg", ImageFormat.Png);
+                image.Dispose();
+            }
         }
+        
     }
 }
    
