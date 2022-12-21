@@ -86,12 +86,21 @@
       <DependentUpon>Effect Dialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectSettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectSettingsDialog.Designer.cs">
+      <DependentUpon>ProjectSettingsDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Effect Dialog.resx">
       <DependentUpon>Effect Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectSettingsDialog.resx">
+      <DependentUpon>ProjectSettingsDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -140,6 +149,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Новый проект %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-size %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stretch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stretch %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\size %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrows-pointing-to-center %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

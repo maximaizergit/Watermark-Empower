@@ -53,7 +53,10 @@
             this.comboBox1.Items.AddRange(new object[] {
             "None",
             "Glitch",
-            "HardGlitch"});
+            "HardGlitch",
+            "WhiteBox",
+            "TransparentWhiteBox",
+            "RoundedWhiteBox"});
             this.comboBox1.Location = new System.Drawing.Point(29, 112);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(185, 31);
@@ -118,6 +121,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(260, 137);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(400, 200);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
@@ -131,7 +135,7 @@
             this.customButtons1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.customButtons1.FlatAppearance.BorderSize = 0;
             this.customButtons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButtons1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButtons1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButtons1.ForeColor = System.Drawing.Color.White;
             this.customButtons1.Location = new System.Drawing.Point(260, 367);
             this.customButtons1.Name = "customButtons1";
@@ -144,15 +148,15 @@
             // 
             // customButtons2
             // 
-            this.customButtons2.BackColor = System.Drawing.Color.SpringGreen;
-            this.customButtons2.BackgroundColor = System.Drawing.Color.SpringGreen;
+            this.customButtons2.BackColor = System.Drawing.Color.LimeGreen;
+            this.customButtons2.BackgroundColor = System.Drawing.Color.LimeGreen;
             this.customButtons2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.customButtons2.BorderRadius = 20;
             this.customButtons2.BorderSize = 0;
             this.customButtons2.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.customButtons2.FlatAppearance.BorderSize = 0;
             this.customButtons2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButtons2.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButtons2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButtons2.ForeColor = System.Drawing.Color.White;
             this.customButtons2.Location = new System.Drawing.Point(540, 367);
             this.customButtons2.Name = "customButtons2";

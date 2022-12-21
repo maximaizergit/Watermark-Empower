@@ -13,3 +13,4 @@ D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\Generator
 D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\GeneratorPattern1.exe.config
 D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.csproj.CopyComplete
 D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\EffectDialog.Form2.resources
+D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark_Empower.ProjectSettingsDialog.resources

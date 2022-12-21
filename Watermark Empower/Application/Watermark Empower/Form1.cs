@@ -46,7 +46,16 @@ namespace Watermark_Empower
         {
            //Preparing visual for form
             DoubleBuffered = true;
+            foreach (string temp in tempfiles){
+                if (File.Exists(temp))
+                {
 
+                    File.Delete(temp);
+
+                }
+            }
+            
+            
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer,true);
             filePath = Path.Combine(Directory.GetCurrentDirectory(), fileName);
@@ -118,6 +127,21 @@ namespace Watermark_Empower
 
             }
         }
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (MainDisplay.Image != null) { MainDisplay.Image.Dispose(); MainDisplay.Image = null; }
+           
+           
+            foreach (string temp in tempfiles)
+            {
+                if (File.Exists(temp))
+                {
+
+                    File.Delete(temp);
+
+                }
+            }
+        }
 
         private void NavMove(int height, int top, int left)//animation for nav menu
         {
@@ -137,9 +161,11 @@ namespace Watermark_Empower
         }
         //DESCRIBING VARIABLES
         string fileName = "tempinput.jpg";
+        List<string> tempfiles = new List<string>() { "input.jpg","tempinput.jpg","tempinput2.jpg"};
         string filePath;
         int operation = 0;
-        Options options = new Options();
+        Generator.Options options = new Generator.Options();
+        Generator.ProjectSettings settings = new Generator.ProjectSettings();
         Generator gen = new Generator();
         bool isimported = false;
         //MAIN FORM FUNCTIONAL
@@ -147,19 +173,29 @@ namespace Watermark_Empower
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
-
+           
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
+                if (File.Exists(fileName))
+                {
+                    MainDisplay.Image.Dispose();
+
+                    MainDisplay.Image = null;
+                    File.Delete(fileName);
+
+                }
                 // Open the selected image file
                 using (FileStream fileStream = new FileStream(openFileDialog.FileName, FileMode.Open))
                 {
                     Image image = Image.FromStream(fileStream);
                     // Load the image into the PictureBox control
-                    image.Save(filePath);
-                    MainDisplay.Image = Image.FromStream(fileStream);
+                    NavMove(MenuButton.Height, MenuButton.Top, 0);
+                    Tools.SelectTab("none");
+                    MainDisplay.Image = image;
                     string executableDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
                     // Save the image to the executable directory with the specified name
+                   
                     MainDisplay.Image.Save(Path.Combine(executableDirectory, "tempinput.jpg"), ImageFormat.Jpeg);
                     MainDisplay.Image.Save(Path.Combine(executableDirectory, "input.jpg"), ImageFormat.Jpeg);
                     isimported = true;
@@ -200,15 +236,13 @@ namespace Watermark_Empower
                 {
                     if (operation == 0)
                     {
-                        gen.GenPatternFullfill(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween,
-                            options.Heightbetween, options.Fontstyle, options.Color, 0, options.Effect);
+                        gen.GenPatternFullfill( 0, options, settings);
                         
                         MainDisplay.Image = Image.FromFile("tempinput2.jpg");
                     }
                     else
                     {
-                        gen.GenPatternFullfill(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween,
-                            options.Heightbetween, options.Fontstyle, options.Color, 1, options.Effect);
+                        gen.GenPatternFullfill( 1, options, settings);
                         MainDisplay.Image = Image.FromFile("tempinput.jpg");
                     }
 
@@ -255,14 +289,12 @@ namespace Watermark_Empower
                 MainDisplay.Image.Dispose();
                 if (operation == 0)
                 {
-                    gen.GenPatternChess(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween,
-                           options.Heightbetween, options.Fontstyle, options.Color, 0, options.Effect);
+                    gen.GenPatternChess( 0, options);
                     MainDisplay.Image = Image.FromFile("tempinput2.jpg");
                 }
                 else
                 {
-                    gen.GenPatternChess(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween,
-                            options.Heightbetween, options.Fontstyle, options.Color, 1, options.Effect);
+                    gen.GenPatternChess(1, options);
                     MainDisplay.Image = Image.FromFile("tempinput.jpg");
                 }
             }
@@ -335,66 +367,22 @@ namespace Watermark_Empower
         }
 
 
-        //CLASSES
-
-        //class with options for creating new images
-        public class Options
-        {
-            string text = "Watermark";
-            string fontname = "Arial";
-            int fontsize = 48;
-            int transparancy = 128;
-            int angle = 25;
-            int widthbetween = 0;
-            int heightbetween = 0;
-            FontStyle fontstyle = FontStyle.Regular;
-            Color color = Color.White;
-            Color color2 = Color.White;
-            Color color3 = Color.White;
-            int colorstart = 0;
-            int colorend = 300;
-            int colorangle = 50;
-            string effect = "None";
-
-            public string Fontname { get => fontname; set => fontname = value; }
-            public int Fontsize { get => fontsize; set => fontsize = value; }
-            public int Transparancy
-            {
-                get => transparancy;
-                set
-                {
-                    double alpha = (double)value / 100 * 255;
-                    transparancy = Convert.ToInt32(alpha);
-                }
-            }
-            public int Angle { get => angle; set => angle = value; }
-            public int Widthbetween { get => widthbetween; set => widthbetween = value; }
-            public int Heightbetween { get => heightbetween; set => heightbetween = value; }
-            public FontStyle Fontstyle { get => fontstyle; set => fontstyle = value; }
-            public string Text { get => text; set => text = value; }
-            public Color Color { get => color; set => color = value; }
-            public Color Color2 { get => color2; set => color2 = value; }
-            public Color Color3 { get => color3; set => color3 = value; }
-            public int Colorstart { get => colorstart; set => colorstart = value; }
-            public int Colorend { get => colorend; set => colorend = value; }
-            public int Colorangle { get => colorangle; set => colorangle = value; }
-            public string Effect { get => effect; set => effect = value; }
-        }
+        
         //WORK WITH FULLFILL PATTERN
         //Updating unused image. Disposing used image. Opening updated image 
-        private void FullfillUpdate(string text, string fontname, int fontsize, int alpha, int angle, int widthbetween, int heightbetween, FontStyle fontstyle, Color color, Color color2, Color color3, int colorstart, int colorend, int colorangle, string effect)
+        private void FullfillUpdate()
         {
             MainDisplay.Image.Dispose();
             if (!FullfillGradientcheckbox.Checked)
             {
                 if (operation == 0)
                 {
-                    gen.GenPatternFullfill(text, fontname, fontsize, alpha, angle, widthbetween, heightbetween, fontstyle, color, newoperation(),effect);
+                    gen.GenPatternFullfill( newoperation(),options,settings);
                     MainDisplay.Image = Image.FromFile("tempinput2.jpg");
                 }
                 else
                 {
-                    gen.GenPatternFullfill(text, fontname, fontsize, alpha, angle, widthbetween, heightbetween, fontstyle, color, newoperation(),effect);
+                    gen.GenPatternFullfill(newoperation(),options,settings);
                     MainDisplay.Image = Image.FromFile("tempinput.jpg");
                 }
             }
@@ -402,12 +390,12 @@ namespace Watermark_Empower
             {
                 if (operation == 0)
                 {
-                    gen.GenPatternFullfill(text, fontname, fontsize, alpha, angle, widthbetween, heightbetween, fontstyle, newoperation(), color, color2, color3, colorstart, colorend, colorangle);
+                    gen.GenPatternFullfillGradient( newoperation(), options);
                     MainDisplay.Image = Image.FromFile("tempinput2.jpg");
                 }
                 else
                 {
-                    gen.GenPatternFullfill(text, fontname, fontsize, alpha, angle, widthbetween, heightbetween, fontstyle, newoperation(), color, color2, color3, colorstart, colorend, colorangle);
+                    gen.GenPatternFullfillGradient(newoperation(), options);
                     MainDisplay.Image = Image.FromFile("tempinput.jpg");
                 }
             }
@@ -418,16 +406,14 @@ namespace Watermark_Empower
         private void FullfillFont_TextChanged(object sender, EventArgs e)
         {
             options.Fontname = FullfillFont.Text;
-            FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, options.Colorangle, options.Effect);
+            FullfillUpdate();
 
         }
         
         private void FullfillText_TextChanged(object sender, EventArgs e)
         {
             options.Text = FullfillText.Text;
-            FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, options.Colorangle,options.Effect);
+            FullfillUpdate();
         }
 
         private void FullfillFontSize_TextChanged(object sender, EventArgs e)
@@ -446,8 +432,7 @@ namespace Watermark_Empower
                 {
                     MessageBox.Show(ex.Message);
                 }
-                FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, options.Colorangle, options.Effect);
+                FullfillUpdate();
             }
 
         }
@@ -470,9 +455,7 @@ namespace Watermark_Empower
                     MessageBox.Show(ex.Message);
 
                 }
-                FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, 
-                    options.Colorangle, options.Effect);
+                FullfillUpdate();
 
             }
 
@@ -491,9 +474,7 @@ namespace Watermark_Empower
                 {
                     MessageBox.Show(ex.Message);
                 }
-                FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, 
-                    options.Colorangle, options.Effect);
+                FullfillUpdate();
             }
 
         }
@@ -523,9 +504,7 @@ namespace Watermark_Empower
                 {
                     MessageBox.Show(ex.Message);
                 }
-                FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                    options.Colorangle, options.Effect);
+                FullfillUpdate();
             }
         }
 
@@ -554,9 +533,7 @@ namespace Watermark_Empower
                 {
                     MessageBox.Show(ex.Message);
                 }
-                FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, 
-                    options.Colorangle, options.Effect);
+                FullfillUpdate();
             }
         }
 
@@ -585,9 +562,7 @@ namespace Watermark_Empower
 
                     break;
             }
-            FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                   , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                   options.Colorangle, options.Effect);
+            FullfillUpdate();
         }
             
 
@@ -646,9 +621,7 @@ namespace Watermark_Empower
         {
 
             options.Color = color;
-            FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                   , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, 
-                   options.Colorangle, options.Effect);
+            FullfillUpdate();
         }
         private void FullfillGradientUpd(Color color, Color color1, Color color2, int colorstart, int colorend, int colorangle)
         {
@@ -658,9 +631,7 @@ namespace Watermark_Empower
             options.Colorstart = colorstart;
             options.Colorend = colorend;
             options.Colorangle = colorangle;
-            FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                   , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, 
-                   options.Colorangle, options.Effect);
+            FullfillUpdate();
         }
 
 
@@ -672,16 +643,12 @@ namespace Watermark_Empower
                 options.Color = Color.Red;
                 options.Color2 = Color.Blue;
                 options.Color3 = Color.Green;
-                FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                       , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                       options.Colorangle, options.Effect);
+                FullfillUpdate();
             }
             else
             {
                 options.Color = Color.White;
-                FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                      , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                      options.Colorangle, options.Effect);
+                FullfillUpdate();
             }
         }
 
@@ -692,9 +659,7 @@ namespace Watermark_Empower
                 try
                 {
                     options.Colorstart = Convert.ToInt32(FullfillGradientStart.Text);
-                    FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                  , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                  options.Colorangle, options.Effect);
+                    FullfillUpdate();
                 }
                 catch (Exception ex)
                 {
@@ -710,9 +675,7 @@ namespace Watermark_Empower
                 try
                 {
                     options.Colorend = Convert.ToInt32(FullfillGradientEnd.Text);
-                    FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                  , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                  options.Colorangle, options.Effect);
+                    FullfillUpdate();
                 }
                 catch (Exception ex)
                 {
@@ -728,9 +691,7 @@ namespace Watermark_Empower
                 try
                 {
                     options.Colorstart = Convert.ToInt32(FullfillGradientAngle.Text);
-                    FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                  , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                  options.Colorangle, options.Effect);
+                    FullfillUpdate();
                 }
                 catch (Exception ex)
                 {
@@ -748,9 +709,7 @@ namespace Watermark_Empower
                 {
                     FullfillEffectTextBox.Text = effectdialog.SelectedEffect;
                     options.Effect = effectdialog.SelectedEffect;
-                    FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                          , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                          options.Colorangle, options.Effect);
+                    FullfillUpdate();
                 }
             }
         }
@@ -771,19 +730,19 @@ namespace Watermark_Empower
         }
 
         //WORK WITH CHESS PATTERN
-        private void ChessUpdate(string text, string fontname, int fontsize, int alpha, int angle, int widthbetween, int heightbetween, FontStyle fontstyle, Color color, Color color2, Color color3, int colorstart, int colorend, int colorangle, string effect)
+        private void ChessUpdate()
         {
             MainDisplay.Image.Dispose();
             if (!ChessGradientCheckBox.Checked)
             {
                 if (operation == 0)
                 {
-                    gen.GenPatternChess(text, fontname, fontsize, alpha, angle, widthbetween, heightbetween, fontstyle, color, newoperation(), effect);
+                    gen.GenPatternChess( newoperation(), options);
                     MainDisplay.Image = Image.FromFile("tempinput2.jpg");
                 }
                 else
                 {
-                    gen.GenPatternChess(text, fontname, fontsize, alpha, angle, widthbetween, heightbetween, fontstyle, color, newoperation(), effect);
+                    gen.GenPatternChess( newoperation(), options);
                     MainDisplay.Image = Image.FromFile("tempinput.jpg");
                 }
             }
@@ -791,12 +750,12 @@ namespace Watermark_Empower
             {
                 if (operation == 0)
                 {
-                    gen.GenPatternFullfill(text, fontname, fontsize, alpha, angle, widthbetween, heightbetween, fontstyle, newoperation(), color, color2, color3, colorstart, colorend, colorangle);
+                    gen.GenPatternChessGradient( newoperation(), options);
                     MainDisplay.Image = Image.FromFile("tempinput2.jpg");
                 }
                 else
                 {
-                    gen.GenPatternFullfill(text, fontname, fontsize, alpha, angle, widthbetween, heightbetween, fontstyle, newoperation(), color, color2, color3, colorstart, colorend, colorangle);
+                    gen.GenPatternChessGradient(newoperation(), options);
                     MainDisplay.Image = Image.FromFile("tempinput.jpg");
                 }
             }
@@ -805,16 +764,14 @@ namespace Watermark_Empower
         private void ChessText_TextChanged(object sender, EventArgs e)
         {
             options.Text = ChessText.Text;
-            ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, options.Colorangle, options.Effect);
+            ChessUpdate();
 
         }
 
         private void ChessFont_TextChanged(object sender, EventArgs e)
         {
             options.Fontname = ChessFont.Text;
-            ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, options.Colorangle, options.Effect);
+            ChessUpdate();
 
         }
 
@@ -849,8 +806,7 @@ namespace Watermark_Empower
                 {
                     MessageBox.Show(ex.Message);
                 }
-                ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend, options.Colorangle, options.Effect);
+                ChessUpdate();
             }
         }
 
@@ -872,9 +828,7 @@ namespace Watermark_Empower
                     MessageBox.Show(ex.Message);
 
                 }
-                ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                    options.Colorangle, options.Effect);
+                ChessUpdate();
 
             }
         }
@@ -892,9 +846,7 @@ namespace Watermark_Empower
                 {
                     MessageBox.Show(ex.Message);
                 }
-                ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                    options.Colorangle, options.Effect);
+                ChessUpdate();
             }
         }
 
@@ -923,9 +875,7 @@ namespace Watermark_Empower
                 {
                     MessageBox.Show(ex.Message);
                 }
-               ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                    options.Colorangle, options.Effect);
+               ChessUpdate();
             }
         }
 
@@ -954,9 +904,7 @@ namespace Watermark_Empower
                 {
                     MessageBox.Show(ex.Message);
                 }
-                ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                    , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                    options.Colorangle, options.Effect);
+                ChessUpdate();
             }
         }
 
@@ -984,9 +932,7 @@ namespace Watermark_Empower
 
                     break;
             }
-            ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                   , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                   options.Colorangle, options.Effect);
+            ChessUpdate();
         }
         private void ChessGradientUpd(Color color, Color color1, Color color2, int colorstart, int colorend, int colorangle)
         {
@@ -996,17 +942,13 @@ namespace Watermark_Empower
             options.Colorstart = colorstart;
             options.Colorend = colorend;
             options.Colorangle = colorangle;
-            FullfillUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                   , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                   options.Colorangle, options.Effect);
+            FullfillUpdate();
         }
         private void ChessColorUpd(Color color)
         {
 
             options.Color = color;
-            ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                   , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                   options.Colorangle, options.Effect);
+            ChessUpdate();
         }
         private void ChessColorIcon_Click(object sender, EventArgs e)
         {
@@ -1069,16 +1011,12 @@ namespace Watermark_Empower
                 options.Color = Color.Red;
                 options.Color2 = Color.Blue;
                 options.Color3 = Color.Green;
-               ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                       , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                       options.Colorangle, options.Effect);
+               ChessUpdate();
             }
             else
             {
                 options.Color = Color.White;
-                ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                      , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                      options.Colorangle, options.Effect);
+                ChessUpdate();
             }
         }
 
@@ -1089,9 +1027,7 @@ namespace Watermark_Empower
                 try
                 {
                     options.Colorstart = Convert.ToInt32(ChessGradientStart.Text);
-                    ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                  , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                  options.Colorangle, options.Effect);
+                    ChessUpdate();
                 }
                 catch (Exception ex)
                 {
@@ -1107,9 +1043,7 @@ namespace Watermark_Empower
                 try
                 {
                     options.Colorend = Convert.ToInt32(ChessGradientEnd.Text);
-                    ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                  , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                  options.Colorangle, options.Effect);
+                    ChessUpdate();
                 }
                 catch (Exception ex)
                 {
@@ -1125,9 +1059,7 @@ namespace Watermark_Empower
                 try
                 {
                     options.Colorstart = Convert.ToInt32(ChessGradientAngle.Text);
-                    ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                  , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                  options.Colorangle, options.Effect);
+                    ChessUpdate();
                 }
                 catch (Exception ex)
                 {
@@ -1144,9 +1076,68 @@ namespace Watermark_Empower
                 {
                     ChessEffectBtn.Text = effectdialog.SelectedEffect;
                     options.Effect = effectdialog.SelectedEffect;
-                    ChessUpdate(options.Text, options.Fontname, options.Fontsize, options.Transparancy, options.Angle, options.Widthbetween
-                          , options.Heightbetween, options.Fontstyle, options.Color, options.Color2, options.Color3, options.Colorstart, options.Colorend,
-                          options.Colorangle, options.Effect);
+                    ChessUpdate();
+                }
+            }
+        }
+
+        private void StretchButton_Click(object sender, EventArgs e)
+        {
+            
+            MainDisplay.SizeMode = PictureBoxSizeMode.StretchImage;
+            MainDisplay.Width = 960;
+            MainDisplay.Height = 585;
+        }
+
+        private void NormalSizeButton_Click(object sender, EventArgs e)
+        {
+            
+            MainDisplay.SizeMode = PictureBoxSizeMode.Normal;
+            MainDisplay.Width = 960;
+            MainDisplay.Height = 585;
+        }
+
+        private void AutosizeButton_Click(object sender, EventArgs e)
+        {
+            MainDisplay.SizeMode = PictureBoxSizeMode.AutoSize;
+            if (MainDisplay.Width >960 || MainDisplay.Height > 585)
+            {
+                
+                MainDisplay.SizeMode = PictureBoxSizeMode.Normal;
+                MainDisplay.Width = 960;
+                MainDisplay.Height = 585;
+                MessageBox.Show("Размер изображения превосходит возможный для работы размер, выберите другой способ размежения картинки");
+            }
+        }
+
+        private void CenterImageButton_Click(object sender, EventArgs e)
+        {
+            
+            MainDisplay.SizeMode = PictureBoxSizeMode.CenterImage;
+            MainDisplay.Width = 960;
+            MainDisplay.Height = 585;
+        }
+
+        private void ZoomButton_Click(object sender, EventArgs e)
+        {
+            
+            MainDisplay.SizeMode = PictureBoxSizeMode.Zoom;
+            MainDisplay.Width = 960;
+            MainDisplay.Height = 585;
+        }
+
+        private void ProjectOptions_Click(object sender, EventArgs e)
+        {
+            using (ProjectSettingsDialog prjset = new ProjectSettingsDialog(settings.Rows,settings.Columns,settings.Xoffset, settings.Yoffset))
+            {
+                if (prjset.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    settings.Rows = prjset.rows;
+                    settings.Columns = prjset.columns;
+                    settings.Xoffset = prjset.xoffset;
+                    settings.Yoffset = prjset.yoffset;
+                   
+                    FullfillUpdate();
                 }
             }
         }

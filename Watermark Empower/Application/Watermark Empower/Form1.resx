@@ -117,501 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;fullfill.Name" xml:space="preserve">
-    <value>fullfill</value>
-  </data>
-  <data name="&gt;&gt;fullfill.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fullfill.Parent" xml:space="preserve">
-    <value>Tools</value>
-  </data>
-  <data name="&gt;&gt;fullfill.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;chess.Name" xml:space="preserve">
-    <value>chess</value>
-  </data>
-  <data name="&gt;&gt;chess.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chess.Parent" xml:space="preserve">
-    <value>Tools</value>
-  </data>
-  <data name="&gt;&gt;chess.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;None.Name" xml:space="preserve">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;None.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;None.Parent" xml:space="preserve">
-    <value>Tools</value>
-  </data>
-  <data name="&gt;&gt;None.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Tools.ItemSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 2</value>
-  </data>
-  <data name="Tools.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1549, 41</value>
-  </data>
-  <data name="Tools.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 942</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Tools.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Tools.Name" xml:space="preserve">
-    <value>Tools</value>
-  </data>
-  <data name="&gt;&gt;Tools.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tools.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Tools.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <data name="fullfill.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;EffectDialogButton.Name" xml:space="preserve">
-    <value>EffectDialogButton</value>
-  </data>
-  <data name="&gt;&gt;EffectDialogButton.Type" xml:space="preserve">
-    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;EffectDialogButton.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;EffectDialogButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label24.Name" xml:space="preserve">
-    <value>label24</value>
-  </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;FullfillEffectTextBox.Name" xml:space="preserve">
-    <value>FullfillEffectTextBox</value>
-  </data>
-  <data name="&gt;&gt;FullfillEffectTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillEffectTextBox.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillEffectTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;FullfillFontSelectBtn.Name" xml:space="preserve">
-    <value>FullfillFontSelectBtn</value>
-  </data>
-  <data name="&gt;&gt;FullfillFontSelectBtn.Type" xml:space="preserve">
-    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;FullfillFontSelectBtn.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillFontSelectBtn.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientAngle.Name" xml:space="preserve">
-    <value>FullfillGradientAngle</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientAngle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientAngle.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientAngle.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientEnd.Name" xml:space="preserve">
-    <value>FullfillGradientEnd</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientEnd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientEnd.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientEnd.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientStart.Name" xml:space="preserve">
-    <value>FullfillGradientStart</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientStart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientStart.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientStart.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label22.Name" xml:space="preserve">
-    <value>label22</value>
-  </data>
-  <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label21.Name" xml:space="preserve">
-    <value>label21</value>
-  </data>
-  <data name="&gt;&gt;label21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label20.Name" xml:space="preserve">
-    <value>label20</value>
-  </data>
-  <data name="&gt;&gt;label20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientcheckbox.Name" xml:space="preserve">
-    <value>FullfillGradientcheckbox</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientcheckbox.Type" xml:space="preserve">
-    <value>MyCheckBox, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientcheckbox.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillGradientcheckbox.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;label19.Name" xml:space="preserve">
-    <value>label19</value>
-  </data>
-  <data name="&gt;&gt;label19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;FullfillColorDisplay.Name" xml:space="preserve">
-    <value>FullfillColorDisplay</value>
-  </data>
-  <data name="&gt;&gt;FullfillColorDisplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillColorDisplay.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillColorDisplay.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;FullfillColorMenu.Name" xml:space="preserve">
-    <value>FullfillColorMenu</value>
-  </data>
-  <data name="&gt;&gt;FullfillColorMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillColorMenu.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillColorMenu.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;FullfillStyle.Name" xml:space="preserve">
-    <value>FullfillStyle</value>
-  </data>
-  <data name="&gt;&gt;FullfillStyle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillStyle.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillStyle.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;Fullfillhbtw.Name" xml:space="preserve">
-    <value>Fullfillhbtw</value>
-  </data>
-  <data name="&gt;&gt;Fullfillhbtw.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Fullfillhbtw.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;Fullfillhbtw.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;Fullfillwbtw.Name" xml:space="preserve">
-    <value>Fullfillwbtw</value>
-  </data>
-  <data name="&gt;&gt;Fullfillwbtw.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Fullfillwbtw.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;Fullfillwbtw.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;FullfillText.Name" xml:space="preserve">
-    <value>FullfillText</value>
-  </data>
-  <data name="&gt;&gt;FullfillText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillText.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillText.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;FullfillAngle.Name" xml:space="preserve">
-    <value>FullfillAngle</value>
-  </data>
-  <data name="&gt;&gt;FullfillAngle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillAngle.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillAngle.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;FullfillTransparancy.Name" xml:space="preserve">
-    <value>FullfillTransparancy</value>
-  </data>
-  <data name="&gt;&gt;FullfillTransparancy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillTransparancy.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillTransparancy.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;FullfillFontSize.Name" xml:space="preserve">
-    <value>FullfillFontSize</value>
-  </data>
-  <data name="&gt;&gt;FullfillFontSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillFontSize.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillFontSize.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;FullfillFont.Name" xml:space="preserve">
-    <value>FullfillFont</value>
-  </data>
-  <data name="&gt;&gt;FullfillFont.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillFont.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;FullfillFont.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="scrollableControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="scrollableControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 923</value>
-  </data>
-  <data name="scrollableControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="scrollableControl1.Text" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl1.Name" xml:space="preserve">
-    <value>scrollableControl1</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ScrollableControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl1.Parent" xml:space="preserve">
-    <value>fullfill</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="fullfill.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 1.2pt</value>
-  </data>
-  <data name="fullfill.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 6</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="fullfill.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="fullfill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>342, 932</value>
-  </data>
-  <data name="fullfill.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="fullfill.Text" xml:space="preserve">
-    <value>fullfill</value>
-  </data>
-  <data name="&gt;&gt;fullfill.Name" xml:space="preserve">
-    <value>fullfill</value>
-  </data>
-  <data name="&gt;&gt;fullfill.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fullfill.Parent" xml:space="preserve">
-    <value>Tools</value>
-  </data>
-  <data name="&gt;&gt;fullfill.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="EffectDialogButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="EffectDialogButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
@@ -958,7 +472,7 @@
     <value>20</value>
   </data>
   <data name="label19.Text" xml:space="preserve">
-    <value>Режим гардиента</value>
+    <value>Режим градиента</value>
   </data>
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
@@ -1536,1046 +1050,59 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
-  <data name="&gt;&gt;scrollableControl2.Name" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ScrollableControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl2.Parent" xml:space="preserve">
-    <value>chess</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="chess.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 6</value>
-  </data>
-  <data name="chess.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="chess.Size" type="System.Drawing.Size, System.Drawing">
-    <value>342, 932</value>
-  </data>
-  <data name="chess.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="chess.Text" xml:space="preserve">
-    <value>chess</value>
-  </data>
-  <data name="&gt;&gt;chess.Name" xml:space="preserve">
-    <value>chess</value>
-  </data>
-  <data name="&gt;&gt;chess.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chess.Parent" xml:space="preserve">
-    <value>Tools</value>
-  </data>
-  <data name="&gt;&gt;chess.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ChessEffectBtn.Name" xml:space="preserve">
-    <value>ChessEffectBtn</value>
-  </data>
-  <data name="&gt;&gt;ChessEffectBtn.Type" xml:space="preserve">
-    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ChessEffectBtn.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessEffectBtn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ChessEffect.Name" xml:space="preserve">
-    <value>ChessEffect</value>
-  </data>
-  <data name="&gt;&gt;ChessEffect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessEffect.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessEffect.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ChessFontBtn.Name" xml:space="preserve">
-    <value>ChessFontBtn</value>
-  </data>
-  <data name="&gt;&gt;ChessFontBtn.Type" xml:space="preserve">
-    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ChessFontBtn.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessFontBtn.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientAngle.Name" xml:space="preserve">
-    <value>ChessGradientAngle</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientAngle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientAngle.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientAngle.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientEnd.Name" xml:space="preserve">
-    <value>ChessGradientEnd</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientEnd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientEnd.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientEnd.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientStart.Name" xml:space="preserve">
-    <value>ChessGradientStart</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientStart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientStart.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientStart.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientCheckBox.Name" xml:space="preserve">
-    <value>ChessGradientCheckBox</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientCheckBox.Type" xml:space="preserve">
-    <value>MyCheckBox, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientCheckBox.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessGradientCheckBox.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;ChessColorDisplay.Name" xml:space="preserve">
-    <value>ChessColorDisplay</value>
-  </data>
-  <data name="&gt;&gt;ChessColorDisplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessColorDisplay.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessColorDisplay.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;ChessColorIcon.Name" xml:space="preserve">
-    <value>ChessColorIcon</value>
-  </data>
-  <data name="&gt;&gt;ChessColorIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessColorIcon.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessColorIcon.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;ChessTextStyle.Name" xml:space="preserve">
-    <value>ChessTextStyle</value>
-  </data>
-  <data name="&gt;&gt;ChessTextStyle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessTextStyle.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessTextStyle.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
-  </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;ChessHbtw.Name" xml:space="preserve">
-    <value>ChessHbtw</value>
-  </data>
-  <data name="&gt;&gt;ChessHbtw.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessHbtw.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessHbtw.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
-  </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;ChessWbtw.Name" xml:space="preserve">
-    <value>ChessWbtw</value>
-  </data>
-  <data name="&gt;&gt;ChessWbtw.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessWbtw.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessWbtw.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
-  </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;ChessText.Name" xml:space="preserve">
-    <value>ChessText</value>
-  </data>
-  <data name="&gt;&gt;ChessText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessText.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessText.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;label25.Name" xml:space="preserve">
-    <value>label25</value>
-  </data>
-  <data name="&gt;&gt;label25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;ChessAngle.Name" xml:space="preserve">
-    <value>ChessAngle</value>
-  </data>
-  <data name="&gt;&gt;ChessAngle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessAngle.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessAngle.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;label26.Name" xml:space="preserve">
-    <value>label26</value>
-  </data>
-  <data name="&gt;&gt;label26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;ChessTransparancy.Name" xml:space="preserve">
-    <value>ChessTransparancy</value>
-  </data>
-  <data name="&gt;&gt;ChessTransparancy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessTransparancy.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessTransparancy.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;label27.Name" xml:space="preserve">
-    <value>label27</value>
-  </data>
-  <data name="&gt;&gt;label27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;ChessTextSize.Name" xml:space="preserve">
-    <value>ChessTextSize</value>
-  </data>
-  <data name="&gt;&gt;ChessTextSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessTextSize.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessTextSize.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;label28.Name" xml:space="preserve">
-    <value>label28</value>
-  </data>
-  <data name="&gt;&gt;label28.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;ChessFont.Name" xml:space="preserve">
-    <value>ChessFont</value>
-  </data>
-  <data name="&gt;&gt;ChessFont.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessFont.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;ChessFont.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;label29.Name" xml:space="preserve">
-    <value>label29</value>
-  </data>
-  <data name="&gt;&gt;label29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="scrollableControl2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="scrollableControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
   </data>
-  <data name="scrollableControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 923</value>
+  <data name="scrollableControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 923</value>
   </data>
-  <data name="scrollableControl2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="scrollableControl2.Text" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl2.Name" xml:space="preserve">
-    <value>scrollableControl2</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ScrollableControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl2.Parent" xml:space="preserve">
-    <value>chess</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl2.ZOrder" xml:space="preserve">
+  <data name="scrollableControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;scrollableControl3.Name" xml:space="preserve">
-    <value>scrollableControl3</value>
+  <data name="scrollableControl1.Text" xml:space="preserve">
+    <value>scrollableControl1</value>
   </data>
-  <data name="&gt;&gt;scrollableControl3.Type" xml:space="preserve">
+  <data name="&gt;&gt;scrollableControl1.Name" xml:space="preserve">
+    <value>scrollableControl1</value>
+  </data>
+  <data name="&gt;&gt;scrollableControl1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ScrollableControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;scrollableControl3.Parent" xml:space="preserve">
-    <value>None</value>
+  <data name="&gt;&gt;scrollableControl1.Parent" xml:space="preserve">
+    <value>fullfill</value>
   </data>
-  <data name="&gt;&gt;scrollableControl3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;scrollableControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="None.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="fullfill.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 1.2pt</value>
+  </data>
+  <data name="fullfill.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 6</value>
   </data>
-  <data name="None.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="fullfill.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="None.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="fullfill.Size" type="System.Drawing.Size, System.Drawing">
     <value>342, 932</value>
   </data>
-  <data name="None.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="fullfill.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="None.Text" xml:space="preserve">
-    <value>none</value>
+  <data name="fullfill.Text" xml:space="preserve">
+    <value>fullfill</value>
   </data>
-  <data name="&gt;&gt;None.Name" xml:space="preserve">
-    <value>None</value>
+  <data name="&gt;&gt;fullfill.Name" xml:space="preserve">
+    <value>fullfill</value>
   </data>
-  <data name="&gt;&gt;None.Type" xml:space="preserve">
+  <data name="&gt;&gt;fullfill.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;None.Parent" xml:space="preserve">
+  <data name="&gt;&gt;fullfill.Parent" xml:space="preserve">
     <value>Tools</value>
   </data>
-  <data name="&gt;&gt;None.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="scrollableControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="scrollableControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 930</value>
-  </data>
-  <data name="scrollableControl3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="scrollableControl3.Text" xml:space="preserve">
-    <value>scrollableControl3</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl3.Name" xml:space="preserve">
-    <value>scrollableControl3</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ScrollableControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl3.Parent" xml:space="preserve">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;scrollableControl3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;fullfill.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="FullfillSelector.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="FullfillSelector.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Nirmala UI, 16.2pt</value>
-  </data>
-  <data name="FullfillSelector.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="FullfillSelector.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 83</value>
-  </data>
-  <data name="FullfillSelector.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 61</value>
-  </data>
-  <data name="FullfillSelector.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="FullfillSelector.Text" xml:space="preserve">
-    <value>Fullfill</value>
-  </data>
-  <data name="&gt;&gt;FullfillSelector.Name" xml:space="preserve">
-    <value>FullfillSelector</value>
-  </data>
-  <data name="&gt;&gt;FullfillSelector.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FullfillSelector.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;FullfillSelector.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>184, 17</value>
-  </metadata>
-  <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>346, 17</value>
-  </metadata>
-  <data name="&gt;&gt;Nav.Name" xml:space="preserve">
-    <value>Nav</value>
-  </data>
-  <data name="&gt;&gt;Nav.Type" xml:space="preserve">
-    <value>Watermark_Empower.TryDoubleBufferAgain, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Nav.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;Nav.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ChessSelector.Name" xml:space="preserve">
-    <value>ChessSelector</value>
-  </data>
-  <data name="&gt;&gt;ChessSelector.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessSelector.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;ChessSelector.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1370, 29</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 947</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Nav.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Nav.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
-  </data>
-  <data name="Nav.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 61</value>
-  </data>
-  <data name="Nav.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;Nav.Name" xml:space="preserve">
-    <value>Nav</value>
-  </data>
-  <data name="&gt;&gt;Nav.Type" xml:space="preserve">
-    <value>Watermark_Empower.TryDoubleBufferAgain, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Nav.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;Nav.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Nirmala UI, 16.2pt</value>
-  </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 264</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 63</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Chess</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Nirmala UI, 16.2pt</value>
-  </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 204</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 63</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Chess</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ChessSelector.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="ChessSelector.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Nirmala UI, 16.2pt</value>
-  </data>
-  <data name="ChessSelector.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ChessSelector.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 143</value>
-  </data>
-  <data name="ChessSelector.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 63</value>
-  </data>
-  <data name="ChessSelector.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ChessSelector.Text" xml:space="preserve">
-    <value>Chess</value>
-  </data>
-  <data name="&gt;&gt;ChessSelector.Name" xml:space="preserve">
-    <value>ChessSelector</value>
-  </data>
-  <data name="&gt;&gt;ChessSelector.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChessSelector.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;ChessSelector.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Nirmala UI, 16.2pt, style=Bold</value>
-  </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-9, 27</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 58</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>Menu</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Nirmala UI, 16.2pt, style=Bold</value>
-  </data>
-  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>489, 9</value>
-  </data>
-  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 38</value>
-  </data>
-  <data name="label23.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label23.Text" xml:space="preserve">
-    <value>Watermark Empower</value>
-  </data>
-  <data name="&gt;&gt;label23.Name" xml:space="preserve">
-    <value>label23</value>
-  </data>
-  <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1910, 41</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>490, 17</value>
-  </metadata>
-  <data name="navpanelborder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="navpanelborder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1370, 50</value>
-  </data>
-  <data name="navpanelborder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>3, 926</value>
-  </data>
-  <data name="navpanelborder.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;navpanelborder.Name" xml:space="preserve">
-    <value>navpanelborder</value>
-  </data>
-  <data name="&gt;&gt;navpanelborder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;navpanelborder.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;navpanelborder.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 50</value>
-  </data>
-  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1875, 3</value>
-  </data>
-  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
-    <value>pictureBox4</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="MainDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="MainDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 105</value>
-  </data>
-  <data name="MainDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1280, 720</value>
-  </data>
-  <data name="MainDisplay.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="MainDisplay.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;MainDisplay.Name" xml:space="preserve">
-    <value>MainDisplay</value>
-  </data>
-  <data name="&gt;&gt;MainDisplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MainDisplay.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MainDisplay.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 86</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1319, 759</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="customButtons2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="customButtons2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Nirmala UI, 16.2pt, style=Bold</value>
-  </data>
-  <data name="customButtons2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="customButtons2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="customButtons2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>554, 870</value>
-  </data>
-  <data name="customButtons2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 64</value>
-  </data>
-  <data name="customButtons2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="customButtons2.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="&gt;&gt;customButtons2.Name" xml:space="preserve">
-    <value>customButtons2</value>
-  </data>
-  <data name="&gt;&gt;customButtons2.Type" xml:space="preserve">
-    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;customButtons2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;customButtons2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="CloseForm.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="CloseForm.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Nirmala UI, 16.2pt, style=Bold</value>
-  </data>
-  <data name="CloseForm.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="CloseForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CloseForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1073, 870</value>
-  </data>
-  <data name="CloseForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 64</value>
-  </data>
-  <data name="CloseForm.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="CloseForm.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="&gt;&gt;CloseForm.Name" xml:space="preserve">
-    <value>CloseForm</value>
-  </data>
-  <data name="&gt;&gt;CloseForm.Type" xml:space="preserve">
-    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;CloseForm.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CloseForm.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Import_Image.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="Import_Image.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Nirmala UI, 16.2pt, style=Bold</value>
-  </data>
-  <data name="Import_Image.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="Import_Image.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Import_Image.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 870</value>
-  </data>
-  <data name="Import_Image.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 64</value>
-  </data>
-  <data name="Import_Image.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="Import_Image.Text" xml:space="preserve">
-    <value>Import</value>
-  </data>
-  <data name="&gt;&gt;Import_Image.Name" xml:space="preserve">
-    <value>Import_Image</value>
-  </data>
-  <data name="&gt;&gt;Import_Image.Type" xml:space="preserve">
-    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Import_Image.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Import_Image.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="ChessEffectBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2926,7 +1453,7 @@
     <value>52</value>
   </data>
   <data name="label14.Text" xml:space="preserve">
-    <value>Режим гардиента</value>
+    <value>Режим градиента</value>
   </data>
   <data name="&gt;&gt;label14.Name" xml:space="preserve">
     <value>label14</value>
@@ -3503,6 +2030,822 @@
   </data>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
     <value>30</value>
+  </data>
+  <data name="scrollableControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="scrollableControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 923</value>
+  </data>
+  <data name="scrollableControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="scrollableControl2.Text" xml:space="preserve">
+    <value>scrollableControl2</value>
+  </data>
+  <data name="&gt;&gt;scrollableControl2.Name" xml:space="preserve">
+    <value>scrollableControl2</value>
+  </data>
+  <data name="&gt;&gt;scrollableControl2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ScrollableControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scrollableControl2.Parent" xml:space="preserve">
+    <value>chess</value>
+  </data>
+  <data name="&gt;&gt;scrollableControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chess.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 6</value>
+  </data>
+  <data name="chess.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="chess.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 932</value>
+  </data>
+  <data name="chess.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chess.Text" xml:space="preserve">
+    <value>chess</value>
+  </data>
+  <data name="&gt;&gt;chess.Name" xml:space="preserve">
+    <value>chess</value>
+  </data>
+  <data name="&gt;&gt;chess.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chess.Parent" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="&gt;&gt;chess.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="scrollableControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="scrollableControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 930</value>
+  </data>
+  <data name="scrollableControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="scrollableControl3.Text" xml:space="preserve">
+    <value>scrollableControl3</value>
+  </data>
+  <data name="&gt;&gt;scrollableControl3.Name" xml:space="preserve">
+    <value>scrollableControl3</value>
+  </data>
+  <data name="&gt;&gt;scrollableControl3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ScrollableControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scrollableControl3.Parent" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;scrollableControl3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="None.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 6</value>
+  </data>
+  <data name="None.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="None.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 932</value>
+  </data>
+  <data name="None.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="None.Text" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="&gt;&gt;None.Name" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;None.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;None.Parent" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="&gt;&gt;None.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Tools.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>1, 2</value>
+  </data>
+  <data name="Tools.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1549, 41</value>
+  </data>
+  <data name="Tools.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 942</value>
+  </data>
+  <data name="Tools.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Tools.Name" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="&gt;&gt;Tools.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Tools.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Tools.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="FullfillSelector.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="FullfillSelector.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 16.2pt</value>
+  </data>
+  <data name="FullfillSelector.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FullfillSelector.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 83</value>
+  </data>
+  <data name="FullfillSelector.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 61</value>
+  </data>
+  <data name="FullfillSelector.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="FullfillSelector.Text" xml:space="preserve">
+    <value>Fullfill</value>
+  </data>
+  <data name="&gt;&gt;FullfillSelector.Name" xml:space="preserve">
+    <value>FullfillSelector</value>
+  </data>
+  <data name="&gt;&gt;FullfillSelector.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FullfillSelector.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;FullfillSelector.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>184, 17</value>
+  </metadata>
+  <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>346, 17</value>
+  </metadata>
+  <data name="Nav.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Nav.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, -40</value>
+  </data>
+  <data name="Nav.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 61</value>
+  </data>
+  <data name="Nav.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Nav.Name" xml:space="preserve">
+    <value>Nav</value>
+  </data>
+  <data name="&gt;&gt;Nav.Type" xml:space="preserve">
+    <value>Watermark_Empower.TryDoubleBufferAgain, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Nav.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;Nav.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 16.2pt</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 264</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 63</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Chess</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 16.2pt</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 204</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 63</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Chess</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ChessSelector.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ChessSelector.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 16.2pt</value>
+  </data>
+  <data name="ChessSelector.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ChessSelector.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 143</value>
+  </data>
+  <data name="ChessSelector.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 63</value>
+  </data>
+  <data name="ChessSelector.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ChessSelector.Text" xml:space="preserve">
+    <value>Chess</value>
+  </data>
+  <data name="&gt;&gt;ChessSelector.Name" xml:space="preserve">
+    <value>ChessSelector</value>
+  </data>
+  <data name="&gt;&gt;ChessSelector.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChessSelector.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;ChessSelector.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="MenuButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="MenuButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 16.2pt, style=Bold</value>
+  </data>
+  <data name="MenuButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MenuButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-9, 27</value>
+  </data>
+  <data name="MenuButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 58</value>
+  </data>
+  <data name="MenuButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="MenuButton.Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;MenuButton.Name" xml:space="preserve">
+    <value>MenuButton</value>
+  </data>
+  <data name="&gt;&gt;MenuButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuButton.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;MenuButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1370, 29</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 947</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 16.2pt, style=Bold</value>
+  </data>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>489, 9</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 38</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Watermark Empower</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1910, 50</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>490, 17</value>
+  </metadata>
+  <data name="ZoomButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ZoomButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ZoomButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ZoomButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 59</value>
+  </data>
+  <data name="ZoomButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 41</value>
+  </data>
+  <data name="ZoomButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;ZoomButton.Name" xml:space="preserve">
+    <value>ZoomButton</value>
+  </data>
+  <data name="&gt;&gt;ZoomButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ZoomButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ZoomButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CenterImageButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="CenterImageButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CenterImageButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CenterImageButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 59</value>
+  </data>
+  <data name="CenterImageButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 41</value>
+  </data>
+  <data name="CenterImageButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;CenterImageButton.Name" xml:space="preserve">
+    <value>CenterImageButton</value>
+  </data>
+  <data name="&gt;&gt;CenterImageButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CenterImageButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CenterImageButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="AutosizeButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="AutosizeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="AutosizeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AutosizeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 59</value>
+  </data>
+  <data name="AutosizeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 41</value>
+  </data>
+  <data name="AutosizeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;AutosizeButton.Name" xml:space="preserve">
+    <value>AutosizeButton</value>
+  </data>
+  <data name="&gt;&gt;AutosizeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AutosizeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AutosizeButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="StretchButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="StretchButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="StretchButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="StretchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 59</value>
+  </data>
+  <data name="StretchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 41</value>
+  </data>
+  <data name="StretchButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;StretchButton.Name" xml:space="preserve">
+    <value>StretchButton</value>
+  </data>
+  <data name="&gt;&gt;StretchButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StretchButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StretchButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="NormalSizeButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="NormalSizeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="NormalSizeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NormalSizeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 59</value>
+  </data>
+  <data name="NormalSizeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 41</value>
+  </data>
+  <data name="NormalSizeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;NormalSizeButton.Name" xml:space="preserve">
+    <value>NormalSizeButton</value>
+  </data>
+  <data name="&gt;&gt;NormalSizeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NormalSizeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NormalSizeButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="navpanelborder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="navpanelborder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1370, 50</value>
+  </data>
+  <data name="navpanelborder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>3, 926</value>
+  </data>
+  <data name="navpanelborder.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;navpanelborder.Name" xml:space="preserve">
+    <value>navpanelborder</value>
+  </data>
+  <data name="&gt;&gt;navpanelborder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;navpanelborder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;navpanelborder.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1875, 3</value>
+  </data>
+  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
+    <value>pictureBox4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="MainDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MainDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 122</value>
+  </data>
+  <data name="MainDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 720</value>
+  </data>
+  <data name="MainDisplay.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="MainDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MainDisplay.Name" xml:space="preserve">
+    <value>MainDisplay</value>
+  </data>
+  <data name="&gt;&gt;MainDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainDisplay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MainDisplay.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 103</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1319, 759</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ProjectOptions.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ProjectOptions.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ProjectOptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ProjectOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1290, 58</value>
+  </data>
+  <data name="ProjectOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 43</value>
+  </data>
+  <data name="ProjectOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;ProjectOptions.Name" xml:space="preserve">
+    <value>ProjectOptions</value>
+  </data>
+  <data name="&gt;&gt;ProjectOptions.Type" xml:space="preserve">
+    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ProjectOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ProjectOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customButtons1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="customButtons1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="customButtons1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 56</value>
+  </data>
+  <data name="customButtons1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 45</value>
+  </data>
+  <data name="customButtons1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;customButtons1.Name" xml:space="preserve">
+    <value>customButtons1</value>
+  </data>
+  <data name="&gt;&gt;customButtons1.Type" xml:space="preserve">
+    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;customButtons1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;customButtons1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="customButtons2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="customButtons2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 16.2pt, style=Bold</value>
+  </data>
+  <data name="customButtons2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="customButtons2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="customButtons2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>554, 884</value>
+  </data>
+  <data name="customButtons2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 64</value>
+  </data>
+  <data name="customButtons2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="customButtons2.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;customButtons2.Name" xml:space="preserve">
+    <value>customButtons2</value>
+  </data>
+  <data name="&gt;&gt;customButtons2.Type" xml:space="preserve">
+    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;customButtons2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;customButtons2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="CloseForm.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CloseForm.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 16.2pt, style=Bold</value>
+  </data>
+  <data name="CloseForm.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="CloseForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CloseForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1073, 884</value>
+  </data>
+  <data name="CloseForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 64</value>
+  </data>
+  <data name="CloseForm.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="CloseForm.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="&gt;&gt;CloseForm.Name" xml:space="preserve">
+    <value>CloseForm</value>
+  </data>
+  <data name="&gt;&gt;CloseForm.Type" xml:space="preserve">
+    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CloseForm.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CloseForm.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Import_Image.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="Import_Image.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 16.2pt, style=Bold</value>
+  </data>
+  <data name="Import_Image.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="Import_Image.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Import_Image.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 884</value>
+  </data>
+  <data name="Import_Image.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 64</value>
+  </data>
+  <data name="Import_Image.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Import_Image.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="&gt;&gt;Import_Image.Name" xml:space="preserve">
+    <value>Import_Image</value>
+  </data>
+  <data name="&gt;&gt;Import_Image.Type" xml:space="preserve">
+    <value>Watermark_Empower.CustomButtons, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Import_Image.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Import_Image.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
