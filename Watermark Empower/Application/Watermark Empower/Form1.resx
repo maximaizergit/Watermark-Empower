@@ -1054,7 +1054,7 @@
     <value>6, 6</value>
   </data>
   <data name="scrollableControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 923</value>
+    <value>312, 949</value>
   </data>
   <data name="scrollableControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1084,7 +1084,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="fullfill.Size" type="System.Drawing.Size, System.Drawing">
-    <value>342, 932</value>
+    <value>342, 990</value>
   </data>
   <data name="fullfill.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2035,7 +2035,7 @@
     <value>6, 6</value>
   </data>
   <data name="scrollableControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 923</value>
+    <value>333, 955</value>
   </data>
   <data name="scrollableControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2062,7 +2062,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="chess.Size" type="System.Drawing.Size, System.Drawing">
-    <value>342, 932</value>
+    <value>342, 990</value>
   </data>
   <data name="chess.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2113,7 +2113,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="None.Size" type="System.Drawing.Size, System.Drawing">
-    <value>342, 932</value>
+    <value>342, 990</value>
   </data>
   <data name="None.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2140,7 +2140,7 @@
     <value>1549, 41</value>
   </data>
   <data name="Tools.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 942</value>
+    <value>350, 1000</value>
   </data>
   <data name="Tools.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2443,7 +2443,7 @@
     <value>NoControl</value>
   </data>
   <data name="ZoomButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 59</value>
+    <value>210, 73</value>
   </data>
   <data name="ZoomButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 41</value>
@@ -2473,7 +2473,7 @@
     <value>NoControl</value>
   </data>
   <data name="CenterImageButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 59</value>
+    <value>170, 73</value>
   </data>
   <data name="CenterImageButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 41</value>
@@ -2503,7 +2503,7 @@
     <value>NoControl</value>
   </data>
   <data name="AutosizeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 59</value>
+    <value>130, 73</value>
   </data>
   <data name="AutosizeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 41</value>
@@ -2533,7 +2533,7 @@
     <value>NoControl</value>
   </data>
   <data name="StretchButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 59</value>
+    <value>90, 73</value>
   </data>
   <data name="StretchButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 41</value>
@@ -2563,7 +2563,7 @@
     <value>NoControl</value>
   </data>
   <data name="NormalSizeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 59</value>
+    <value>50, 73</value>
   </data>
   <data name="NormalSizeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 41</value>
@@ -2635,7 +2635,7 @@
     <value>NoControl</value>
   </data>
   <data name="MainDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 122</value>
+    <value>40, 157</value>
   </data>
   <data name="MainDisplay.Size" type="System.Drawing.Size, System.Drawing">
     <value>1280, 720</value>
@@ -2662,7 +2662,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 103</value>
+    <value>21, 138</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1319, 759</value>
@@ -2692,7 +2692,7 @@
     <value>NoControl</value>
   </data>
   <data name="ProjectOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1290, 58</value>
+    <value>1290, 71</value>
   </data>
   <data name="ProjectOptions.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 43</value>
@@ -2719,7 +2719,7 @@
     <value>NoControl</value>
   </data>
   <data name="customButtons1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 56</value>
+    <value>31, 70</value>
   </data>
   <data name="customButtons1.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 45</value>
@@ -2752,7 +2752,7 @@
     <value>NoControl</value>
   </data>
   <data name="customButtons2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>554, 884</value>
+    <value>554, 919</value>
   </data>
   <data name="customButtons2.Size" type="System.Drawing.Size, System.Drawing">
     <value>267, 64</value>
@@ -2788,7 +2788,7 @@
     <value>NoControl</value>
   </data>
   <data name="CloseForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1073, 884</value>
+    <value>1073, 919</value>
   </data>
   <data name="CloseForm.Size" type="System.Drawing.Size, System.Drawing">
     <value>267, 64</value>
@@ -2824,7 +2824,7 @@
     <value>NoControl</value>
   </data>
   <data name="Import_Image.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 884</value>
+    <value>40, 919</value>
   </data>
   <data name="Import_Image.Size" type="System.Drawing.Size, System.Drawing">
     <value>267, 64</value>
@@ -2847,6 +2847,30 @@
   <data name="&gt;&gt;Import_Image.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <data name="sizingnav.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sizingnav.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 68</value>
+  </data>
+  <data name="sizingnav.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 50</value>
+  </data>
+  <data name="sizingnav.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;sizingnav.Name" xml:space="preserve">
+    <value>sizingnav</value>
+  </data>
+  <data name="&gt;&gt;sizingnav.Type" xml:space="preserve">
+    <value>Watermark_Empower.TryDoubleBufferAgain, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sizingnav.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sizingnav.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2860,7 +2884,10 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1911, 975</value>
+    <value>1911, 1004</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>Manual</value>

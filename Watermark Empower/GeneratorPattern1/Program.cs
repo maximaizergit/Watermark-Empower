@@ -11,6 +11,7 @@ namespace WatermarkGenerator
 {
     public class Generator
     {
+        
         static void Main(string[] args)
         {
 
@@ -76,10 +77,37 @@ namespace WatermarkGenerator
             public int Yoffset { get => yoffset; set => yoffset = value; }
 
         }
-       
-       
+       private Graphics DrawGlitchBack(PointF position, Graphics graphics, string text,Font font)
+        {
+            Color[] gltchColors = new Color[] { Color.FromArgb(128, Color.Red), Color.FromArgb(128, Color.Green), Color.FromArgb(128, Color.Blue), };
+            position.X = position.X - 6;
+            position.Y = position.Y - 6;
+            foreach (Color c in gltchColors)
+            {
+                Brush gltchbrush = new SolidBrush(c);
+                graphics.DrawString(text, font, gltchbrush, position);
+                position.X = position.X + 2;
+                position.Y = position.Y + 2;
+            }
+            return graphics;
+        }
+       private Graphics DrawGlitchFront(PointF position, Graphics graphics, string text, Font font)
+        {
+            Color[] gltchColors = new Color[] { Color.FromArgb(128, Color.Red), Color.FromArgb(128, Color.Green), Color.FromArgb(128, Color.Blue), };
+            
+            foreach (Color c in gltchColors)
+            {
+                position.X = position.X + 2;
+                position.Y = position.Y + 2;
+                Brush gltchbrush = new SolidBrush(c);
+                graphics.DrawString(text, font, gltchbrush, position);
+               
+            }
+            return graphics;
+        }
 
-         
+
+
 
         public void GenPatternFullfill(int operation, Options options, ProjectSettings settings)
         {
@@ -95,7 +123,7 @@ namespace WatermarkGenerator
                 // Set the font, color, and position of the watermark text
                 Font font = new Font(options.Fontname, options.Fontsize, options.Fontstyle);
                 ColorBlend blend = new ColorBlend();
-                Color[] gltchColors = new Color[] { Color.FromArgb(128, Color.Red), Color.FromArgb(128, Color.Green), Color.FromArgb(128, Color.Blue), };
+                
             
                 Brush brush = new SolidBrush(Color.FromArgb(options.Transparancy, options.Color));
               
@@ -132,42 +160,13 @@ namespace WatermarkGenerator
                                 graphics.DrawString(options.Text, font, brush, position);
                                 break;
                             case ("Glitch"):
-
-                                position.X = position.X - 6;
-                                position.Y = position.Y - 6;
-                                foreach (Color c in gltchColors)
-                                {
-                                   
-                                    Brush gltchbrush = new SolidBrush(c);
-                                    graphics.DrawString(options.Text, font, gltchbrush, position);
-                                    position.X = position.X + 2;
-                                    position.Y = position.Y + 2;
-                                }
-                                // Draw the text at the specified position
-                                graphics.DrawString(options.Text, font, brush, position);
+                               DrawGlitchBack(position,graphics,options.Text, font);
+                               graphics.DrawString(options.Text, font, brush, position);
                                 break;
                             case ("HardGlitch"):
-                                position.X = position.X - 6;
-                                position.Y = position.Y - 6;
-                                foreach (Color c in gltchColors)
-                                {
-
-                                    Brush gltchbrush = new SolidBrush(c);
-                                    graphics.DrawString(options.Text, font, gltchbrush, position);
-                                    position.X = position.X + 2;
-                                    position.Y = position.Y + 2;
-                                }
-                                // Draw the text at the specified position
+                                DrawGlitchBack(position, graphics, options.Text, font);
                                 graphics.DrawString(options.Text, font, brush, position);
-                                foreach (Color c in gltchColors)
-                                {
-                                    Brush gltchbrush = new SolidBrush(c);
-                                    graphics.DrawString(options.Text, font, gltchbrush, position);
-                                    position.X = position.X + 2;
-                                    position.Y = position.Y + 2;
-                                }
-                                position.X = position.X - 6;
-                                position.Y= position.Y - 6;
+                                DrawGlitchFront(position, graphics, options.Text, font);
                                 break;
                             default:
                                 break;

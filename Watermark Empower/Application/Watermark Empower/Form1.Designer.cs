@@ -125,6 +125,7 @@
             this.ChessEffectBtn = new Watermark_Empower.CustomButtons();
             this.ChessFontBtn = new Watermark_Empower.CustomButtons();
             this.ChessGradientCheckBox = new MyCheckBox();
+            this.sizingnav = new Watermark_Empower.TryDoubleBufferAgain();
             this.Tools.SuspendLayout();
             this.fullfill.SuspendLayout();
             this.scrollableControl1.SuspendLayout();
@@ -142,6 +143,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MainDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nav)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).BeginInit();
             this.SuspendLayout();
             // 
             // Tools
@@ -924,6 +926,13 @@
             this.ChessGradientCheckBox.UseVisualStyleBackColor = true;
             this.ChessGradientCheckBox.CheckedChanged += new System.EventHandler(this.ChessGradientCheckBox_CheckedChanged);
             // 
+            // sizingnav
+            // 
+            this.sizingnav.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.sizingnav, "sizingnav");
+            this.sizingnav.Name = "sizingnav";
+            this.sizingnav.TabStop = false;
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -946,6 +955,7 @@
             this.Controls.Add(this.Tools);
             this.Controls.Add(this.MainDisplay);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.sizingnav);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
@@ -974,6 +984,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MainDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nav)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1075,6 +1086,7 @@
         private System.Windows.Forms.Button CenterImageButton;
         private System.Windows.Forms.Button ZoomButton;
         private CustomButtons ProjectOptions;
+        private TryDoubleBufferAgain sizingnav;
     }
 }
 

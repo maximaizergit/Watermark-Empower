@@ -61,7 +61,7 @@ namespace Watermark_Empower
             filePath = Path.Combine(Directory.GetCurrentDirectory(), fileName);
             this.AutoSize = false;
             this.Width = 1410;
-            this.Height = 775;
+            this.Height = 820;
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 40, 40));
             Rectangle r = new Rectangle(0, 0, pictureBox1.Width, pictureBox1.Height);
@@ -80,6 +80,7 @@ namespace Watermark_Empower
             if (hgt < Tools.Height)
             {
                 scrollableControl1.Height = Tools.Height - 20;
+                scrollableControl3.Height = Tools.Height - 20;
 
             }
             Tools.SelectTab("None");
@@ -143,7 +144,7 @@ namespace Watermark_Empower
             }
         }
 
-        private void NavMove(int height, int top, int left)//animation for nav menu
+        private void NavMove( int top, int left)//animation for nav menu
         {
 
             //Nav.Height = height;
@@ -157,6 +158,22 @@ namespace Watermark_Empower
                 Thread.Sleep(10);
             }
             Nav.Top = top;
+
+        }
+        private void SizingNavMove( int left)//animation for nav menu
+        {
+
+           
+            
+            int leftmove = (sizingnav.Left - left) / 10;
+            for (int i = 0; i < 10; i++)
+            {
+
+                sizingnav.Left = sizingnav.Left - leftmove;
+                Nav.Refresh();
+                Thread.Sleep(10);
+            }
+            sizingnav.Left = left;
 
         }
         //DESCRIBING VARIABLES
@@ -189,7 +206,7 @@ namespace Watermark_Empower
                 {
                     Image image = Image.FromStream(fileStream);
                     // Load the image into the PictureBox control
-                    NavMove(MenuButton.Height, MenuButton.Top, 0);
+                    NavMove( MenuButton.Top, 0);
                     Tools.SelectTab("none");
                     MainDisplay.Image = image;
                     string executableDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -230,7 +247,7 @@ namespace Watermark_Empower
                 FullfillGradientAngle.Text = options.Angle.ToString();
                 FullfillEffectTextBox.Text = options.Effect.ToString();
                 FullfillGradientcheckbox.Checked = false;
-                NavMove(FullfillSelector.Height, FullfillSelector.Top, FullfillSelector.Left);
+                NavMove( FullfillSelector.Top, FullfillSelector.Left);
                 MainDisplay.Image.Dispose();
                 if (!FullfillGradientcheckbox.Checked)
                 {
@@ -284,7 +301,7 @@ namespace Watermark_Empower
                 ChessGradientAngle.Text = options.Angle.ToString();
                 ChessEffect.Text = options.Effect.ToString();
                 ChessGradientCheckBox.Checked = false;
-                NavMove(ChessSelector.Height, ChessSelector.Top, ChessSelector.Left);
+                NavMove( ChessSelector.Top, ChessSelector.Left);
                 
                 MainDisplay.Image.Dispose();
                 if (operation == 0)
@@ -305,13 +322,13 @@ namespace Watermark_Empower
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            NavMove(button1.Height, button1.Top, button1.Left);
+            NavMove( button1.Top, button1.Left);
             button1.BackColor = Color.FromArgb(46, 51, 73);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            NavMove(button2.Height, button2.Top, button2.Left);
+            NavMove( button2.Top, button2.Left);
             button2.BackColor = Color.FromArgb(46, 51, 73);
         }
         //TODO remove color change
@@ -1087,6 +1104,7 @@ namespace Watermark_Empower
             MainDisplay.SizeMode = PictureBoxSizeMode.StretchImage;
             MainDisplay.Width = 960;
             MainDisplay.Height = 585;
+            SizingNavMove(StretchButton.Left);
         }
 
         private void NormalSizeButton_Click(object sender, EventArgs e)
@@ -1095,11 +1113,13 @@ namespace Watermark_Empower
             MainDisplay.SizeMode = PictureBoxSizeMode.Normal;
             MainDisplay.Width = 960;
             MainDisplay.Height = 585;
+            SizingNavMove(NormalSizeButton.Left);
         }
 
         private void AutosizeButton_Click(object sender, EventArgs e)
         {
             MainDisplay.SizeMode = PictureBoxSizeMode.AutoSize;
+            SizingNavMove(AutosizeButton.Left);
             if (MainDisplay.Width >960 || MainDisplay.Height > 585)
             {
                 
@@ -1107,7 +1127,9 @@ namespace Watermark_Empower
                 MainDisplay.Width = 960;
                 MainDisplay.Height = 585;
                 MessageBox.Show("Размер изображения превосходит возможный для работы размер, выберите другой способ размежения картинки");
+                SizingNavMove(NormalSizeButton.Left);
             }
+          
         }
 
         private void CenterImageButton_Click(object sender, EventArgs e)
@@ -1116,6 +1138,7 @@ namespace Watermark_Empower
             MainDisplay.SizeMode = PictureBoxSizeMode.CenterImage;
             MainDisplay.Width = 960;
             MainDisplay.Height = 585;
+            SizingNavMove(CenterImageButton.Left);
         }
 
         private void ZoomButton_Click(object sender, EventArgs e)
@@ -1124,6 +1147,7 @@ namespace Watermark_Empower
             MainDisplay.SizeMode = PictureBoxSizeMode.Zoom;
             MainDisplay.Width = 960;
             MainDisplay.Height = 585;
+            SizingNavMove(ZoomButton.Left);
         }
 
         private void ProjectOptions_Click(object sender, EventArgs e)
