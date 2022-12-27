@@ -15,6 +15,8 @@ using System.Threading;
 using EffectDialog;
 using System.Runtime.InteropServices;
 using System.Drawing.Drawing2D;
+using static WatermarkGenerator.Generator;
+using System.Xml.Serialization;
 
 namespace Watermark_Empower
 {
@@ -44,7 +46,7 @@ namespace Watermark_Empower
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           //Preparing visual for form
+           //Preparing form
             DoubleBuffered = true;
             foreach (string temp in tempfiles){
                 if (File.Exists(temp))
@@ -54,7 +56,7 @@ namespace Watermark_Empower
 
                 }
             }
-            
+           
             
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer,true);
@@ -84,6 +86,7 @@ namespace Watermark_Empower
 
             }
             Tools.SelectTab("None");
+           RefreshPresets_Click(sender, e);
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -130,7 +133,7 @@ namespace Watermark_Empower
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (MainDisplay.Image != null) { MainDisplay.Image.Dispose(); MainDisplay.Image = null; }
+            if (MainDisplay.Image != null) { newoperation(); }
            
            
             foreach (string temp in tempfiles)
@@ -177,12 +180,13 @@ namespace Watermark_Empower
 
         }
         //DESCRIBING VARIABLES
+       
         string fileName = "tempinput.jpg";
-        List<string> tempfiles = new List<string>() { "input.jpg","tempinput.jpg","tempinput2.jpg"};
-        string filePath;
-        int operation = 0;
+        List<string> tempfiles = new List<string>() { "input.jpg","tempinput.jpg"};
+        string filePath;       
         Generator.Options options = new Generator.Options();
         Generator.ProjectSettings settings = new Generator.ProjectSettings();
+        Generator.EffectSettings effectsettings = new Generator.EffectSettings();
         Generator gen = new Generator();
         bool isimported = false;
         //MAIN FORM FUNCTIONAL
@@ -195,9 +199,7 @@ namespace Watermark_Empower
             {
                 if (File.Exists(fileName))
                 {
-                    MainDisplay.Image.Dispose();
-
-                    MainDisplay.Image = null;
+                    newoperation();
                     File.Delete(fileName);
 
                 }
@@ -224,6 +226,57 @@ namespace Watermark_Empower
         {
             this.Close();
         }
+        private void StretchButton_Click(object sender, EventArgs e)
+        {
+
+            MainDisplay.SizeMode = PictureBoxSizeMode.StretchImage;
+            MainDisplay.Width = 960;
+            MainDisplay.Height = 585;
+            SizingNavMove(StretchButton.Left);
+        }
+
+        private void NormalSizeButton_Click(object sender, EventArgs e)
+        {
+
+            MainDisplay.SizeMode = PictureBoxSizeMode.Normal;
+            MainDisplay.Width = 960;
+            MainDisplay.Height = 585;
+            SizingNavMove(NormalSizeButton.Left);
+        }
+
+        private void AutosizeButton_Click(object sender, EventArgs e)
+        {
+            MainDisplay.SizeMode = PictureBoxSizeMode.AutoSize;
+            SizingNavMove(AutosizeButton.Left);
+            if (MainDisplay.Width > 960 || MainDisplay.Height > 585)
+            {
+
+                MainDisplay.SizeMode = PictureBoxSizeMode.Normal;
+                MainDisplay.Width = 960;
+                MainDisplay.Height = 585;
+                MessageBox.Show("Размер изображения превосходит возможный для работы размер, выберите другой способ размежения картинки");
+                SizingNavMove(NormalSizeButton.Left);
+            }
+
+        }
+
+        private void CenterImageButton_Click(object sender, EventArgs e)
+        {
+
+            MainDisplay.SizeMode = PictureBoxSizeMode.CenterImage;
+            MainDisplay.Width = 960;
+            MainDisplay.Height = 585;
+            SizingNavMove(CenterImageButton.Left);
+        }
+
+        private void ZoomButton_Click(object sender, EventArgs e)
+        {
+
+            MainDisplay.SizeMode = PictureBoxSizeMode.Zoom;
+            MainDisplay.Width = 960;
+            MainDisplay.Height = 585;
+            SizingNavMove(ZoomButton.Left);
+        }
         //nav buttons
         private void FullfillSelector_Click(object sender, EventArgs e)//opening Fullfill options menu and creating image with defoult options
         {
@@ -246,27 +299,29 @@ namespace Watermark_Empower
                 FullfillGradientEnd.Text = options.Colorend.ToString();
                 FullfillGradientAngle.Text = options.Angle.ToString();
                 FullfillEffectTextBox.Text = options.Effect.ToString();
-                FullfillGradientcheckbox.Checked = false;
+               
                 NavMove( FullfillSelector.Top, FullfillSelector.Left);
-                MainDisplay.Image.Dispose();
-                if (!FullfillGradientcheckbox.Checked)
+                options.Operation = "Fullfill";
+                if (settings.Isgradienton)
                 {
-                    if (operation == 0)
-                    {
-                        gen.GenPatternFullfill( 0, options, settings);
-                        
-                        MainDisplay.Image = Image.FromFile("tempinput2.jpg");
-                    }
-                    else
-                    {
-                        gen.GenPatternFullfill( 1, options, settings);
-                        MainDisplay.Image = Image.FromFile("tempinput.jpg");
-                    }
-
+                    FullfillGradientcheckbox.Checked = true;
                 }
                 else
                 {
-                    //TODO defoult for gradient
+                    FullfillGradientcheckbox.Checked = false;
+                }
+                newoperation();
+
+                if (!FullfillGradientcheckbox.Checked)
+                {
+                        
+                        gen.GenPatternFullfill(options, settings, effectsettings);
+                        MainDisplay.Image = Image.FromFile("tempinput.jpg");
+                }
+                else
+                {
+                    gen.GenPatternFullfillGradient(options, settings, effectsettings);
+                    MainDisplay.Image = Image.FromFile("tempinput.jpg");
 
                 }
 
@@ -290,7 +345,6 @@ namespace Watermark_Empower
                 ChessTextSize.Text = options.Fontsize.ToString();
                 ChessAngle.Text = options.Angle.ToString();
                 double transparancy = (Convert.ToDouble(options.Transparancy) / 255 * 100);
-
                 ChessTransparancy.Text = Math.Round(transparancy, 0).ToString();
                 ChessWbtw.Text = options.Widthbetween.ToString();
                 ChessHbtw.Text = options.Heightbetween.ToString();
@@ -300,20 +354,35 @@ namespace Watermark_Empower
                 ChessGradientEnd.Text = options.Colorend.ToString();
                 ChessGradientAngle.Text = options.Angle.ToString();
                 ChessEffect.Text = options.Effect.ToString();
-                ChessGradientCheckBox.Checked = false;
+       
+                options.Operation = "Chess";
                 NavMove( ChessSelector.Top, ChessSelector.Left);
-                
-                MainDisplay.Image.Dispose();
-                if (operation == 0)
+                if (settings.Isgradienton)
                 {
-                    gen.GenPatternChess( 0, options);
-                    MainDisplay.Image = Image.FromFile("tempinput2.jpg");
+                    ChessGradientCheckBox.Checked = true;
                 }
                 else
                 {
-                    gen.GenPatternChess(1, options);
+                    
+                      ChessGradientCheckBox.Checked = false;
+                    
+                }
+                newoperation();
+                if (!FullfillGradientcheckbox.Checked)
+                {
+
+                    gen.GenPatternChess(options, settings, effectsettings);
                     MainDisplay.Image = Image.FromFile("tempinput.jpg");
                 }
+                else
+                {
+                    gen.GenPatternChessGradient(options, settings, effectsettings);
+                    MainDisplay.Image = Image.FromFile("tempinput.jpg");
+
+                }
+             
+           
+                
             }
             else
             {
@@ -342,20 +411,10 @@ namespace Watermark_Empower
             ChessSelector.BackColor = Color.FromArgb(24, 30, 53);
         }
         //switch for selecting unused image
-        private int newoperation()
+        private void newoperation()
         {
-            if (operation == 0)
-            {
-                int res = 0;
-                operation++;
-                return res;
-            }
-            else
-            {
-                int res = 1;
-                operation--;
-                return res;
-            }
+            MainDisplay.Image.Dispose();
+            MainDisplay.Image = null;
         }
         private Color colorupd()
         {
@@ -389,32 +448,22 @@ namespace Watermark_Empower
         //Updating unused image. Disposing used image. Opening updated image 
         private void FullfillUpdate()
         {
-            MainDisplay.Image.Dispose();
+            newoperation();
             if (!FullfillGradientcheckbox.Checked)
             {
-                if (operation == 0)
-                {
-                    gen.GenPatternFullfill( newoperation(),options,settings);
-                    MainDisplay.Image = Image.FromFile("tempinput2.jpg");
-                }
-                else
-                {
-                    gen.GenPatternFullfill(newoperation(),options,settings);
+               
+                   
+                    gen.GenPatternFullfill( options,settings, effectsettings);
                     MainDisplay.Image = Image.FromFile("tempinput.jpg");
-                }
+               
             }
             else
             {
-                if (operation == 0)
-                {
-                    gen.GenPatternFullfillGradient( newoperation(), options);
-                    MainDisplay.Image = Image.FromFile("tempinput2.jpg");
-                }
-                else
-                {
-                    gen.GenPatternFullfillGradient(newoperation(), options);
-                    MainDisplay.Image = Image.FromFile("tempinput.jpg");
-                }
+                
+                    gen.GenPatternFullfillGradient( options,settings, effectsettings);
+       
+                MainDisplay.Image = Image.FromFile("tempinput.jpg");
+                
             }
 
         }
@@ -464,7 +513,7 @@ namespace Watermark_Empower
                     {
                         throw new Exception("Прозрачность вышла за пределы диапазона");
                     }
-                    options.Transparancy = Convert.ToInt32(FullfillTransparancy.Text);
+                    options.Transparancy = Convert.ToInt32(Convert.ToDouble(FullfillTransparancy.Text)/100*255);
 
                 }
                 catch (Exception ex)
@@ -595,17 +644,23 @@ namespace Watermark_Empower
                 Color color1 = colorupd();
                 Color color2 = colorupd();
                 Color color3 = colorupd();
-                ColorBlend blend = new ColorBlend();
-
-                blend.Positions = new float[] { 0, 0.5f, 1 };
-                blend.Colors = new Color[] { color1, color2, color3 };
-                LinearGradientBrush gradientBrush = new LinearGradientBrush(new Point(0, 0), new Point(40, 67), Color.Red, Color.Blue);
-                gradientBrush.InterpolationColors = blend;
-
+                LinearGradientBrush gradientBrush = ColorPreviewUpd(color1, color2, color3);
                 FullfillColorDisplay.CreateGraphics().FillRectangle(gradientBrush, pictureBox1.ClientRectangle);
                 FullfillGradientUpd(color1, color2, color3, options.Colorstart, options.Colorend, options.Colorangle);
             }
 
+        }
+        private LinearGradientBrush ColorPreviewUpd(Color color1, Color color2, Color color3)
+        {
+            
+            ColorBlend blend = new ColorBlend();
+
+            blend.Positions = new float[] { 0, 0.5f, 1 };
+            blend.Colors = new Color[] { color1, color2, color3 };
+            LinearGradientBrush gradientBrush = new LinearGradientBrush(new Point(0, 0), new Point(40, 67), Color.Red, Color.Blue);
+            gradientBrush.InterpolationColors = blend;
+
+            return gradientBrush;
         }
 
         private void FullfillColorDisplay_Click(object sender, EventArgs e)
@@ -620,16 +675,7 @@ namespace Watermark_Empower
                 Color color1 = colorupd();
                 Color color2 = colorupd();
                 Color color3 = colorupd();
-                ColorBlend blend = new ColorBlend();
-
-
-
-
-                blend.Positions = new float[] { 0, 0.5f, 1 };
-                blend.Colors = new Color[] { color1, color2, color3 };
-                LinearGradientBrush gradientBrush = new LinearGradientBrush(new Point(0, 0), new Point(40, 67), Color.Red, Color.Blue);
-                gradientBrush.InterpolationColors = blend;
-
+                LinearGradientBrush gradientBrush = ColorPreviewUpd(color1, color2, color3);
                 FullfillColorDisplay.CreateGraphics().FillRectangle(gradientBrush, pictureBox1.ClientRectangle);
                 FullfillGradientUpd(color1, color2, color3, options.Colorstart, options.Colorend, options.Colorangle);
             }
@@ -655,18 +701,21 @@ namespace Watermark_Empower
 
         private void FullfillGradientcheckbox_CheckedChanged(object sender, EventArgs e)
         {
+          
+               
+           
             if (FullfillGradientcheckbox.Checked)
             {
-                options.Color = Color.Red;
-                options.Color2 = Color.Blue;
-                options.Color3 = Color.Green;
+                settings.Isgradienton = true;
                 FullfillUpdate();
             }
             else
             {
+                settings.Isgradienton = false;
                 options.Color = Color.White;
                 FullfillUpdate();
             }
+
         }
 
         private void FullfillGradientStart_TextChanged(object sender, EventArgs e)
@@ -720,12 +769,13 @@ namespace Watermark_Empower
         
         private void EffectDialogButton_Click(object sender, EventArgs e)
         {
-            using (Form2 effectdialog = new Form2())
+            using (Form2 effectdialog = new Form2(effectsettings))
             {
                 if (effectdialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    FullfillEffectTextBox.Text = effectdialog.SelectedEffect;
-                    options.Effect = effectdialog.SelectedEffect;
+                    effectsettings = effectdialog.EffectSettings;
+                    FullfillEffectTextBox.Text = effectsettings.SelectedEffect;
+                    options.Effect =effectsettings.SelectedEffect;
                     FullfillUpdate();
                 }
             }
@@ -749,32 +799,20 @@ namespace Watermark_Empower
         //WORK WITH CHESS PATTERN
         private void ChessUpdate()
         {
-            MainDisplay.Image.Dispose();
+            newoperation();
             if (!ChessGradientCheckBox.Checked)
             {
-                if (operation == 0)
-                {
-                    gen.GenPatternChess( newoperation(), options);
-                    MainDisplay.Image = Image.FromFile("tempinput2.jpg");
-                }
-                else
-                {
-                    gen.GenPatternChess( newoperation(), options);
+                
+                    gen.GenPatternChess(options,settings, effectsettings);
                     MainDisplay.Image = Image.FromFile("tempinput.jpg");
-                }
+                
             }
             else
             {
-                if (operation == 0)
-                {
-                    gen.GenPatternChessGradient( newoperation(), options);
-                    MainDisplay.Image = Image.FromFile("tempinput2.jpg");
-                }
-                else
-                {
-                    gen.GenPatternChessGradient(newoperation(), options);
+                    gen.GenPatternChessGradient( options,settings, effectsettings);
+               
                     MainDisplay.Image = Image.FromFile("tempinput.jpg");
-                }
+               
             }
 
         }
@@ -837,7 +875,7 @@ namespace Watermark_Empower
                     {
                         throw new Exception("Прозрачность вышла за пределы диапазона");
                     }
-                    options.Transparancy = Convert.ToInt32(ChessTransparancy.Text);
+                    options.Transparancy = Convert.ToInt32(Convert.ToDouble(ChessTransparancy.Text) / 100 * 255);
 
                 }
                 catch (Exception ex)
@@ -959,7 +997,7 @@ namespace Watermark_Empower
             options.Colorstart = colorstart;
             options.Colorend = colorend;
             options.Colorangle = colorangle;
-            FullfillUpdate();
+            ChessUpdate();
         }
         private void ChessColorUpd(Color color)
         {
@@ -981,13 +1019,7 @@ namespace Watermark_Empower
                 Color color3 = colorupd();
                 ColorBlend blend = new ColorBlend();
 
-
-
-
-                blend.Positions = new float[] { 0, 0.5f, 1 };
-                blend.Colors = new Color[] { color1, color2, color3 };
-                LinearGradientBrush gradientBrush = new LinearGradientBrush(new Point(0, 0), new Point(40, 67), Color.Red, Color.Blue);
-                gradientBrush.InterpolationColors = blend;
+                LinearGradientBrush gradientBrush = ColorPreviewUpd(color1, color2, color3);
 
                 ChessColorDisplay.CreateGraphics().FillRectangle(gradientBrush, pictureBox1.ClientRectangle);
                 ChessGradientUpd(color1, color2, color3, options.Colorstart, options.Colorend, options.Colorangle);
@@ -1006,15 +1038,7 @@ namespace Watermark_Empower
                 Color color1 = colorupd();
                 Color color2 = colorupd();
                 Color color3 = colorupd();
-                ColorBlend blend = new ColorBlend();
-
-
-
-
-                blend.Positions = new float[] { 0, 0.5f, 1 };
-                blend.Colors = new Color[] { color1, color2, color3 };
-                LinearGradientBrush gradientBrush = new LinearGradientBrush(new Point(0, 0), new Point(40, 67), Color.Red, Color.Blue);
-                gradientBrush.InterpolationColors = blend;
+                LinearGradientBrush gradientBrush = ColorPreviewUpd(color1, color2, color3);
 
                 ChessColorDisplay.CreateGraphics().FillRectangle(gradientBrush, pictureBox1.ClientRectangle);
                 ChessGradientUpd(color1, color2, color3, options.Colorstart, options.Colorend, options.Colorangle);
@@ -1025,13 +1049,12 @@ namespace Watermark_Empower
         {
             if (ChessGradientCheckBox.Checked)
             {
-                options.Color = Color.Red;
-                options.Color2 = Color.Blue;
-                options.Color3 = Color.Green;
+                settings.Isgradienton = true;
                ChessUpdate();
             }
             else
             {
+                settings.Isgradienton = false;
                 options.Color = Color.White;
                 ChessUpdate();
             }
@@ -1087,82 +1110,117 @@ namespace Watermark_Empower
 
         private void ChessEffectBtn_Click(object sender, EventArgs e)
         {
-            using (Form2 effectdialog = new Form2())
+            using (Form2 effectdialog = new Form2(effectsettings))
             {
                 if (effectdialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    ChessEffectBtn.Text = effectdialog.SelectedEffect;
-                    options.Effect = effectdialog.SelectedEffect;
+                    effectsettings = effectdialog.EffectSettings;
+                    ChessEffectBtn.Text = effectsettings.SelectedEffect;
+                    options.Effect = effectsettings.SelectedEffect;
                     ChessUpdate();
                 }
             }
         }
 
-        private void StretchButton_Click(object sender, EventArgs e)
-        {
-            
-            MainDisplay.SizeMode = PictureBoxSizeMode.StretchImage;
-            MainDisplay.Width = 960;
-            MainDisplay.Height = 585;
-            SizingNavMove(StretchButton.Left);
-        }
-
-        private void NormalSizeButton_Click(object sender, EventArgs e)
-        {
-            
-            MainDisplay.SizeMode = PictureBoxSizeMode.Normal;
-            MainDisplay.Width = 960;
-            MainDisplay.Height = 585;
-            SizingNavMove(NormalSizeButton.Left);
-        }
-
-        private void AutosizeButton_Click(object sender, EventArgs e)
-        {
-            MainDisplay.SizeMode = PictureBoxSizeMode.AutoSize;
-            SizingNavMove(AutosizeButton.Left);
-            if (MainDisplay.Width >960 || MainDisplay.Height > 585)
-            {
-                
-                MainDisplay.SizeMode = PictureBoxSizeMode.Normal;
-                MainDisplay.Width = 960;
-                MainDisplay.Height = 585;
-                MessageBox.Show("Размер изображения превосходит возможный для работы размер, выберите другой способ размежения картинки");
-                SizingNavMove(NormalSizeButton.Left);
-            }
-          
-        }
-
-        private void CenterImageButton_Click(object sender, EventArgs e)
-        {
-            
-            MainDisplay.SizeMode = PictureBoxSizeMode.CenterImage;
-            MainDisplay.Width = 960;
-            MainDisplay.Height = 585;
-            SizingNavMove(CenterImageButton.Left);
-        }
-
-        private void ZoomButton_Click(object sender, EventArgs e)
-        {
-            
-            MainDisplay.SizeMode = PictureBoxSizeMode.Zoom;
-            MainDisplay.Width = 960;
-            MainDisplay.Height = 585;
-            SizingNavMove(ZoomButton.Left);
-        }
-
         private void ProjectOptions_Click(object sender, EventArgs e)
         {
-            using (ProjectSettingsDialog prjset = new ProjectSettingsDialog(settings.Rows,settings.Columns,settings.Xoffset, settings.Yoffset))
+            using (ProjectSettingsDialog prjset = new ProjectSettingsDialog(settings))
             {
                 if (prjset.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    settings.Rows = prjset.rows;
-                    settings.Columns = prjset.columns;
-                    settings.Xoffset = prjset.xoffset;
-                    settings.Yoffset = prjset.yoffset;
-                   
-                    FullfillUpdate();
+                    settings = prjset.CurSettings;
+
+                    switch (options.Operation)
+                    {
+                        case ("Fullfill"):
+                            FullfillUpdate();
+                            break;
+                        case ("Chess"):
+                            ChessUpdate();
+                            break ;
+                        
+                    }
                 }
+            }
+        }
+
+        private void customButtons3_Click(object sender, EventArgs e)
+        {
+            using (PresetDialog presetdialog = new PresetDialog(options, settings,effectsettings))
+            {
+                if (presetdialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    RefreshPresets_Click(sender,e);
+                }
+            }
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Wrapper wrapperLoaded;
+            XmlSerializer serializer = new XmlSerializer(typeof(Wrapper));
+            string[] xmlpresets = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.xml");
+            // Add the file names to a combo box
+
+            try
+            {
+
+
+                using (FileStream stream = File.OpenRead(xmlpresets[0]))
+                {
+                    wrapperLoaded = (Wrapper)serializer.Deserialize(stream);
+                }
+                Console.WriteLine("Parameters loaded successfully.");
+
+                // Get the instances of the three classes from the wrapper
+
+                options = wrapperLoaded.WrapedOptions;
+                XmlColor restorecolor = new XmlColor();
+                restorecolor = wrapperLoaded.WrapedColor;
+                options.Color = restorecolor.GetColor(restorecolor.Red1, restorecolor.Green1, restorecolor.Blue1);
+                options.Color2 = restorecolor.GetColor(restorecolor.Red2, restorecolor.Green2, restorecolor.Blue2);
+                options.Color3 = restorecolor.GetColor(restorecolor.Red3, restorecolor.Green3, restorecolor.Blue3);
+
+
+                settings = wrapperLoaded.WrapedPrjSettings;
+
+                effectsettings = wrapperLoaded.WrapedEffectSettings;
+                effectsettings.EffectColor1 = restorecolor.GetColor(restorecolor.EffectRed1, restorecolor.EffectGreen1, restorecolor.EffectBlue1);
+                effectsettings.EffectColor2 = restorecolor.GetColor(restorecolor.EffectRed2, restorecolor.EffectGreen2, restorecolor.EffectBlue2);
+                effectsettings.EffectColor3 = restorecolor.GetColor(restorecolor.EffectRed3, restorecolor.EffectGreen3, restorecolor.EffectBlue3);
+
+                switch (settings.Operation)
+                {
+                    case ("Fullfill"):
+                        FullfillColorDisplay.BackColor = options.Color;
+                        FullfillSelector_Click(sender, e);
+                        break;
+                    case ("Chess"):
+                        ChessColorDisplay.BackColor = options.Color;
+                        ChessSelector_Click(sender, e);
+                        break;
+                }
+                FullfillColorDisplay.BackColor = options.Color;
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+        }
+      
+      
+
+        
+
+        private void RefreshPresets_Click(object sender, EventArgs e)
+        {
+            string[] xmlpresets = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.xml");
+            // Add the file names to a combo box
+    
+            comboBox1.Items.Clear();
+         
+
+            foreach (string filePath in xmlpresets)
+            {
+                comboBox1.Items.Add(Path.GetFileNameWithoutExtension(filePath));
             }
         }
     }

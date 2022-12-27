@@ -85,6 +85,12 @@
     <Compile Include="Effect Dialog.Designer.cs">
       <DependentUpon>Effect Dialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="PresetDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresetDialog.Designer.cs">
+      <DependentUpon>PresetDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProjectSettingsDialog.cs">
       <SubType>Form</SubType>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Effect Dialog.resx">
       <DependentUpon>Effect Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresetDialog.resx">
+      <DependentUpon>PresetDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProjectSettingsDialog.resx">
       <DependentUpon>ProjectSettingsDialog.cs</DependentUpon>
@@ -173,6 +182,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\settings %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

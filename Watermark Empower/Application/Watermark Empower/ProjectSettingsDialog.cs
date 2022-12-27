@@ -7,38 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WatermarkGenerator.Generator;
 
 namespace Watermark_Empower
 {
    
     public partial class ProjectSettingsDialog : Form
     {
-        public int rows { get; set; }
-        public int columns { get; set; }
-        public int xoffset { get; set; }
-        public int yoffset { get; set; }
+        public ProjectSettings CurSettings = new ProjectSettings();
+      
 
-        public ProjectSettingsDialog(int srows, int scolumns, int sxoffset, int syoffset)
+        public ProjectSettingsDialog(ProjectSettings settings)
         {
             InitializeComponent();
-            RowsTxtBx.Text = srows.ToString();
-            ColsTxtBx.Text = scolumns.ToString();
-            XOffsettTxtBx.Text = sxoffset.ToString();
-            YOffsetTxtBx.Text=syoffset.ToString();
-            rows = srows;
-            columns = scolumns;
-            xoffset = sxoffset;
-            yoffset = syoffset;
+            CurSettings = settings;
+            RowsTxtBx.Text = CurSettings.Rows.ToString();
+            ColsTxtBx.Text = CurSettings.Columns.ToString();
+            XOffsettTxtBx.Text = CurSettings.Xoffset.ToString();
+            YOffsetTxtBx.Text= CurSettings.Yoffset.ToString();
+            
         }
 
         private void customButtons2_Click(object sender, EventArgs e)
         {
             try
             {
-                rows = Convert.ToInt32(RowsTxtBx.Text);
-                columns = Convert.ToInt32(ColsTxtBx.Text);
-                xoffset = Convert.ToInt32(XOffsettTxtBx.Text);
-                yoffset = Convert.ToInt32(YOffsetTxtBx.Text);
+                CurSettings.Rows = Convert.ToInt32(RowsTxtBx.Text);
+                CurSettings.Columns = Convert.ToInt32(ColsTxtBx.Text);
+                CurSettings.Xoffset = Convert.ToInt32(XOffsettTxtBx.Text);
+                CurSettings.Yoffset = Convert.ToInt32(YOffsetTxtBx.Text);
                
             }
             catch (Exception ex)

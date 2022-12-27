@@ -32,16 +32,21 @@
             this.Tools = new System.Windows.Forms.TabControl();
             this.fullfill = new System.Windows.Forms.TabPage();
             this.scrollableControl1 = new System.Windows.Forms.ScrollableControl();
+            this.EffectDialogButton = new Watermark_Empower.CustomButtons();
             this.label24 = new System.Windows.Forms.Label();
             this.FullfillEffectTextBox = new System.Windows.Forms.TextBox();
+            this.FullfillFontSelectBtn = new Watermark_Empower.CustomButtons();
             this.FullfillGradientAngle = new System.Windows.Forms.TextBox();
             this.FullfillGradientEnd = new System.Windows.Forms.TextBox();
             this.FullfillGradientStart = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.FullfillGradientcheckbox = new MyCheckBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.FullfillColorDisplay = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.FullfillColorMenu = new System.Windows.Forms.PictureBox();
             this.FullfillStyle = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Fullfillhbtw = new System.Windows.Forms.TextBox();
@@ -60,32 +65,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.chess = new System.Windows.Forms.TabPage();
             this.scrollableControl2 = new System.Windows.Forms.ScrollableControl();
-            this.label10 = new System.Windows.Forms.Label();
+            this.ChessEffectBtn = new Watermark_Empower.CustomButtons();
             this.ChessEffect = new System.Windows.Forms.TextBox();
+            this.ChessFontBtn = new Watermark_Empower.CustomButtons();
             this.ChessGradientAngle = new System.Windows.Forms.TextBox();
             this.ChessGradientEnd = new System.Windows.Forms.TextBox();
             this.ChessGradientStart = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.ChessGradientCheckBox = new MyCheckBox();
+            this.ChessColorDisplay = new System.Windows.Forms.PictureBox();
+            this.ChessColorIcon = new System.Windows.Forms.PictureBox();
             this.ChessTextStyle = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.ChessHbtw = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.ChessWbtw = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.ChessText = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
             this.ChessAngle = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
             this.ChessTransparancy = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.ChessTextSize = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
             this.ChessFont = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
             this.None = new System.Windows.Forms.TabPage();
             this.scrollableControl3 = new System.Windows.Forms.ScrollableControl();
             this.FullfillSelector = new System.Windows.Forms.Button();
@@ -93,6 +89,7 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Nav = new Watermark_Empower.TryDoubleBufferAgain();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.ChessSelector = new System.Windows.Forms.Button();
@@ -107,43 +104,51 @@
             this.NormalSizeButton = new System.Windows.Forms.Button();
             this.navpanelborder = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.FullfillColorDisplay = new System.Windows.Forms.PictureBox();
-            this.FullfillColorMenu = new System.Windows.Forms.PictureBox();
-            this.ChessColorDisplay = new System.Windows.Forms.PictureBox();
-            this.ChessColorIcon = new System.Windows.Forms.PictureBox();
             this.MainDisplay = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ProjectOptions = new Watermark_Empower.CustomButtons();
             this.customButtons1 = new Watermark_Empower.CustomButtons();
             this.customButtons2 = new Watermark_Empower.CustomButtons();
             this.CloseForm = new Watermark_Empower.CustomButtons();
-            this.Nav = new Watermark_Empower.TryDoubleBufferAgain();
             this.Import_Image = new Watermark_Empower.CustomButtons();
-            this.EffectDialogButton = new Watermark_Empower.CustomButtons();
-            this.FullfillFontSelectBtn = new Watermark_Empower.CustomButtons();
-            this.FullfillGradientcheckbox = new MyCheckBox();
-            this.ChessEffectBtn = new Watermark_Empower.CustomButtons();
-            this.ChessFontBtn = new Watermark_Empower.CustomButtons();
-            this.ChessGradientCheckBox = new MyCheckBox();
             this.sizingnav = new Watermark_Empower.TryDoubleBufferAgain();
+            this.label30 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.customButtons3 = new Watermark_Empower.CustomButtons();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
             this.Tools.SuspendLayout();
             this.fullfill.SuspendLayout();
             this.scrollableControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FullfillColorDisplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FullfillColorMenu)).BeginInit();
             this.chess.SuspendLayout();
             this.scrollableControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChessColorDisplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChessColorIcon)).BeginInit();
             this.None.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Nav)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navpanelborder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FullfillColorDisplay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FullfillColorMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChessColorDisplay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChessColorIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Nav)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Tools
@@ -200,6 +205,21 @@
             resources.ApplyResources(this.scrollableControl1, "scrollableControl1");
             this.scrollableControl1.Name = "scrollableControl1";
             // 
+            // EffectDialogButton
+            // 
+            this.EffectDialogButton.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.EffectDialogButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.EffectDialogButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.EffectDialogButton.BorderRadius = 15;
+            this.EffectDialogButton.BorderSize = 0;
+            this.EffectDialogButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.EffectDialogButton, "EffectDialogButton");
+            this.EffectDialogButton.ForeColor = System.Drawing.Color.White;
+            this.EffectDialogButton.Name = "EffectDialogButton";
+            this.EffectDialogButton.TextColor = System.Drawing.Color.White;
+            this.EffectDialogButton.UseVisualStyleBackColor = false;
+            this.EffectDialogButton.Click += new System.EventHandler(this.EffectDialogButton_Click);
+            // 
             // label24
             // 
             resources.ApplyResources(this.label24, "label24");
@@ -211,6 +231,21 @@
             resources.ApplyResources(this.FullfillEffectTextBox, "FullfillEffectTextBox");
             this.FullfillEffectTextBox.Name = "FullfillEffectTextBox";
             this.FullfillEffectTextBox.ReadOnly = true;
+            // 
+            // FullfillFontSelectBtn
+            // 
+            this.FullfillFontSelectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.FullfillFontSelectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.FullfillFontSelectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.FullfillFontSelectBtn.BorderRadius = 15;
+            this.FullfillFontSelectBtn.BorderSize = 0;
+            this.FullfillFontSelectBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.FullfillFontSelectBtn, "FullfillFontSelectBtn");
+            this.FullfillFontSelectBtn.ForeColor = System.Drawing.Color.White;
+            this.FullfillFontSelectBtn.Name = "FullfillFontSelectBtn";
+            this.FullfillFontSelectBtn.TextColor = System.Drawing.Color.White;
+            this.FullfillFontSelectBtn.UseVisualStyleBackColor = false;
+            this.FullfillFontSelectBtn.Click += new System.EventHandler(this.FullfillFontSelectBtn_Click);
             // 
             // FullfillGradientAngle
             // 
@@ -248,17 +283,41 @@
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label20.Name = "label20";
             // 
+            // FullfillGradientcheckbox
+            // 
+            resources.ApplyResources(this.FullfillGradientcheckbox, "FullfillGradientcheckbox");
+            this.FullfillGradientcheckbox.Name = "FullfillGradientcheckbox";
+            this.FullfillGradientcheckbox.UseVisualStyleBackColor = true;
+            this.FullfillGradientcheckbox.CheckedChanged += new System.EventHandler(this.FullfillGradientcheckbox_CheckedChanged);
+            // 
             // label19
             // 
             resources.ApplyResources(this.label19, "label19");
             this.label19.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label19.Name = "label19";
             // 
+            // FullfillColorDisplay
+            // 
+            this.FullfillColorDisplay.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.FullfillColorDisplay, "FullfillColorDisplay");
+            this.FullfillColorDisplay.Name = "FullfillColorDisplay";
+            this.FullfillColorDisplay.TabStop = false;
+            this.FullfillColorDisplay.Click += new System.EventHandler(this.FullfillColorDisplay_Click);
+            // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label9.Name = "label9";
+            // 
+            // FullfillColorMenu
+            // 
+            this.FullfillColorMenu.Image = global::Watermark_Empower.Properties.Resources.colour;
+            resources.ApplyResources(this.FullfillColorMenu, "FullfillColorMenu");
+            this.FullfillColorMenu.InitialImage = global::Watermark_Empower.Properties.Resources.colour;
+            this.FullfillColorMenu.Name = "FullfillColorMenu";
+            this.FullfillColorMenu.TabStop = false;
+            this.FullfillColorMenu.Click += new System.EventHandler(this.FullfillColorMenu_Click);
             // 
             // FullfillStyle
             // 
@@ -366,51 +425,75 @@
             // scrollableControl2
             // 
             this.scrollableControl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.scrollableControl2.Controls.Add(this.label31);
+            this.scrollableControl2.Controls.Add(this.label32);
+            this.scrollableControl2.Controls.Add(this.label33);
+            this.scrollableControl2.Controls.Add(this.label34);
+            this.scrollableControl2.Controls.Add(this.label35);
+            this.scrollableControl2.Controls.Add(this.label36);
+            this.scrollableControl2.Controls.Add(this.label37);
+            this.scrollableControl2.Controls.Add(this.label38);
+            this.scrollableControl2.Controls.Add(this.label39);
+            this.scrollableControl2.Controls.Add(this.label40);
+            this.scrollableControl2.Controls.Add(this.label41);
+            this.scrollableControl2.Controls.Add(this.label42);
+            this.scrollableControl2.Controls.Add(this.label43);
+            this.scrollableControl2.Controls.Add(this.label44);
             this.scrollableControl2.Controls.Add(this.ChessEffectBtn);
-            this.scrollableControl2.Controls.Add(this.label10);
             this.scrollableControl2.Controls.Add(this.ChessEffect);
             this.scrollableControl2.Controls.Add(this.ChessFontBtn);
             this.scrollableControl2.Controls.Add(this.ChessGradientAngle);
             this.scrollableControl2.Controls.Add(this.ChessGradientEnd);
             this.scrollableControl2.Controls.Add(this.ChessGradientStart);
-            this.scrollableControl2.Controls.Add(this.label11);
-            this.scrollableControl2.Controls.Add(this.label12);
-            this.scrollableControl2.Controls.Add(this.label13);
             this.scrollableControl2.Controls.Add(this.ChessGradientCheckBox);
-            this.scrollableControl2.Controls.Add(this.label14);
             this.scrollableControl2.Controls.Add(this.ChessColorDisplay);
-            this.scrollableControl2.Controls.Add(this.label15);
             this.scrollableControl2.Controls.Add(this.ChessColorIcon);
             this.scrollableControl2.Controls.Add(this.ChessTextStyle);
-            this.scrollableControl2.Controls.Add(this.label16);
             this.scrollableControl2.Controls.Add(this.ChessHbtw);
-            this.scrollableControl2.Controls.Add(this.label17);
             this.scrollableControl2.Controls.Add(this.ChessWbtw);
-            this.scrollableControl2.Controls.Add(this.label18);
             this.scrollableControl2.Controls.Add(this.ChessText);
-            this.scrollableControl2.Controls.Add(this.label25);
             this.scrollableControl2.Controls.Add(this.ChessAngle);
-            this.scrollableControl2.Controls.Add(this.label26);
             this.scrollableControl2.Controls.Add(this.ChessTransparancy);
-            this.scrollableControl2.Controls.Add(this.label27);
             this.scrollableControl2.Controls.Add(this.ChessTextSize);
-            this.scrollableControl2.Controls.Add(this.label28);
             this.scrollableControl2.Controls.Add(this.ChessFont);
-            this.scrollableControl2.Controls.Add(this.label29);
             resources.ApplyResources(this.scrollableControl2, "scrollableControl2");
             this.scrollableControl2.Name = "scrollableControl2";
             // 
-            // label10
+            // ChessEffectBtn
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Name = "label10";
+            this.ChessEffectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessEffectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessEffectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ChessEffectBtn.BorderRadius = 15;
+            this.ChessEffectBtn.BorderSize = 0;
+            this.ChessEffectBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.ChessEffectBtn, "ChessEffectBtn");
+            this.ChessEffectBtn.ForeColor = System.Drawing.Color.White;
+            this.ChessEffectBtn.Name = "ChessEffectBtn";
+            this.ChessEffectBtn.TextColor = System.Drawing.Color.White;
+            this.ChessEffectBtn.UseVisualStyleBackColor = false;
+            this.ChessEffectBtn.Click += new System.EventHandler(this.ChessEffectBtn_Click);
             // 
             // ChessEffect
             // 
             resources.ApplyResources(this.ChessEffect, "ChessEffect");
             this.ChessEffect.Name = "ChessEffect";
             this.ChessEffect.ReadOnly = true;
+            // 
+            // ChessFontBtn
+            // 
+            this.ChessFontBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessFontBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessFontBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ChessFontBtn.BorderRadius = 15;
+            this.ChessFontBtn.BorderSize = 0;
+            this.ChessFontBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.ChessFontBtn, "ChessFontBtn");
+            this.ChessFontBtn.ForeColor = System.Drawing.Color.White;
+            this.ChessFontBtn.Name = "ChessFontBtn";
+            this.ChessFontBtn.TextColor = System.Drawing.Color.White;
+            this.ChessFontBtn.UseVisualStyleBackColor = false;
+            this.ChessFontBtn.Click += new System.EventHandler(this.ChessFontBtn_Click);
             // 
             // ChessGradientAngle
             // 
@@ -430,35 +513,29 @@
             this.ChessGradientStart.Name = "ChessGradientStart";
             this.ChessGradientStart.TextChanged += new System.EventHandler(this.ChessGradientStart_TextChanged);
             // 
-            // label11
+            // ChessGradientCheckBox
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label11.Name = "label11";
+            resources.ApplyResources(this.ChessGradientCheckBox, "ChessGradientCheckBox");
+            this.ChessGradientCheckBox.Name = "ChessGradientCheckBox";
+            this.ChessGradientCheckBox.UseVisualStyleBackColor = true;
+            this.ChessGradientCheckBox.CheckedChanged += new System.EventHandler(this.ChessGradientCheckBox_CheckedChanged);
             // 
-            // label12
+            // ChessColorDisplay
             // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label12.Name = "label12";
+            this.ChessColorDisplay.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.ChessColorDisplay, "ChessColorDisplay");
+            this.ChessColorDisplay.Name = "ChessColorDisplay";
+            this.ChessColorDisplay.TabStop = false;
+            this.ChessColorDisplay.Click += new System.EventHandler(this.ChessColorDisplay_Click);
             // 
-            // label13
+            // ChessColorIcon
             // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label13.Name = "label13";
-            // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label14.Name = "label14";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label15.Name = "label15";
+            this.ChessColorIcon.Image = global::Watermark_Empower.Properties.Resources.colour;
+            resources.ApplyResources(this.ChessColorIcon, "ChessColorIcon");
+            this.ChessColorIcon.InitialImage = global::Watermark_Empower.Properties.Resources.colour;
+            this.ChessColorIcon.Name = "ChessColorIcon";
+            this.ChessColorIcon.TabStop = false;
+            this.ChessColorIcon.Click += new System.EventHandler(this.ChessColorIcon_Click);
             // 
             // ChessTextStyle
             // 
@@ -466,23 +543,11 @@
             this.ChessTextStyle.Name = "ChessTextStyle";
             this.ChessTextStyle.TextChanged += new System.EventHandler(this.ChessTextStyle_TextChanged);
             // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label16.Name = "label16";
-            // 
             // ChessHbtw
             // 
             resources.ApplyResources(this.ChessHbtw, "ChessHbtw");
             this.ChessHbtw.Name = "ChessHbtw";
             this.ChessHbtw.TextChanged += new System.EventHandler(this.ChessHbtw_TextChanged);
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label17.Name = "label17";
             // 
             // ChessWbtw
             // 
@@ -490,23 +555,11 @@
             this.ChessWbtw.Name = "ChessWbtw";
             this.ChessWbtw.TextChanged += new System.EventHandler(this.ChessWbtw_TextChanged);
             // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label18.Name = "label18";
-            // 
             // ChessText
             // 
             resources.ApplyResources(this.ChessText, "ChessText");
             this.ChessText.Name = "ChessText";
             this.ChessText.TextChanged += new System.EventHandler(this.ChessText_TextChanged);
-            // 
-            // label25
-            // 
-            resources.ApplyResources(this.label25, "label25");
-            this.label25.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label25.Name = "label25";
             // 
             // ChessAngle
             // 
@@ -514,23 +567,11 @@
             this.ChessAngle.Name = "ChessAngle";
             this.ChessAngle.TextChanged += new System.EventHandler(this.ChessAngle_TextChanged);
             // 
-            // label26
-            // 
-            resources.ApplyResources(this.label26, "label26");
-            this.label26.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label26.Name = "label26";
-            // 
             // ChessTransparancy
             // 
             resources.ApplyResources(this.ChessTransparancy, "ChessTransparancy");
             this.ChessTransparancy.Name = "ChessTransparancy";
             this.ChessTransparancy.TextChanged += new System.EventHandler(this.ChessTransparancy_TextChanged);
-            // 
-            // label27
-            // 
-            resources.ApplyResources(this.label27, "label27");
-            this.label27.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label27.Name = "label27";
             // 
             // ChessTextSize
             // 
@@ -538,23 +579,11 @@
             this.ChessTextSize.Name = "ChessTextSize";
             this.ChessTextSize.TextChanged += new System.EventHandler(this.ChessTextSize_TextChanged);
             // 
-            // label28
-            // 
-            resources.ApplyResources(this.label28, "label28");
-            this.label28.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label28.Name = "label28";
-            // 
             // ChessFont
             // 
             resources.ApplyResources(this.ChessFont, "ChessFont");
             this.ChessFont.Name = "ChessFont";
             this.ChessFont.TextChanged += new System.EventHandler(this.ChessFont_TextChanged);
-            // 
-            // label29
-            // 
-            resources.ApplyResources(this.label29, "label29");
-            this.label29.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label29.Name = "label29";
             // 
             // None
             // 
@@ -595,6 +624,13 @@
             this.panel1.Controls.Add(this.FullfillSelector);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // Nav
+            // 
+            this.Nav.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.Nav, "Nav");
+            this.Nav.Name = "Nav";
+            this.Nav.TabStop = false;
             // 
             // button2
             // 
@@ -723,40 +759,6 @@
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
-            // FullfillColorDisplay
-            // 
-            this.FullfillColorDisplay.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.FullfillColorDisplay, "FullfillColorDisplay");
-            this.FullfillColorDisplay.Name = "FullfillColorDisplay";
-            this.FullfillColorDisplay.TabStop = false;
-            this.FullfillColorDisplay.Click += new System.EventHandler(this.FullfillColorDisplay_Click);
-            // 
-            // FullfillColorMenu
-            // 
-            this.FullfillColorMenu.Image = global::Watermark_Empower.Properties.Resources.colour;
-            resources.ApplyResources(this.FullfillColorMenu, "FullfillColorMenu");
-            this.FullfillColorMenu.InitialImage = global::Watermark_Empower.Properties.Resources.colour;
-            this.FullfillColorMenu.Name = "FullfillColorMenu";
-            this.FullfillColorMenu.TabStop = false;
-            this.FullfillColorMenu.Click += new System.EventHandler(this.FullfillColorMenu_Click);
-            // 
-            // ChessColorDisplay
-            // 
-            this.ChessColorDisplay.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.ChessColorDisplay, "ChessColorDisplay");
-            this.ChessColorDisplay.Name = "ChessColorDisplay";
-            this.ChessColorDisplay.TabStop = false;
-            this.ChessColorDisplay.Click += new System.EventHandler(this.ChessColorDisplay_Click);
-            // 
-            // ChessColorIcon
-            // 
-            this.ChessColorIcon.Image = global::Watermark_Empower.Properties.Resources.colour;
-            resources.ApplyResources(this.ChessColorIcon, "ChessColorIcon");
-            this.ChessColorIcon.InitialImage = global::Watermark_Empower.Properties.Resources.colour;
-            this.ChessColorIcon.Name = "ChessColorIcon";
-            this.ChessColorIcon.TabStop = false;
-            this.ChessColorIcon.Click += new System.EventHandler(this.ChessColorIcon_Click);
-            // 
             // MainDisplay
             // 
             resources.ApplyResources(this.MainDisplay, "MainDisplay");
@@ -830,13 +832,6 @@
             this.CloseForm.UseVisualStyleBackColor = false;
             this.CloseForm.Click += new System.EventHandler(this.CloseForm_Click);
             // 
-            // Nav
-            // 
-            this.Nav.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.Nav, "Nav");
-            this.Nav.Name = "Nav";
-            this.Nav.TabStop = false;
-            // 
             // Import_Image
             // 
             this.Import_Image.BackColor = System.Drawing.Color.Orange;
@@ -852,80 +847,6 @@
             this.Import_Image.UseVisualStyleBackColor = false;
             this.Import_Image.Click += new System.EventHandler(this.Import_Image_Click);
             // 
-            // EffectDialogButton
-            // 
-            this.EffectDialogButton.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.EffectDialogButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.EffectDialogButton.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.EffectDialogButton.BorderRadius = 15;
-            this.EffectDialogButton.BorderSize = 0;
-            this.EffectDialogButton.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.EffectDialogButton, "EffectDialogButton");
-            this.EffectDialogButton.ForeColor = System.Drawing.Color.White;
-            this.EffectDialogButton.Name = "EffectDialogButton";
-            this.EffectDialogButton.TextColor = System.Drawing.Color.White;
-            this.EffectDialogButton.UseVisualStyleBackColor = false;
-            this.EffectDialogButton.Click += new System.EventHandler(this.EffectDialogButton_Click);
-            // 
-            // FullfillFontSelectBtn
-            // 
-            this.FullfillFontSelectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.FullfillFontSelectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.FullfillFontSelectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.FullfillFontSelectBtn.BorderRadius = 15;
-            this.FullfillFontSelectBtn.BorderSize = 0;
-            this.FullfillFontSelectBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.FullfillFontSelectBtn, "FullfillFontSelectBtn");
-            this.FullfillFontSelectBtn.ForeColor = System.Drawing.Color.White;
-            this.FullfillFontSelectBtn.Name = "FullfillFontSelectBtn";
-            this.FullfillFontSelectBtn.TextColor = System.Drawing.Color.White;
-            this.FullfillFontSelectBtn.UseVisualStyleBackColor = false;
-            this.FullfillFontSelectBtn.Click += new System.EventHandler(this.FullfillFontSelectBtn_Click);
-            // 
-            // FullfillGradientcheckbox
-            // 
-            resources.ApplyResources(this.FullfillGradientcheckbox, "FullfillGradientcheckbox");
-            this.FullfillGradientcheckbox.Name = "FullfillGradientcheckbox";
-            this.FullfillGradientcheckbox.UseVisualStyleBackColor = true;
-            this.FullfillGradientcheckbox.CheckedChanged += new System.EventHandler(this.FullfillGradientcheckbox_CheckedChanged);
-            // 
-            // ChessEffectBtn
-            // 
-            this.ChessEffectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessEffectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessEffectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.ChessEffectBtn.BorderRadius = 15;
-            this.ChessEffectBtn.BorderSize = 0;
-            this.ChessEffectBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.ChessEffectBtn, "ChessEffectBtn");
-            this.ChessEffectBtn.ForeColor = System.Drawing.Color.White;
-            this.ChessEffectBtn.Name = "ChessEffectBtn";
-            this.ChessEffectBtn.TextColor = System.Drawing.Color.White;
-            this.ChessEffectBtn.UseVisualStyleBackColor = false;
-            this.ChessEffectBtn.Click += new System.EventHandler(this.ChessEffectBtn_Click);
-            // 
-            // ChessFontBtn
-            // 
-            this.ChessFontBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessFontBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessFontBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.ChessFontBtn.BorderRadius = 15;
-            this.ChessFontBtn.BorderSize = 0;
-            this.ChessFontBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.ChessFontBtn, "ChessFontBtn");
-            this.ChessFontBtn.ForeColor = System.Drawing.Color.White;
-            this.ChessFontBtn.Name = "ChessFontBtn";
-            this.ChessFontBtn.TextColor = System.Drawing.Color.White;
-            this.ChessFontBtn.UseVisualStyleBackColor = false;
-            this.ChessFontBtn.Click += new System.EventHandler(this.ChessFontBtn_Click);
-            // 
-            // ChessGradientCheckBox
-            // 
-            resources.ApplyResources(this.ChessGradientCheckBox, "ChessGradientCheckBox");
-            this.ChessGradientCheckBox.Name = "ChessGradientCheckBox";
-            this.ChessGradientCheckBox.UseVisualStyleBackColor = true;
-            this.ChessGradientCheckBox.CheckedChanged += new System.EventHandler(this.ChessGradientCheckBox_CheckedChanged);
-            // 
             // sizingnav
             // 
             this.sizingnav.BackColor = System.Drawing.Color.Lime;
@@ -933,11 +854,138 @@
             this.sizingnav.Name = "sizingnav";
             this.sizingnav.TabStop = false;
             // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label30.Name = "label30";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // customButtons3
+            // 
+            this.customButtons3.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.customButtons3.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.customButtons3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customButtons3.BorderRadius = 15;
+            this.customButtons3.BorderSize = 0;
+            this.customButtons3.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.customButtons3, "customButtons3");
+            this.customButtons3.ForeColor = System.Drawing.Color.White;
+            this.customButtons3.Name = "customButtons3";
+            this.customButtons3.TextColor = System.Drawing.Color.White;
+            this.customButtons3.UseVisualStyleBackColor = false;
+            this.customButtons3.Click += new System.EventHandler(this.customButtons3_Click);
+            // 
+            // label31
+            // 
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label31.Name = "label31";
+            // 
+            // label32
+            // 
+            resources.ApplyResources(this.label32, "label32");
+            this.label32.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label32.Name = "label32";
+            // 
+            // label33
+            // 
+            resources.ApplyResources(this.label33, "label33");
+            this.label33.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label33.Name = "label33";
+            // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label34.Name = "label34";
+            // 
+            // label35
+            // 
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label35.Name = "label35";
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label36.Name = "label36";
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label37.Name = "label37";
+            // 
+            // label38
+            // 
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label38.Name = "label38";
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label39.Name = "label39";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label40.Name = "label40";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label42.Name = "label42";
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label43.Name = "label43";
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label44.Name = "label44";
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label41.Name = "label41";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.customButtons3);
+            this.Controls.Add(this.label30);
             this.Controls.Add(this.ProjectOptions);
             this.Controls.Add(this.ZoomButton);
             this.Controls.Add(this.CenterImageButton);
@@ -956,6 +1004,7 @@
             this.Controls.Add(this.MainDisplay);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sizingnav);
+            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
@@ -968,24 +1017,26 @@
             this.fullfill.ResumeLayout(false);
             this.scrollableControl1.ResumeLayout(false);
             this.scrollableControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FullfillColorDisplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FullfillColorMenu)).EndInit();
             this.chess.ResumeLayout(false);
             this.scrollableControl2.ResumeLayout(false);
             this.scrollableControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChessColorDisplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChessColorIcon)).EndInit();
             this.None.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Nav)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navpanelborder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FullfillColorDisplay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FullfillColorMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChessColorDisplay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ChessColorIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Nav)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1049,36 +1100,22 @@
         private System.Windows.Forms.TabPage None;
         private System.Windows.Forms.ScrollableControl scrollableControl3;
         private CustomButtons ChessEffectBtn;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox ChessEffect;
         private CustomButtons ChessFontBtn;
         private System.Windows.Forms.TextBox ChessGradientAngle;
         private System.Windows.Forms.TextBox ChessGradientEnd;
         private System.Windows.Forms.TextBox ChessGradientStart;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private MyCheckBox ChessGradientCheckBox;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox ChessColorDisplay;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox ChessColorIcon;
         private System.Windows.Forms.TextBox ChessTextStyle;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox ChessHbtw;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox ChessWbtw;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox ChessText;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox ChessAngle;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox ChessTransparancy;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox ChessTextSize;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox ChessFont;
-        private System.Windows.Forms.Label label29;
         private CustomButtons customButtons1;
         private System.Windows.Forms.Button NormalSizeButton;
         private System.Windows.Forms.Button StretchButton;
@@ -1087,6 +1124,24 @@
         private System.Windows.Forms.Button ZoomButton;
         private CustomButtons ProjectOptions;
         private TryDoubleBufferAgain sizingnav;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private CustomButtons customButtons3;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
     }
 }
 

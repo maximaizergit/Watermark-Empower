@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.customButtons2 = new Watermark_Empower.CustomButtons();
-            this.customButtons1 = new Watermark_Empower.CustomButtons();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,50 +39,11 @@
             this.XOffsettTxtBx = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.customButtons2 = new Watermark_Empower.CustomButtons();
+            this.customButtons1 = new Watermark_Empower.CustomButtons();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // customButtons2
-            // 
-            this.customButtons2.BackColor = System.Drawing.Color.LimeGreen;
-            this.customButtons2.BackgroundColor = System.Drawing.Color.LimeGreen;
-            this.customButtons2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.customButtons2.BorderRadius = 20;
-            this.customButtons2.BorderSize = 0;
-            this.customButtons2.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.customButtons2.FlatAppearance.BorderSize = 0;
-            this.customButtons2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButtons2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButtons2.ForeColor = System.Drawing.Color.White;
-            this.customButtons2.Location = new System.Drawing.Point(280, 269);
-            this.customButtons2.Name = "customButtons2";
-            this.customButtons2.Size = new System.Drawing.Size(111, 43);
-            this.customButtons2.TabIndex = 6;
-            this.customButtons2.Text = "Confirm";
-            this.customButtons2.TextColor = System.Drawing.Color.White;
-            this.customButtons2.UseVisualStyleBackColor = false;
-            this.customButtons2.Click += new System.EventHandler(this.customButtons2_Click);
-            // 
-            // customButtons1
-            // 
-            this.customButtons1.BackColor = System.Drawing.Color.Crimson;
-            this.customButtons1.BackgroundColor = System.Drawing.Color.Crimson;
-            this.customButtons1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.customButtons1.BorderRadius = 20;
-            this.customButtons1.BorderSize = 0;
-            this.customButtons1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.customButtons1.FlatAppearance.BorderSize = 0;
-            this.customButtons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButtons1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButtons1.ForeColor = System.Drawing.Color.White;
-            this.customButtons1.Location = new System.Drawing.Point(17, 269);
-            this.customButtons1.Name = "customButtons1";
-            this.customButtons1.Size = new System.Drawing.Size(111, 43);
-            this.customButtons1.TabIndex = 7;
-            this.customButtons1.Text = "Cancel";
-            this.customButtons1.TextColor = System.Drawing.Color.White;
-            this.customButtons1.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -210,12 +169,53 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Matrix based patterns only";
             // 
+            // customButtons2
+            // 
+            this.customButtons2.BackColor = System.Drawing.Color.LimeGreen;
+            this.customButtons2.BackgroundColor = System.Drawing.Color.LimeGreen;
+            this.customButtons2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customButtons2.BorderRadius = 20;
+            this.customButtons2.BorderSize = 0;
+            this.customButtons2.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.customButtons2.FlatAppearance.BorderSize = 0;
+            this.customButtons2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButtons2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButtons2.ForeColor = System.Drawing.Color.White;
+            this.customButtons2.Location = new System.Drawing.Point(280, 269);
+            this.customButtons2.Name = "customButtons2";
+            this.customButtons2.Size = new System.Drawing.Size(111, 43);
+            this.customButtons2.TabIndex = 6;
+            this.customButtons2.Text = "Confirm";
+            this.customButtons2.TextColor = System.Drawing.Color.White;
+            this.customButtons2.UseVisualStyleBackColor = false;
+            this.customButtons2.Click += new System.EventHandler(this.customButtons2_Click);
+            // 
+            // customButtons1
+            // 
+            this.customButtons1.BackColor = System.Drawing.Color.Crimson;
+            this.customButtons1.BackgroundColor = System.Drawing.Color.Crimson;
+            this.customButtons1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customButtons1.BorderRadius = 20;
+            this.customButtons1.BorderSize = 0;
+            this.customButtons1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.customButtons1.FlatAppearance.BorderSize = 0;
+            this.customButtons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButtons1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButtons1.ForeColor = System.Drawing.Color.White;
+            this.customButtons1.Location = new System.Drawing.Point(17, 269);
+            this.customButtons1.Name = "customButtons1";
+            this.customButtons1.Size = new System.Drawing.Size(111, 43);
+            this.customButtons1.TabIndex = 7;
+            this.customButtons1.Text = "Cancel";
+            this.customButtons1.TextColor = System.Drawing.Color.White;
+            this.customButtons1.UseVisualStyleBackColor = false;
+            // 
             // ProjectSettingsDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(403, 350);
+            this.ClientSize = new System.Drawing.Size(403, 339);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
