@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Tools = new System.Windows.Forms.TabControl();
             this.fullfill = new System.Windows.Forms.TabPage();
@@ -65,6 +66,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.chess = new System.Windows.Forms.TabPage();
             this.scrollableControl2 = new System.Windows.Forms.ScrollableControl();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
             this.ChessEffectBtn = new Watermark_Empower.CustomButtons();
             this.ChessEffect = new System.Windows.Forms.TextBox();
             this.ChessFontBtn = new Watermark_Empower.CustomButtons();
@@ -106,30 +121,17 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.MainDisplay = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.PresetsComboBox = new System.Windows.Forms.ComboBox();
+            this.PresetDialogButton = new Watermark_Empower.CustomButtons();
             this.ProjectOptions = new Watermark_Empower.CustomButtons();
             this.customButtons1 = new Watermark_Empower.CustomButtons();
             this.customButtons2 = new Watermark_Empower.CustomButtons();
             this.CloseForm = new Watermark_Empower.CustomButtons();
             this.Import_Image = new Watermark_Empower.CustomButtons();
             this.sizingnav = new Watermark_Empower.TryDoubleBufferAgain();
-            this.label30 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.customButtons3 = new Watermark_Empower.CustomButtons();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Tools.SuspendLayout();
             this.fullfill.SuspendLayout();
             this.scrollableControl1.SuspendLayout();
@@ -147,8 +149,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).BeginInit();
             this.SuspendLayout();
             // 
             // Tools
@@ -459,6 +461,90 @@
             resources.ApplyResources(this.scrollableControl2, "scrollableControl2");
             this.scrollableControl2.Name = "scrollableControl2";
             // 
+            // label31
+            // 
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label31.Name = "label31";
+            // 
+            // label32
+            // 
+            resources.ApplyResources(this.label32, "label32");
+            this.label32.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label32.Name = "label32";
+            // 
+            // label33
+            // 
+            resources.ApplyResources(this.label33, "label33");
+            this.label33.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label33.Name = "label33";
+            // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label34.Name = "label34";
+            // 
+            // label35
+            // 
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label35.Name = "label35";
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label36.Name = "label36";
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label37.Name = "label37";
+            // 
+            // label38
+            // 
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label38.Name = "label38";
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label39.Name = "label39";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label40.Name = "label40";
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label41.Name = "label41";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label42.Name = "label42";
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label43.Name = "label43";
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label44.Name = "label44";
+            // 
             // ChessEffectBtn
             // 
             this.ChessEffectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -764,6 +850,9 @@
             resources.ApplyResources(this.MainDisplay, "MainDisplay");
             this.MainDisplay.Name = "MainDisplay";
             this.MainDisplay.TabStop = false;
+            this.MainDisplay.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainDisplay_MouseDown);
+            this.MainDisplay.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainDisplay_MouseMove);
+            this.MainDisplay.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainDisplay_MouseUp);
             // 
             // pictureBox1
             // 
@@ -771,6 +860,46 @@
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label30.Name = "label30";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // PresetsComboBox
+            // 
+            this.PresetsComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.PresetsComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.PresetsComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            resources.ApplyResources(this.PresetsComboBox, "PresetsComboBox");
+            this.PresetsComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.PresetsComboBox.FormattingEnabled = true;
+            this.PresetsComboBox.Name = "PresetsComboBox";
+            this.PresetsComboBox.SelectedIndexChanged += new System.EventHandler(this.PresetsComboBox_SelectedIndexChanged);
+            // 
+            // PresetDialogButton
+            // 
+            this.PresetDialogButton.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.PresetDialogButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.PresetDialogButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.PresetDialogButton.BorderRadius = 15;
+            this.PresetDialogButton.BorderSize = 0;
+            this.PresetDialogButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.PresetDialogButton, "PresetDialogButton");
+            this.PresetDialogButton.ForeColor = System.Drawing.Color.White;
+            this.PresetDialogButton.Name = "PresetDialogButton";
+            this.PresetDialogButton.TextColor = System.Drawing.Color.White;
+            this.PresetDialogButton.UseVisualStyleBackColor = false;
+            this.PresetDialogButton.Click += new System.EventHandler(this.PresetDialogButton_Click);
             // 
             // ProjectOptions
             // 
@@ -854,137 +983,18 @@
             this.sizingnav.Name = "sizingnav";
             this.sizingnav.TabStop = false;
             // 
-            // label30
+            // timer1
             // 
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label30.Name = "label30";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // customButtons3
-            // 
-            this.customButtons3.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.customButtons3.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.customButtons3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.customButtons3.BorderRadius = 15;
-            this.customButtons3.BorderSize = 0;
-            this.customButtons3.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.customButtons3, "customButtons3");
-            this.customButtons3.ForeColor = System.Drawing.Color.White;
-            this.customButtons3.Name = "customButtons3";
-            this.customButtons3.TextColor = System.Drawing.Color.White;
-            this.customButtons3.UseVisualStyleBackColor = false;
-            this.customButtons3.Click += new System.EventHandler(this.customButtons3_Click);
-            // 
-            // label31
-            // 
-            resources.ApplyResources(this.label31, "label31");
-            this.label31.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label31.Name = "label31";
-            // 
-            // label32
-            // 
-            resources.ApplyResources(this.label32, "label32");
-            this.label32.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label32.Name = "label32";
-            // 
-            // label33
-            // 
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label33.Name = "label33";
-            // 
-            // label34
-            // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label34.Name = "label34";
-            // 
-            // label35
-            // 
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label35.Name = "label35";
-            // 
-            // label36
-            // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label36.Name = "label36";
-            // 
-            // label37
-            // 
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label37.Name = "label37";
-            // 
-            // label38
-            // 
-            resources.ApplyResources(this.label38, "label38");
-            this.label38.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label38.Name = "label38";
-            // 
-            // label39
-            // 
-            resources.ApplyResources(this.label39, "label39");
-            this.label39.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label39.Name = "label39";
-            // 
-            // label40
-            // 
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label40.Name = "label40";
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label42.Name = "label42";
-            // 
-            // label43
-            // 
-            resources.ApplyResources(this.label43, "label43");
-            this.label43.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label43.Name = "label43";
-            // 
-            // label44
-            // 
-            resources.ApplyResources(this.label44, "label44");
-            this.label44.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label44.Name = "label44";
-            // 
-            // label41
-            // 
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label41.Name = "label41";
+            this.timer1.Interval = 15;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.customButtons3);
+            this.Controls.Add(this.PresetsComboBox);
+            this.Controls.Add(this.PresetDialogButton);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.ProjectOptions);
             this.Controls.Add(this.ZoomButton);
@@ -1033,8 +1043,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1126,8 +1136,8 @@
         private TryDoubleBufferAgain sizingnav;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private CustomButtons customButtons3;
+        private System.Windows.Forms.ComboBox PresetsComboBox;
+        private CustomButtons PresetDialogButton;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
@@ -1142,6 +1152,7 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

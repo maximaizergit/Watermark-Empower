@@ -39,6 +39,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.customButtons3 = new Watermark_Empower.CustomButtons();
+            this.ImportPresetButton = new Watermark_Empower.CustomButtons();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -89,7 +90,7 @@
             this.customButtons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButtons1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButtons1.ForeColor = System.Drawing.Color.White;
-            this.customButtons1.Location = new System.Drawing.Point(169, 545);
+            this.customButtons1.Location = new System.Drawing.Point(169, 456);
             this.customButtons1.Name = "customButtons1";
             this.customButtons1.Size = new System.Drawing.Size(115, 40);
             this.customButtons1.TabIndex = 7;
@@ -205,12 +206,34 @@
             this.customButtons3.UseVisualStyleBackColor = false;
             this.customButtons3.Click += new System.EventHandler(this.customButtons3_Click);
             // 
+            // ImportPresetButton
+            // 
+            this.ImportPresetButton.BackColor = System.Drawing.Color.LimeGreen;
+            this.ImportPresetButton.BackgroundColor = System.Drawing.Color.LimeGreen;
+            this.ImportPresetButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ImportPresetButton.BorderRadius = 20;
+            this.ImportPresetButton.BorderSize = 0;
+            this.ImportPresetButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.ImportPresetButton.FlatAppearance.BorderSize = 0;
+            this.ImportPresetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ImportPresetButton.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImportPresetButton.ForeColor = System.Drawing.Color.White;
+            this.ImportPresetButton.Location = new System.Drawing.Point(24, 319);
+            this.ImportPresetButton.Name = "ImportPresetButton";
+            this.ImportPresetButton.Size = new System.Drawing.Size(234, 40);
+            this.ImportPresetButton.TabIndex = 23;
+            this.ImportPresetButton.Text = "Import existing preset";
+            this.ImportPresetButton.TextColor = System.Drawing.Color.White;
+            this.ImportPresetButton.UseVisualStyleBackColor = false;
+            this.ImportPresetButton.Click += new System.EventHandler(this.ImportPresetButton_Click);
+            // 
             // PresetDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(467, 597);
+            this.ClientSize = new System.Drawing.Size(467, 520);
+            this.Controls.Add(this.ImportPresetButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.customButtons1);
@@ -241,5 +264,6 @@
         private CustomButtons customButtons3;
         private System.Windows.Forms.ComboBox comboBox1;
         private MyCheckBox RewritePreset;
+        private CustomButtons ImportPresetButton;
     }
 }

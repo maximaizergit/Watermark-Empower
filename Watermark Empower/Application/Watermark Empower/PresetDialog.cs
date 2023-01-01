@@ -48,9 +48,7 @@ namespace Watermark_Empower
             {
                 while (File.Exists(fileName))
                 {
-                    fileName = oldfilename;
-                    string newFileName = fileName.Insert(fileName.LastIndexOf('.'), $" ({count})");
-                    fileName = Path.Combine(executableDirectory, newFileName);
+                    fileName = savePreset(fileName,oldfilename,executableDirectory,count);
                     count++;
                 }
                
@@ -67,7 +65,14 @@ namespace Watermark_Empower
             }
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
         }
-
+        private string savePreset(string fileName, string oldfilename, string executableDirectory, int count)
+        {
+            fileName = oldfilename;
+            string newFileName = fileName.Insert(fileName.LastIndexOf('.'), $" ({count})");
+            fileName = Path.Combine(executableDirectory, newFileName);
+           
+            return fileName;
+        }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -103,6 +108,32 @@ namespace Watermark_Empower
         private void PresetDialog_Load(object sender, EventArgs e)
         {
            RefreshPresets_Click(sender, e);
+        }
+
+        private void ImportPresetButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+
+                // Set the filter options and filter index
+                openFileDialog.Filter = "XML Files (*.xml)|*.xml|All Files (*.*)|*.*";
+                openFileDialog.FilterIndex = 1;
+
+                // Call the ShowDialog method to show the dialog box
+                DialogResult result = openFileDialog.ShowDialog();
+
+                // Process input if the user clicked OK
+                if (result == DialogResult.OK)
+                {
+                    // Open the selected file to read
+                    string filePath = openFileDialog.FileName;
+                    // Copy the file to the execution directory
+                    System.IO.File.Copy(filePath, System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), System.IO.Path.GetFileName(filePath)));
+                }
+            }catch(Exception ex) { MessageBox.Show(ex.Message); }
         }
     }
 }
