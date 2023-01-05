@@ -5,9 +5,9 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watermark Empower Console test", "Watermark Empower\Watermark Empower Console test.csproj", "{A0477A61-FF41-40EA-9BA8-0971AE9CC93B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsLibrary", "GeneratorPattern1\MethodsLibrary.csproj", "{23877789-13AD-43AE-A4B9-7591D1423FC2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watermark Empower", "Application\Watermark Empower\Watermark Empower.csproj", "{86B230EF-D091-48EE-88A7-8CEBDE0412B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "Generator\Generator.csproj", "{3E404480-1CA0-48A1-9797-BBFBAC8B68E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{A0477A61-FF41-40EA-9BA8-0971AE9CC93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0477A61-FF41-40EA-9BA8-0971AE9CC93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0477A61-FF41-40EA-9BA8-0971AE9CC93B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23877789-13AD-43AE-A4B9-7591D1423FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23877789-13AD-43AE-A4B9-7591D1423FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23877789-13AD-43AE-A4B9-7591D1423FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23877789-13AD-43AE-A4B9-7591D1423FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{86B230EF-D091-48EE-88A7-8CEBDE0412B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{86B230EF-D091-48EE-88A7-8CEBDE0412B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86B230EF-D091-48EE-88A7-8CEBDE0412B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86B230EF-D091-48EE-88A7-8CEBDE0412B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E404480-1CA0-48A1-9797-BBFBAC8B68E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E404480-1CA0-48A1-9797-BBFBAC8B68E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E404480-1CA0-48A1-9797-BBFBAC8B68E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E404480-1CA0-48A1-9797-BBFBAC8B68E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

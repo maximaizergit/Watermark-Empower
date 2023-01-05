@@ -135,12 +135,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GeneratorPattern1\MethodsLibrary.csproj">
-      <Project>{23877789-13ad-43ae-a4b9-7591d1423fc2}</Project>
-      <Name>MethodsLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\png-transparent-light-visible-spectrum-color-wheel-colors-white-color-color-theory-thumbnail.png" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +179,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\refresh %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Generator\Generator.csproj">
+      <Project>{3e404480-1ca0-48a1-9797-bbfbac8b68e1}</Project>
+      <Name>Generator</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

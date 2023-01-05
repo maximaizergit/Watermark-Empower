@@ -8,10 +8,10 @@ D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark
 D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.csproj.CoreCompileInputs.cache
 D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.exe
 D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.pdb
-D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\GeneratorPattern1.exe
-D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\GeneratorPattern1.pdb
-D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\GeneratorPattern1.exe.config
 D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark Empower.csproj.CopyComplete
 D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\EffectDialog.Form2.resources
 D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark_Empower.ProjectSettingsDialog.resources
 D:\c#\course\Watermark Empower\Application\Watermark Empower\obj\Debug\Watermark_Empower.PresetDialog.resources
+D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\Generator.exe
+D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\Generator.pdb
+D:\c#\course\Watermark Empower\Application\Watermark Empower\bin\Debug\Generator.exe.config

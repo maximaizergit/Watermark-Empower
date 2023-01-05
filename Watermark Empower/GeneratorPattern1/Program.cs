@@ -7,6 +7,7 @@ using System.Drawing.Text;
 using System.IO;
 using System.Reflection;
 
+
 namespace WatermarkGenerator
 {
     public class Generator
@@ -278,6 +279,10 @@ namespace WatermarkGenerator
                 image.Dispose();
             
         }
+        string executableDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+      
+
+        
         public void GenPatternFullfillGradient(Options options, ProjectSettings settings, EffectSettings effectsettings)
         {
             Image image = Image.FromFile("input.jpg");

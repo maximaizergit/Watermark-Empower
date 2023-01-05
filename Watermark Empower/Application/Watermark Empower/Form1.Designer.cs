@@ -33,20 +33,16 @@
             this.Tools = new System.Windows.Forms.TabControl();
             this.fullfill = new System.Windows.Forms.TabPage();
             this.scrollableControl1 = new System.Windows.Forms.ScrollableControl();
-            this.EffectDialogButton = new Watermark_Empower.CustomButtons();
             this.label24 = new System.Windows.Forms.Label();
             this.FullfillEffectTextBox = new System.Windows.Forms.TextBox();
-            this.FullfillFontSelectBtn = new Watermark_Empower.CustomButtons();
             this.FullfillGradientAngle = new System.Windows.Forms.TextBox();
             this.FullfillGradientEnd = new System.Windows.Forms.TextBox();
             this.FullfillGradientStart = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.FullfillGradientcheckbox = new MyCheckBox();
             this.label19 = new System.Windows.Forms.Label();
             this.FullfillColorDisplay = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.FullfillColorMenu = new System.Windows.Forms.PictureBox();
             this.FullfillStyle = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -71,7 +67,6 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
@@ -80,13 +75,10 @@
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.ChessEffectBtn = new Watermark_Empower.CustomButtons();
             this.ChessEffect = new System.Windows.Forms.TextBox();
-            this.ChessFontBtn = new Watermark_Empower.CustomButtons();
             this.ChessGradientAngle = new System.Windows.Forms.TextBox();
             this.ChessGradientEnd = new System.Windows.Forms.TextBox();
             this.ChessGradientStart = new System.Windows.Forms.TextBox();
-            this.ChessGradientCheckBox = new MyCheckBox();
             this.ChessColorDisplay = new System.Windows.Forms.PictureBox();
             this.ChessColorIcon = new System.Windows.Forms.PictureBox();
             this.ChessTextStyle = new System.Windows.Forms.TextBox();
@@ -99,14 +91,38 @@
             this.ChessFont = new System.Windows.Forms.TextBox();
             this.None = new System.Windows.Forms.TabPage();
             this.scrollableControl3 = new System.Windows.Forms.ScrollableControl();
+            this.point = new System.Windows.Forms.TabPage();
+            this.scrollableControl4 = new System.Windows.Forms.ScrollableControl();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.PointEffectTxtBox = new System.Windows.Forms.TextBox();
+            this.PointGradientAngleTxtBox = new System.Windows.Forms.TextBox();
+            this.PointGradientEndTxtBox = new System.Windows.Forms.TextBox();
+            this.PointGradientStartTxtBox = new System.Windows.Forms.TextBox();
+            this.PointColorDisplay = new System.Windows.Forms.PictureBox();
+            this.PointColorMenu = new System.Windows.Forms.PictureBox();
+            this.PointStyleTxtBox = new System.Windows.Forms.TextBox();
+            this.PointTextTxtBox = new System.Windows.Forms.TextBox();
+            this.PointAngleTxtBox = new System.Windows.Forms.TextBox();
+            this.PointOpacityTxtBox = new System.Windows.Forms.TextBox();
+            this.PointFontSizeTxtBox = new System.Windows.Forms.TextBox();
+            this.PointFontTxtBox = new System.Windows.Forms.TextBox();
             this.FullfillSelector = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Nav = new Watermark_Empower.TryDoubleBufferAgain();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.PointSelector = new System.Windows.Forms.Button();
             this.ChessSelector = new System.Windows.Forms.Button();
             this.MenuButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -124,14 +140,35 @@
             this.label30 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PresetsComboBox = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.PointsList = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.PointLocationXTxtBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.PointLocationYTxtBox = new System.Windows.Forms.TextBox();
             this.PresetDialogButton = new Watermark_Empower.CustomButtons();
             this.ProjectOptions = new Watermark_Empower.CustomButtons();
             this.customButtons1 = new Watermark_Empower.CustomButtons();
             this.customButtons2 = new Watermark_Empower.CustomButtons();
             this.CloseForm = new Watermark_Empower.CustomButtons();
+            this.Nav = new Watermark_Empower.TryDoubleBufferAgain();
             this.Import_Image = new Watermark_Empower.CustomButtons();
+            this.EffectDialogButton = new Watermark_Empower.CustomButtons();
+            this.FullfillFontSelectBtn = new Watermark_Empower.CustomButtons();
+            this.FullfillGradientcheckbox = new MyCheckBox();
+            this.ChessEffectBtn = new Watermark_Empower.CustomButtons();
+            this.ChessFontBtn = new Watermark_Empower.CustomButtons();
+            this.ChessGradientCheckBox = new MyCheckBox();
+            this.DelPointBtn = new Watermark_Empower.CustomButtons();
+            this.customButtons3 = new Watermark_Empower.CustomButtons();
+            this.AddPointBtn = new Watermark_Empower.CustomButtons();
+            this.PointEffectBtn = new Watermark_Empower.CustomButtons();
+            this.PointFontBtn = new Watermark_Empower.CustomButtons();
+            this.PointGradientChkBox = new MyCheckBox();
             this.sizingnav = new Watermark_Empower.TryDoubleBufferAgain();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Tools.SuspendLayout();
             this.fullfill.SuspendLayout();
             this.scrollableControl1.SuspendLayout();
@@ -142,14 +179,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.ChessColorDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChessColorIcon)).BeginInit();
             this.None.SuspendLayout();
+            this.point.SuspendLayout();
+            this.scrollableControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PointColorDisplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PointColorMenu)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Nav)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navpanelborder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nav)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,6 +200,7 @@
             this.Tools.Controls.Add(this.fullfill);
             this.Tools.Controls.Add(this.chess);
             this.Tools.Controls.Add(this.None);
+            this.Tools.Controls.Add(this.point);
             resources.ApplyResources(this.Tools, "Tools");
             this.Tools.Multiline = true;
             this.Tools.Name = "Tools";
@@ -186,7 +229,6 @@
             this.scrollableControl1.Controls.Add(this.FullfillGradientcheckbox);
             this.scrollableControl1.Controls.Add(this.label19);
             this.scrollableControl1.Controls.Add(this.FullfillColorDisplay);
-            this.scrollableControl1.Controls.Add(this.label9);
             this.scrollableControl1.Controls.Add(this.FullfillColorMenu);
             this.scrollableControl1.Controls.Add(this.FullfillStyle);
             this.scrollableControl1.Controls.Add(this.label8);
@@ -207,21 +249,6 @@
             resources.ApplyResources(this.scrollableControl1, "scrollableControl1");
             this.scrollableControl1.Name = "scrollableControl1";
             // 
-            // EffectDialogButton
-            // 
-            this.EffectDialogButton.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.EffectDialogButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.EffectDialogButton.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.EffectDialogButton.BorderRadius = 15;
-            this.EffectDialogButton.BorderSize = 0;
-            this.EffectDialogButton.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.EffectDialogButton, "EffectDialogButton");
-            this.EffectDialogButton.ForeColor = System.Drawing.Color.White;
-            this.EffectDialogButton.Name = "EffectDialogButton";
-            this.EffectDialogButton.TextColor = System.Drawing.Color.White;
-            this.EffectDialogButton.UseVisualStyleBackColor = false;
-            this.EffectDialogButton.Click += new System.EventHandler(this.EffectDialogButton_Click);
-            // 
             // label24
             // 
             resources.ApplyResources(this.label24, "label24");
@@ -234,38 +261,23 @@
             this.FullfillEffectTextBox.Name = "FullfillEffectTextBox";
             this.FullfillEffectTextBox.ReadOnly = true;
             // 
-            // FullfillFontSelectBtn
-            // 
-            this.FullfillFontSelectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.FullfillFontSelectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.FullfillFontSelectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.FullfillFontSelectBtn.BorderRadius = 15;
-            this.FullfillFontSelectBtn.BorderSize = 0;
-            this.FullfillFontSelectBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.FullfillFontSelectBtn, "FullfillFontSelectBtn");
-            this.FullfillFontSelectBtn.ForeColor = System.Drawing.Color.White;
-            this.FullfillFontSelectBtn.Name = "FullfillFontSelectBtn";
-            this.FullfillFontSelectBtn.TextColor = System.Drawing.Color.White;
-            this.FullfillFontSelectBtn.UseVisualStyleBackColor = false;
-            this.FullfillFontSelectBtn.Click += new System.EventHandler(this.FullfillFontSelectBtn_Click);
-            // 
             // FullfillGradientAngle
             // 
             resources.ApplyResources(this.FullfillGradientAngle, "FullfillGradientAngle");
             this.FullfillGradientAngle.Name = "FullfillGradientAngle";
-            this.FullfillGradientAngle.TextChanged += new System.EventHandler(this.FullfillGradientAngle_TextChanged);
+            this.FullfillGradientAngle.TextChanged += new System.EventHandler(this.GradientAngleChange_TextChanged);
             // 
             // FullfillGradientEnd
             // 
             resources.ApplyResources(this.FullfillGradientEnd, "FullfillGradientEnd");
             this.FullfillGradientEnd.Name = "FullfillGradientEnd";
-            this.FullfillGradientEnd.TextChanged += new System.EventHandler(this.FullfillGradientEnd_TextChanged);
+            this.FullfillGradientEnd.TextChanged += new System.EventHandler(this.GradientEndChange_TextChanged);
             // 
             // FullfillGradientStart
             // 
             resources.ApplyResources(this.FullfillGradientStart, "FullfillGradientStart");
             this.FullfillGradientStart.Name = "FullfillGradientStart";
-            this.FullfillGradientStart.TextChanged += new System.EventHandler(this.FullfillGradientStart_TextChanged);
+            this.FullfillGradientStart.TextChanged += new System.EventHandler(this.GradientStartChange_TextChanged);
             // 
             // label22
             // 
@@ -285,13 +297,6 @@
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label20.Name = "label20";
             // 
-            // FullfillGradientcheckbox
-            // 
-            resources.ApplyResources(this.FullfillGradientcheckbox, "FullfillGradientcheckbox");
-            this.FullfillGradientcheckbox.Name = "FullfillGradientcheckbox";
-            this.FullfillGradientcheckbox.UseVisualStyleBackColor = true;
-            this.FullfillGradientcheckbox.CheckedChanged += new System.EventHandler(this.FullfillGradientcheckbox_CheckedChanged);
-            // 
             // label19
             // 
             resources.ApplyResources(this.label19, "label19");
@@ -304,13 +309,7 @@
             resources.ApplyResources(this.FullfillColorDisplay, "FullfillColorDisplay");
             this.FullfillColorDisplay.Name = "FullfillColorDisplay";
             this.FullfillColorDisplay.TabStop = false;
-            this.FullfillColorDisplay.Click += new System.EventHandler(this.FullfillColorDisplay_Click);
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Name = "label9";
+            this.FullfillColorDisplay.Click += new System.EventHandler(this.ColorDisplay_Click);
             // 
             // FullfillColorMenu
             // 
@@ -319,13 +318,13 @@
             this.FullfillColorMenu.InitialImage = global::Watermark_Empower.Properties.Resources.colour;
             this.FullfillColorMenu.Name = "FullfillColorMenu";
             this.FullfillColorMenu.TabStop = false;
-            this.FullfillColorMenu.Click += new System.EventHandler(this.FullfillColorMenu_Click);
+            this.FullfillColorMenu.Click += new System.EventHandler(this.ColorDisplay_Click);
             // 
             // FullfillStyle
             // 
             resources.ApplyResources(this.FullfillStyle, "FullfillStyle");
             this.FullfillStyle.Name = "FullfillStyle";
-            this.FullfillStyle.TextChanged += new System.EventHandler(this.FullfillStyle_TextChanged);
+            this.FullfillStyle.TextChanged += new System.EventHandler(this.StyleChange_TextChanged);
             // 
             // label8
             // 
@@ -337,7 +336,7 @@
             // 
             resources.ApplyResources(this.Fullfillhbtw, "Fullfillhbtw");
             this.Fullfillhbtw.Name = "Fullfillhbtw";
-            this.Fullfillhbtw.TextChanged += new System.EventHandler(this.Fullfillhbtw_TextChanged);
+            this.Fullfillhbtw.TextChanged += new System.EventHandler(this.HeightbtwChange_TextChanged);
             // 
             // label6
             // 
@@ -349,7 +348,7 @@
             // 
             resources.ApplyResources(this.Fullfillwbtw, "Fullfillwbtw");
             this.Fullfillwbtw.Name = "Fullfillwbtw";
-            this.Fullfillwbtw.TextChanged += new System.EventHandler(this.Fontfillwbtw_TextChanged);
+            this.Fullfillwbtw.TextChanged += new System.EventHandler(this.WidthbtwChange_TextChanged);
             // 
             // label7
             // 
@@ -361,7 +360,7 @@
             // 
             resources.ApplyResources(this.FullfillText, "FullfillText");
             this.FullfillText.Name = "FullfillText";
-            this.FullfillText.TextChanged += new System.EventHandler(this.FullfillText_TextChanged);
+            this.FullfillText.TextChanged += new System.EventHandler(this.TextChange_TextChanged);
             // 
             // label5
             // 
@@ -373,7 +372,7 @@
             // 
             resources.ApplyResources(this.FullfillAngle, "FullfillAngle");
             this.FullfillAngle.Name = "FullfillAngle";
-            this.FullfillAngle.TextChanged += new System.EventHandler(this.FullfillAngle_TextChanged);
+            this.FullfillAngle.TextChanged += new System.EventHandler(this.AngleChange_TextChanged);
             // 
             // label4
             // 
@@ -385,7 +384,7 @@
             // 
             resources.ApplyResources(this.FullfillTransparancy, "FullfillTransparancy");
             this.FullfillTransparancy.Name = "FullfillTransparancy";
-            this.FullfillTransparancy.TextChanged += new System.EventHandler(this.FullfillTransparancy_TextChanged);
+            this.FullfillTransparancy.TextChanged += new System.EventHandler(this.OpacityChange_TextChanged);
             // 
             // label3
             // 
@@ -397,7 +396,7 @@
             // 
             resources.ApplyResources(this.FullfillFontSize, "FullfillFontSize");
             this.FullfillFontSize.Name = "FullfillFontSize";
-            this.FullfillFontSize.TextChanged += new System.EventHandler(this.FullfillFontSize_TextChanged);
+            this.FullfillFontSize.TextChanged += new System.EventHandler(this.FontSizeChange_TextChanged);
             // 
             // label2
             // 
@@ -409,7 +408,7 @@
             // 
             resources.ApplyResources(this.FullfillFont, "FullfillFont");
             this.FullfillFont.Name = "FullfillFont";
-            this.FullfillFont.TextChanged += new System.EventHandler(this.FullfillFont_TextChanged);
+            this.FullfillFont.TextChanged += new System.EventHandler(this.FontChange_TextChanged);
             // 
             // label1
             // 
@@ -432,7 +431,6 @@
             this.scrollableControl2.Controls.Add(this.label33);
             this.scrollableControl2.Controls.Add(this.label34);
             this.scrollableControl2.Controls.Add(this.label35);
-            this.scrollableControl2.Controls.Add(this.label36);
             this.scrollableControl2.Controls.Add(this.label37);
             this.scrollableControl2.Controls.Add(this.label38);
             this.scrollableControl2.Controls.Add(this.label39);
@@ -491,12 +489,6 @@
             this.label35.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label35.Name = "label35";
             // 
-            // label36
-            // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label36.Name = "label36";
-            // 
             // label37
             // 
             resources.ApplyResources(this.label37, "label37");
@@ -545,66 +537,29 @@
             this.label44.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label44.Name = "label44";
             // 
-            // ChessEffectBtn
-            // 
-            this.ChessEffectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessEffectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessEffectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.ChessEffectBtn.BorderRadius = 15;
-            this.ChessEffectBtn.BorderSize = 0;
-            this.ChessEffectBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.ChessEffectBtn, "ChessEffectBtn");
-            this.ChessEffectBtn.ForeColor = System.Drawing.Color.White;
-            this.ChessEffectBtn.Name = "ChessEffectBtn";
-            this.ChessEffectBtn.TextColor = System.Drawing.Color.White;
-            this.ChessEffectBtn.UseVisualStyleBackColor = false;
-            this.ChessEffectBtn.Click += new System.EventHandler(this.ChessEffectBtn_Click);
-            // 
             // ChessEffect
             // 
             resources.ApplyResources(this.ChessEffect, "ChessEffect");
             this.ChessEffect.Name = "ChessEffect";
             this.ChessEffect.ReadOnly = true;
             // 
-            // ChessFontBtn
-            // 
-            this.ChessFontBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessFontBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessFontBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.ChessFontBtn.BorderRadius = 15;
-            this.ChessFontBtn.BorderSize = 0;
-            this.ChessFontBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.ChessFontBtn, "ChessFontBtn");
-            this.ChessFontBtn.ForeColor = System.Drawing.Color.White;
-            this.ChessFontBtn.Name = "ChessFontBtn";
-            this.ChessFontBtn.TextColor = System.Drawing.Color.White;
-            this.ChessFontBtn.UseVisualStyleBackColor = false;
-            this.ChessFontBtn.Click += new System.EventHandler(this.ChessFontBtn_Click);
-            // 
             // ChessGradientAngle
             // 
             resources.ApplyResources(this.ChessGradientAngle, "ChessGradientAngle");
             this.ChessGradientAngle.Name = "ChessGradientAngle";
-            this.ChessGradientAngle.TextChanged += new System.EventHandler(this.ChessGradientAngle_TextChanged);
+            this.ChessGradientAngle.TextChanged += new System.EventHandler(this.GradientAngleChange_TextChanged);
             // 
             // ChessGradientEnd
             // 
             resources.ApplyResources(this.ChessGradientEnd, "ChessGradientEnd");
             this.ChessGradientEnd.Name = "ChessGradientEnd";
-            this.ChessGradientEnd.TextChanged += new System.EventHandler(this.ChessGradientEnd_TextChanged);
+            this.ChessGradientEnd.TextChanged += new System.EventHandler(this.GradientEndChange_TextChanged);
             // 
             // ChessGradientStart
             // 
             resources.ApplyResources(this.ChessGradientStart, "ChessGradientStart");
             this.ChessGradientStart.Name = "ChessGradientStart";
-            this.ChessGradientStart.TextChanged += new System.EventHandler(this.ChessGradientStart_TextChanged);
-            // 
-            // ChessGradientCheckBox
-            // 
-            resources.ApplyResources(this.ChessGradientCheckBox, "ChessGradientCheckBox");
-            this.ChessGradientCheckBox.Name = "ChessGradientCheckBox";
-            this.ChessGradientCheckBox.UseVisualStyleBackColor = true;
-            this.ChessGradientCheckBox.CheckedChanged += new System.EventHandler(this.ChessGradientCheckBox_CheckedChanged);
+            this.ChessGradientStart.TextChanged += new System.EventHandler(this.GradientStartChange_TextChanged);
             // 
             // ChessColorDisplay
             // 
@@ -612,7 +567,7 @@
             resources.ApplyResources(this.ChessColorDisplay, "ChessColorDisplay");
             this.ChessColorDisplay.Name = "ChessColorDisplay";
             this.ChessColorDisplay.TabStop = false;
-            this.ChessColorDisplay.Click += new System.EventHandler(this.ChessColorDisplay_Click);
+            this.ChessColorDisplay.Click += new System.EventHandler(this.ColorDisplay_Click);
             // 
             // ChessColorIcon
             // 
@@ -621,55 +576,55 @@
             this.ChessColorIcon.InitialImage = global::Watermark_Empower.Properties.Resources.colour;
             this.ChessColorIcon.Name = "ChessColorIcon";
             this.ChessColorIcon.TabStop = false;
-            this.ChessColorIcon.Click += new System.EventHandler(this.ChessColorIcon_Click);
+            this.ChessColorIcon.Click += new System.EventHandler(this.ColorDisplay_Click);
             // 
             // ChessTextStyle
             // 
             resources.ApplyResources(this.ChessTextStyle, "ChessTextStyle");
             this.ChessTextStyle.Name = "ChessTextStyle";
-            this.ChessTextStyle.TextChanged += new System.EventHandler(this.ChessTextStyle_TextChanged);
+            this.ChessTextStyle.TextChanged += new System.EventHandler(this.StyleChange_TextChanged);
             // 
             // ChessHbtw
             // 
             resources.ApplyResources(this.ChessHbtw, "ChessHbtw");
             this.ChessHbtw.Name = "ChessHbtw";
-            this.ChessHbtw.TextChanged += new System.EventHandler(this.ChessHbtw_TextChanged);
+            this.ChessHbtw.TextChanged += new System.EventHandler(this.HeightbtwChange_TextChanged);
             // 
             // ChessWbtw
             // 
             resources.ApplyResources(this.ChessWbtw, "ChessWbtw");
             this.ChessWbtw.Name = "ChessWbtw";
-            this.ChessWbtw.TextChanged += new System.EventHandler(this.ChessWbtw_TextChanged);
+            this.ChessWbtw.TextChanged += new System.EventHandler(this.WidthbtwChange_TextChanged);
             // 
             // ChessText
             // 
             resources.ApplyResources(this.ChessText, "ChessText");
             this.ChessText.Name = "ChessText";
-            this.ChessText.TextChanged += new System.EventHandler(this.ChessText_TextChanged);
+            this.ChessText.TextChanged += new System.EventHandler(this.TextChange_TextChanged);
             // 
             // ChessAngle
             // 
             resources.ApplyResources(this.ChessAngle, "ChessAngle");
             this.ChessAngle.Name = "ChessAngle";
-            this.ChessAngle.TextChanged += new System.EventHandler(this.ChessAngle_TextChanged);
+            this.ChessAngle.TextChanged += new System.EventHandler(this.AngleChange_TextChanged);
             // 
             // ChessTransparancy
             // 
             resources.ApplyResources(this.ChessTransparancy, "ChessTransparancy");
             this.ChessTransparancy.Name = "ChessTransparancy";
-            this.ChessTransparancy.TextChanged += new System.EventHandler(this.ChessTransparancy_TextChanged);
+            this.ChessTransparancy.TextChanged += new System.EventHandler(this.OpacityChange_TextChanged);
             // 
             // ChessTextSize
             // 
             resources.ApplyResources(this.ChessTextSize, "ChessTextSize");
             this.ChessTextSize.Name = "ChessTextSize";
-            this.ChessTextSize.TextChanged += new System.EventHandler(this.ChessTextSize_TextChanged);
+            this.ChessTextSize.TextChanged += new System.EventHandler(this.FontSizeChange_TextChanged);
             // 
             // ChessFont
             // 
             resources.ApplyResources(this.ChessFont, "ChessFont");
             this.ChessFont.Name = "ChessFont";
-            this.ChessFont.TextChanged += new System.EventHandler(this.ChessFont_TextChanged);
+            this.ChessFont.TextChanged += new System.EventHandler(this.FontChange_TextChanged);
             // 
             // None
             // 
@@ -683,6 +638,199 @@
             this.scrollableControl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             resources.ApplyResources(this.scrollableControl3, "scrollableControl3");
             this.scrollableControl3.Name = "scrollableControl3";
+            // 
+            // point
+            // 
+            this.point.BackColor = System.Drawing.Color.Black;
+            this.point.Controls.Add(this.scrollableControl4);
+            resources.ApplyResources(this.point, "point");
+            this.point.Name = "point";
+            // 
+            // scrollableControl4
+            // 
+            this.scrollableControl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.scrollableControl4.Controls.Add(this.label15);
+            this.scrollableControl4.Controls.Add(this.PointLocationYTxtBox);
+            this.scrollableControl4.Controls.Add(this.textBox2);
+            this.scrollableControl4.Controls.Add(this.textBox1);
+            this.scrollableControl4.Controls.Add(this.label9);
+            this.scrollableControl4.Controls.Add(this.PointLocationXTxtBox);
+            this.scrollableControl4.Controls.Add(this.DelPointBtn);
+            this.scrollableControl4.Controls.Add(this.customButtons3);
+            this.scrollableControl4.Controls.Add(this.AddPointBtn);
+            this.scrollableControl4.Controls.Add(this.PointsList);
+            this.scrollableControl4.Controls.Add(this.pictureBox3);
+            this.scrollableControl4.Controls.Add(this.label10);
+            this.scrollableControl4.Controls.Add(this.label11);
+            this.scrollableControl4.Controls.Add(this.label12);
+            this.scrollableControl4.Controls.Add(this.label13);
+            this.scrollableControl4.Controls.Add(this.label14);
+            this.scrollableControl4.Controls.Add(this.label16);
+            this.scrollableControl4.Controls.Add(this.label25);
+            this.scrollableControl4.Controls.Add(this.label26);
+            this.scrollableControl4.Controls.Add(this.label27);
+            this.scrollableControl4.Controls.Add(this.label28);
+            this.scrollableControl4.Controls.Add(this.label29);
+            this.scrollableControl4.Controls.Add(this.PointEffectBtn);
+            this.scrollableControl4.Controls.Add(this.PointEffectTxtBox);
+            this.scrollableControl4.Controls.Add(this.PointFontBtn);
+            this.scrollableControl4.Controls.Add(this.PointGradientAngleTxtBox);
+            this.scrollableControl4.Controls.Add(this.PointGradientEndTxtBox);
+            this.scrollableControl4.Controls.Add(this.PointGradientStartTxtBox);
+            this.scrollableControl4.Controls.Add(this.PointGradientChkBox);
+            this.scrollableControl4.Controls.Add(this.PointColorDisplay);
+            this.scrollableControl4.Controls.Add(this.PointColorMenu);
+            this.scrollableControl4.Controls.Add(this.PointStyleTxtBox);
+            this.scrollableControl4.Controls.Add(this.PointTextTxtBox);
+            this.scrollableControl4.Controls.Add(this.PointAngleTxtBox);
+            this.scrollableControl4.Controls.Add(this.PointOpacityTxtBox);
+            this.scrollableControl4.Controls.Add(this.PointFontSizeTxtBox);
+            this.scrollableControl4.Controls.Add(this.PointFontTxtBox);
+            resources.ApplyResources(this.scrollableControl4, "scrollableControl4");
+            this.scrollableControl4.Name = "scrollableControl4";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label10.Name = "label10";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label11.Name = "label11";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label12.Name = "label12";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label13.Name = "label13";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label14.Name = "label14";
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label16.Name = "label16";
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label25.Name = "label25";
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label26.Name = "label26";
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label27.Name = "label27";
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label28.Name = "label28";
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label29.Name = "label29";
+            // 
+            // PointEffectTxtBox
+            // 
+            resources.ApplyResources(this.PointEffectTxtBox, "PointEffectTxtBox");
+            this.PointEffectTxtBox.Name = "PointEffectTxtBox";
+            this.PointEffectTxtBox.ReadOnly = true;
+            // 
+            // PointGradientAngleTxtBox
+            // 
+            resources.ApplyResources(this.PointGradientAngleTxtBox, "PointGradientAngleTxtBox");
+            this.PointGradientAngleTxtBox.Name = "PointGradientAngleTxtBox";
+            this.PointGradientAngleTxtBox.TextChanged += new System.EventHandler(this.GradientAngleChange_TextChanged);
+            // 
+            // PointGradientEndTxtBox
+            // 
+            resources.ApplyResources(this.PointGradientEndTxtBox, "PointGradientEndTxtBox");
+            this.PointGradientEndTxtBox.Name = "PointGradientEndTxtBox";
+            this.PointGradientEndTxtBox.TextChanged += new System.EventHandler(this.GradientEndChange_TextChanged);
+            // 
+            // PointGradientStartTxtBox
+            // 
+            resources.ApplyResources(this.PointGradientStartTxtBox, "PointGradientStartTxtBox");
+            this.PointGradientStartTxtBox.Name = "PointGradientStartTxtBox";
+            this.PointGradientStartTxtBox.TextChanged += new System.EventHandler(this.GradientStartChange_TextChanged);
+            // 
+            // PointColorDisplay
+            // 
+            this.PointColorDisplay.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.PointColorDisplay, "PointColorDisplay");
+            this.PointColorDisplay.Name = "PointColorDisplay";
+            this.PointColorDisplay.TabStop = false;
+            this.PointColorDisplay.Click += new System.EventHandler(this.ColorDisplay_Click);
+            // 
+            // PointColorMenu
+            // 
+            this.PointColorMenu.Image = global::Watermark_Empower.Properties.Resources.colour;
+            resources.ApplyResources(this.PointColorMenu, "PointColorMenu");
+            this.PointColorMenu.InitialImage = global::Watermark_Empower.Properties.Resources.colour;
+            this.PointColorMenu.Name = "PointColorMenu";
+            this.PointColorMenu.TabStop = false;
+            this.PointColorMenu.Click += new System.EventHandler(this.ColorDisplay_Click);
+            // 
+            // PointStyleTxtBox
+            // 
+            resources.ApplyResources(this.PointStyleTxtBox, "PointStyleTxtBox");
+            this.PointStyleTxtBox.Name = "PointStyleTxtBox";
+            this.PointStyleTxtBox.TextChanged += new System.EventHandler(this.StyleChange_TextChanged);
+            // 
+            // PointTextTxtBox
+            // 
+            resources.ApplyResources(this.PointTextTxtBox, "PointTextTxtBox");
+            this.PointTextTxtBox.Name = "PointTextTxtBox";
+            this.PointTextTxtBox.TextChanged += new System.EventHandler(this.TextChange_TextChanged);
+            // 
+            // PointAngleTxtBox
+            // 
+            resources.ApplyResources(this.PointAngleTxtBox, "PointAngleTxtBox");
+            this.PointAngleTxtBox.Name = "PointAngleTxtBox";
+            this.PointAngleTxtBox.TextChanged += new System.EventHandler(this.AngleChange_TextChanged);
+            // 
+            // PointOpacityTxtBox
+            // 
+            resources.ApplyResources(this.PointOpacityTxtBox, "PointOpacityTxtBox");
+            this.PointOpacityTxtBox.Name = "PointOpacityTxtBox";
+            this.PointOpacityTxtBox.TextChanged += new System.EventHandler(this.OpacityChange_TextChanged);
+            // 
+            // PointFontSizeTxtBox
+            // 
+            resources.ApplyResources(this.PointFontSizeTxtBox, "PointFontSizeTxtBox");
+            this.PointFontSizeTxtBox.Name = "PointFontSizeTxtBox";
+            this.PointFontSizeTxtBox.TextChanged += new System.EventHandler(this.FontSizeChange_TextChanged);
+            // 
+            // PointFontTxtBox
+            // 
+            resources.ApplyResources(this.PointFontTxtBox, "PointFontTxtBox");
+            this.PointFontTxtBox.Name = "PointFontTxtBox";
+            this.PointFontTxtBox.TextChanged += new System.EventHandler(this.FontChange_TextChanged);
             // 
             // FullfillSelector
             // 
@@ -704,19 +852,12 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.Nav);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.PointSelector);
             this.panel1.Controls.Add(this.ChessSelector);
             this.panel1.Controls.Add(this.MenuButton);
             this.panel1.Controls.Add(this.FullfillSelector);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // Nav
-            // 
-            this.Nav.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.Nav, "Nav");
-            this.Nav.Name = "Nav";
-            this.Nav.TabStop = false;
             // 
             // button2
             // 
@@ -729,16 +870,16 @@
             this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.Leave += new System.EventHandler(this.ChessSelector_Leave);
             // 
-            // button1
+            // PointSelector
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.Leave += new System.EventHandler(this.ChessSelector_Leave);
+            this.PointSelector.BackColor = System.Drawing.Color.Transparent;
+            this.PointSelector.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.PointSelector, "PointSelector");
+            this.PointSelector.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.PointSelector.Name = "PointSelector";
+            this.PointSelector.UseVisualStyleBackColor = false;
+            this.PointSelector.Click += new System.EventHandler(this.PointSelector_Click);
+            this.PointSelector.Leave += new System.EventHandler(this.ChessSelector_Leave);
             // 
             // ChessSelector
             // 
@@ -886,6 +1027,64 @@
             this.PresetsComboBox.Name = "PresetsComboBox";
             this.PresetsComboBox.SelectedIndexChanged += new System.EventHandler(this.PresetsComboBox_SelectedIndexChanged);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 50;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(44)))));
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // PointsList
+            // 
+            this.PointsList.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.PointsList.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.PointsList.BackColor = System.Drawing.Color.LightGray;
+            this.PointsList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.PointsList, "PointsList");
+            this.PointsList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.PointsList.FormattingEnabled = true;
+            this.PointsList.Name = "PointsList";
+            this.PointsList.SelectedIndexChanged += new System.EventHandler(this.PointsList_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label9.Name = "label9";
+            // 
+            // PointLocationXTxtBox
+            // 
+            resources.ApplyResources(this.PointLocationXTxtBox, "PointLocationXTxtBox");
+            this.PointLocationXTxtBox.Name = "PointLocationXTxtBox";
+            this.PointLocationXTxtBox.TextChanged += new System.EventHandler(this.PointLocationXTxtBox_TextChanged);
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label15.Name = "label15";
+            // 
+            // PointLocationYTxtBox
+            // 
+            resources.ApplyResources(this.PointLocationYTxtBox, "PointLocationYTxtBox");
+            this.PointLocationYTxtBox.Name = "PointLocationYTxtBox";
+            this.PointLocationYTxtBox.TextChanged += new System.EventHandler(this.PointLocationYTxtBox_TextChanged);
+            // 
             // PresetDialogButton
             // 
             this.PresetDialogButton.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -961,6 +1160,13 @@
             this.CloseForm.UseVisualStyleBackColor = false;
             this.CloseForm.Click += new System.EventHandler(this.CloseForm_Click);
             // 
+            // Nav
+            // 
+            this.Nav.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.Nav, "Nav");
+            this.Nav.Name = "Nav";
+            this.Nav.TabStop = false;
+            // 
             // Import_Image
             // 
             this.Import_Image.BackColor = System.Drawing.Color.Orange;
@@ -976,17 +1182,170 @@
             this.Import_Image.UseVisualStyleBackColor = false;
             this.Import_Image.Click += new System.EventHandler(this.Import_Image_Click);
             // 
+            // EffectDialogButton
+            // 
+            this.EffectDialogButton.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.EffectDialogButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.EffectDialogButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.EffectDialogButton.BorderRadius = 15;
+            this.EffectDialogButton.BorderSize = 0;
+            this.EffectDialogButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.EffectDialogButton, "EffectDialogButton");
+            this.EffectDialogButton.ForeColor = System.Drawing.Color.White;
+            this.EffectDialogButton.Name = "EffectDialogButton";
+            this.EffectDialogButton.TextColor = System.Drawing.Color.White;
+            this.EffectDialogButton.UseVisualStyleBackColor = false;
+            this.EffectDialogButton.Click += new System.EventHandler(this.EffectDialogButton_Click);
+            // 
+            // FullfillFontSelectBtn
+            // 
+            this.FullfillFontSelectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.FullfillFontSelectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.FullfillFontSelectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.FullfillFontSelectBtn.BorderRadius = 15;
+            this.FullfillFontSelectBtn.BorderSize = 0;
+            this.FullfillFontSelectBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.FullfillFontSelectBtn, "FullfillFontSelectBtn");
+            this.FullfillFontSelectBtn.ForeColor = System.Drawing.Color.White;
+            this.FullfillFontSelectBtn.Name = "FullfillFontSelectBtn";
+            this.FullfillFontSelectBtn.TextColor = System.Drawing.Color.White;
+            this.FullfillFontSelectBtn.UseVisualStyleBackColor = false;
+            this.FullfillFontSelectBtn.Click += new System.EventHandler(this.FontSelectBtn_Click);
+            // 
+            // FullfillGradientcheckbox
+            // 
+            resources.ApplyResources(this.FullfillGradientcheckbox, "FullfillGradientcheckbox");
+            this.FullfillGradientcheckbox.Name = "FullfillGradientcheckbox";
+            this.FullfillGradientcheckbox.UseVisualStyleBackColor = true;
+            this.FullfillGradientcheckbox.CheckedChanged += new System.EventHandler(this.Gradientcheckbox_CheckedChanged);
+            // 
+            // ChessEffectBtn
+            // 
+            this.ChessEffectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessEffectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessEffectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ChessEffectBtn.BorderRadius = 15;
+            this.ChessEffectBtn.BorderSize = 0;
+            this.ChessEffectBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.ChessEffectBtn, "ChessEffectBtn");
+            this.ChessEffectBtn.ForeColor = System.Drawing.Color.White;
+            this.ChessEffectBtn.Name = "ChessEffectBtn";
+            this.ChessEffectBtn.TextColor = System.Drawing.Color.White;
+            this.ChessEffectBtn.UseVisualStyleBackColor = false;
+            this.ChessEffectBtn.Click += new System.EventHandler(this.EffectDialogButton_Click);
+            // 
+            // ChessFontBtn
+            // 
+            this.ChessFontBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessFontBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessFontBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ChessFontBtn.BorderRadius = 15;
+            this.ChessFontBtn.BorderSize = 0;
+            this.ChessFontBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.ChessFontBtn, "ChessFontBtn");
+            this.ChessFontBtn.ForeColor = System.Drawing.Color.White;
+            this.ChessFontBtn.Name = "ChessFontBtn";
+            this.ChessFontBtn.TextColor = System.Drawing.Color.White;
+            this.ChessFontBtn.UseVisualStyleBackColor = false;
+            this.ChessFontBtn.Click += new System.EventHandler(this.FontSelectBtn_Click);
+            // 
+            // ChessGradientCheckBox
+            // 
+            resources.ApplyResources(this.ChessGradientCheckBox, "ChessGradientCheckBox");
+            this.ChessGradientCheckBox.Name = "ChessGradientCheckBox";
+            this.ChessGradientCheckBox.UseVisualStyleBackColor = true;
+            this.ChessGradientCheckBox.CheckedChanged += new System.EventHandler(this.Gradientcheckbox_CheckedChanged);
+            // 
+            // DelPointBtn
+            // 
+            this.DelPointBtn.BackColor = System.Drawing.Color.Gold;
+            this.DelPointBtn.BackgroundColor = System.Drawing.Color.Gold;
+            this.DelPointBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.DelPointBtn.BorderRadius = 15;
+            this.DelPointBtn.BorderSize = 0;
+            this.DelPointBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.DelPointBtn, "DelPointBtn");
+            this.DelPointBtn.ForeColor = System.Drawing.Color.Black;
+            this.DelPointBtn.Name = "DelPointBtn";
+            this.DelPointBtn.TextColor = System.Drawing.Color.Black;
+            this.DelPointBtn.UseVisualStyleBackColor = false;
+            this.DelPointBtn.Click += new System.EventHandler(this.DelPointBtn_Click);
+            // 
+            // customButtons3
+            // 
+            this.customButtons3.BackColor = System.Drawing.Color.Lime;
+            this.customButtons3.BackgroundColor = System.Drawing.Color.Lime;
+            this.customButtons3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customButtons3.BorderRadius = 15;
+            this.customButtons3.BorderSize = 0;
+            this.customButtons3.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.customButtons3, "customButtons3");
+            this.customButtons3.ForeColor = System.Drawing.Color.Black;
+            this.customButtons3.Name = "customButtons3";
+            this.customButtons3.TextColor = System.Drawing.Color.Black;
+            this.customButtons3.UseVisualStyleBackColor = false;
+            this.customButtons3.Click += new System.EventHandler(this.customButtons3_Click);
+            // 
+            // AddPointBtn
+            // 
+            this.AddPointBtn.BackColor = System.Drawing.Color.Lime;
+            this.AddPointBtn.BackgroundColor = System.Drawing.Color.Lime;
+            this.AddPointBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.AddPointBtn.BorderRadius = 15;
+            this.AddPointBtn.BorderSize = 0;
+            this.AddPointBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.AddPointBtn, "AddPointBtn");
+            this.AddPointBtn.ForeColor = System.Drawing.Color.Black;
+            this.AddPointBtn.Name = "AddPointBtn";
+            this.AddPointBtn.TextColor = System.Drawing.Color.Black;
+            this.AddPointBtn.UseVisualStyleBackColor = false;
+            this.AddPointBtn.Click += new System.EventHandler(this.AddPointBtn_Click);
+            // 
+            // PointEffectBtn
+            // 
+            this.PointEffectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.PointEffectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.PointEffectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.PointEffectBtn.BorderRadius = 15;
+            this.PointEffectBtn.BorderSize = 0;
+            this.PointEffectBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.PointEffectBtn, "PointEffectBtn");
+            this.PointEffectBtn.ForeColor = System.Drawing.Color.White;
+            this.PointEffectBtn.Name = "PointEffectBtn";
+            this.PointEffectBtn.TextColor = System.Drawing.Color.White;
+            this.PointEffectBtn.UseVisualStyleBackColor = false;
+            this.PointEffectBtn.TextChanged += new System.EventHandler(this.EffectDialogButton_Click);
+            this.PointEffectBtn.Click += new System.EventHandler(this.EffectDialogButton_Click);
+            // 
+            // PointFontBtn
+            // 
+            this.PointFontBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.PointFontBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.PointFontBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.PointFontBtn.BorderRadius = 15;
+            this.PointFontBtn.BorderSize = 0;
+            this.PointFontBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.PointFontBtn, "PointFontBtn");
+            this.PointFontBtn.ForeColor = System.Drawing.Color.White;
+            this.PointFontBtn.Name = "PointFontBtn";
+            this.PointFontBtn.TextColor = System.Drawing.Color.White;
+            this.PointFontBtn.UseVisualStyleBackColor = false;
+            this.PointFontBtn.TextChanged += new System.EventHandler(this.FontSelectBtn_Click);
+            this.PointFontBtn.Click += new System.EventHandler(this.FontSelectBtn_Click);
+            // 
+            // PointGradientChkBox
+            // 
+            resources.ApplyResources(this.PointGradientChkBox, "PointGradientChkBox");
+            this.PointGradientChkBox.Name = "PointGradientChkBox";
+            this.PointGradientChkBox.UseVisualStyleBackColor = true;
+            this.PointGradientChkBox.CheckedChanged += new System.EventHandler(this.Gradientcheckbox_CheckedChanged);
+            // 
             // sizingnav
             // 
             this.sizingnav.BackColor = System.Drawing.Color.Lime;
             resources.ApplyResources(this.sizingnav, "sizingnav");
             this.sizingnav.Name = "sizingnav";
             this.sizingnav.TabStop = false;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -1035,8 +1394,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.ChessColorDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChessColorIcon)).EndInit();
             this.None.ResumeLayout(false);
+            this.point.ResumeLayout(false);
+            this.scrollableControl4.ResumeLayout(false);
+            this.scrollableControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PointColorDisplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PointColorMenu)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Nav)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navpanelborder)).EndInit();
@@ -1044,6 +1407,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.MainDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nav)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1079,12 +1444,11 @@
         private System.Windows.Forms.PictureBox FullfillColorMenu;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.PictureBox FullfillColorDisplay;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button ChessSelector;
         private System.Windows.Forms.PictureBox pictureBox1;
         private TryDoubleBufferAgain Nav;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button PointSelector;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ScrollableControl scrollableControl2;
         private System.Windows.Forms.Label label19;
@@ -1143,7 +1507,6 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
@@ -1153,6 +1516,45 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TabPage point;
+        private System.Windows.Forms.ScrollableControl scrollableControl4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private CustomButtons PointEffectBtn;
+        private System.Windows.Forms.TextBox PointEffectTxtBox;
+        private CustomButtons PointFontBtn;
+        private System.Windows.Forms.TextBox PointGradientAngleTxtBox;
+        private System.Windows.Forms.TextBox PointGradientEndTxtBox;
+        private System.Windows.Forms.TextBox PointGradientStartTxtBox;
+        private MyCheckBox PointGradientChkBox;
+        private System.Windows.Forms.PictureBox PointColorDisplay;
+        private System.Windows.Forms.PictureBox PointColorMenu;
+        private System.Windows.Forms.TextBox PointStyleTxtBox;
+        private System.Windows.Forms.TextBox PointTextTxtBox;
+        private System.Windows.Forms.TextBox PointAngleTxtBox;
+        private System.Windows.Forms.TextBox PointOpacityTxtBox;
+        private System.Windows.Forms.TextBox PointFontSizeTxtBox;
+        private System.Windows.Forms.TextBox PointFontTxtBox;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox PointLocationXTxtBox;
+        private CustomButtons DelPointBtn;
+        private CustomButtons AddPointBtn;
+        private System.Windows.Forms.ComboBox PointsList;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private CustomButtons customButtons3;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox PointLocationYTxtBox;
     }
 }
 

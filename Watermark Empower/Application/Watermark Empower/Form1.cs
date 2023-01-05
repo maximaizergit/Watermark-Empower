@@ -41,8 +41,8 @@ namespace Watermark_Empower
             InitializeComponent();
             this.MouseDown += Form1_MouseDown;
             this.MouseMove += Form1_MouseMove;
-            
-          
+           
+
             timer1.Tick += timer1_Tick;
 
         }
@@ -154,7 +154,12 @@ namespace Watermark_Empower
                 // Update the position of the form
                 settings.Xoffset = settings.Xoffset + delta.X;
                 settings.Yoffset = settings.Yoffset + delta.Y;
-                
+                if (currentPointIndex != -1)
+                {
+                    points.AllPoints[currentPointIndex].X += delta.X;
+                    points.AllPoints[currentPointIndex].Y += delta.Y;
+                   
+                }
                     
               
                 // Update the last cursor position
@@ -172,6 +177,13 @@ namespace Watermark_Empower
                 case ("Chess"):
 
                     ChessUpdate();
+                    break;
+                case ("Point"):
+                    if (currentPointIndex != -1)
+                    {
+                        UpdatePointCords();
+                    }
+                    PointUpdate();
                     break;
             }
 
@@ -440,7 +452,6 @@ namespace Watermark_Empower
             if (isimported)
             {
 
-                Tools.SelectTab("fullfill");
                 FullfillText.Text = options.Text;
                 FullfillFont.Text = options.Fontname;
                 FullfillFontSize.Text = options.Fontsize.ToString();
@@ -456,12 +467,14 @@ namespace Watermark_Empower
                 FullfillGradientEnd.Text = options.Colorend.ToString();
                 FullfillGradientAngle.Text = options.Angle.ToString();
                 FullfillEffectTextBox.Text = options.Effect.ToString();
-
+                
                 NavMove(FullfillSelector.Top, FullfillSelector.Left);
                 options.Operation = "Fullfill";
-                if (settings.Isgradienton)
+                if (options.Isgradienton)
                 {
                     FullfillGradientcheckbox.Checked = true;
+                    LinearGradientBrush gradientBrush = ColorPreviewUpd(options.Color, options.Color2, options.Color3);
+                    UpdColorDisplays(gradientBrush);
                 }
                 else
                 {
@@ -482,6 +495,8 @@ namespace Watermark_Empower
 
                 }
 
+                Tools.SelectTab("fullfill");
+                UpdColorDisplays();
             }
             else
             {
@@ -496,7 +511,7 @@ namespace Watermark_Empower
             if (isimported)
             {
 
-                Tools.SelectTab("chess");
+              
                 ChessText.Text = options.Text;
                 ChessFont.Text = options.Fontname;
                 ChessTextSize.Text = options.Fontsize.ToString();
@@ -511,11 +526,13 @@ namespace Watermark_Empower
                 ChessGradientEnd.Text = options.Colorend.ToString();
                 ChessGradientAngle.Text = options.Angle.ToString();
                 ChessEffect.Text = options.Effect.ToString();
-
+               
                 options.Operation = "Chess";
                 NavMove(ChessSelector.Top, ChessSelector.Left);
-                if (settings.Isgradienton)
+                if (options.Isgradienton)
                 {
+                    LinearGradientBrush gradientBrush = ColorPreviewUpd(options.Color, options.Color2, options.Color3);
+                    UpdColorDisplays(gradientBrush);
                     ChessGradientCheckBox.Checked = true;
                 }
                 else
@@ -525,7 +542,7 @@ namespace Watermark_Empower
 
                 }
                 newoperation();
-                if (!FullfillGradientcheckbox.Checked)
+                if (!options.Isgradienton)
                 {
 
                     gen.GenPatternChess(options, settings, effectsettings);
@@ -537,8 +554,8 @@ namespace Watermark_Empower
                     MainDisplay.Image = Image.FromFile("tempinput.jpg");
 
                 }
-
-
+                Tools.SelectTab("chess");
+                UpdColorDisplays();
 
             }
             else
@@ -546,11 +563,67 @@ namespace Watermark_Empower
                 MessageBox.Show("Сначала импортируйте изображение!");
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void PointSelector_Click(object sender, EventArgs e)
         {
-            NavMove(button1.Top, button1.Left);
-            button1.BackColor = Color.FromArgb(46, 51, 73);
+            
+            if (isimported)
+            {
+               
+                
+                PointTextTxtBox.Text = options.Text;
+                PointFontTxtBox.Text = options.Fontname;
+                PointFontSizeTxtBox.Text = options.Fontsize.ToString();
+                PointAngleTxtBox.Text = options.Angle.ToString();
+                double transparancy = (Convert.ToDouble(options.Transparancy) / 255 * 100);
+                PointOpacityTxtBox.Text = Math.Round(transparancy, 0).ToString();
+                PointStyleTxtBox.Text = options.Fontstyle.ToString();
+                PointColorDisplay.BackColor = options.Color;
+                PointGradientStartTxtBox.Text = options.Colorstart.ToString();
+                PointGradientEndTxtBox.Text = options.Colorend.ToString();
+                PointGradientAngleTxtBox.Text = options.Angle.ToString();
+                PointEffectTxtBox.Text = options.Effect.ToString();
+                
+                options.Operation = "Point";
+                NavMove(PointSelector.Top, PointSelector.Left);
+                if (options.Isgradienton)
+                {
+                    
+                   
+                    PointGradientChkBox.Checked = true;
+                }
+                else
+                {
+
+                    PointGradientChkBox.Checked = false;
+
+                }
+              
+                newoperation();
+                if (!options.Isgradienton)
+                {
+                    gen.DrawPoint(points);
+                    MainDisplay.Image = Image.FromFile("tempinput.jpg");
+                }
+                else
+                {
+                    gen.DrawPoint(points);
+                    MainDisplay.Image = Image.FromFile("tempinput.jpg");
+
+                }
+
+                Tools.SelectTab("point");
+                
+                UpdColorDisplays();
+               
+               
+
+            }
+            else
+            {
+                MessageBox.Show("Сначала импортируйте изображение!");
+            }
         }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -570,8 +643,20 @@ namespace Watermark_Empower
         //switch for selecting unused image
         private void newoperation()
         {
-            MainDisplay.Image.Dispose();
-            MainDisplay.Image = null;
+            if (MainDisplay.Image != null)
+            {
+               
+                MainDisplay.Image.Dispose();
+                MainDisplay.Image = null;
+            }
+            else
+            {
+                MessageBox.Show("noop");
+                
+            }
+              
+            
+            
         }
         private Color colorupd()
         {
@@ -602,6 +687,23 @@ namespace Watermark_Empower
 
 
         //WORK WITH FULLFILL PATTERN
+        private void UpdateImage()
+        {
+         
+            switch (options.Operation)
+            {
+                case ("Fullfill"):
+                    FullfillUpdate();
+                    break;
+                case ("Chess"):
+                    
+                    ChessUpdate();
+                    break;
+                case ("Point"):
+                    PointUpdate();
+                    break;
+            }
+        }
         //Updating unused image. Disposing used image. Opening updated image 
         private void FullfillUpdate()
         {
@@ -609,7 +711,8 @@ namespace Watermark_Empower
             if (!FullfillGradientcheckbox.Checked)
             {
 
-
+              
+                
                 gen.GenPatternFullfill(options, settings, effectsettings);
                 MainDisplay.Image = Image.FromFile("tempinput.jpg");
 
@@ -625,52 +728,53 @@ namespace Watermark_Empower
 
         }
 
-        //Update image on fields change for fullfill 
-        private void FullfillFont_TextChanged(object sender, EventArgs e)
+        //Update image on fields change
+        private void TextChange_TextChanged(object sender, EventArgs e)
         {
-            options.Fontname = FullfillFont.Text;
-            FullfillUpdate();
+
+            TextBox textBox = sender as TextBox;
+            options.Text = textBox.Text;
+            UpdateImage();
 
         }
-
-        private void FullfillText_TextChanged(object sender, EventArgs e)
+        private void FontChange_TextChanged(object sender, EventArgs e)
         {
-            options.Text = FullfillText.Text;
-            FullfillUpdate();
+            TextBox textBox = sender as TextBox;
+            options.Fontname = textBox.Text;
+            UpdateImage();
         }
-
-        private void FullfillFontSize_TextChanged(object sender, EventArgs e)
+        private void FontSizeChange_TextChanged(object sender, EventArgs e)
         {
-            if (!(FullfillFontSize.Text == "" || Convert.ToInt32(FullfillFontSize.Text) <= 7))
+            TextBox textBox = sender as TextBox;
+            if (!(textBox.Text == "" || Convert.ToInt32(textBox.Text) <= 7))
             {
                 try
                 {
-                    if (Convert.ToInt32(FullfillFontSize.Text) < 0 || Convert.ToInt32(FullfillFontSize.Text) > 10000)
+                    if (Convert.ToInt32(textBox.Text) < 0 || Convert.ToInt32(textBox.Text) > 10000)
                     {
                         throw new Exception("Размер шрифта вышел за диапазон");
                     }
-                    options.Fontsize = Convert.ToInt32(FullfillFontSize.Text);
+                    options.Fontsize = Convert.ToInt32(textBox.Text);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-                FullfillUpdate();
+                UpdateImage();
             }
-
         }
-
-        private void FullfillTransparancy_TextChanged(object sender, EventArgs e)
+        private void OpacityChange_TextChanged(object sender, EventArgs e)
         {
-            if (!(FullfillTransparancy.Text == ""))
+            TextBox textBox = sender as TextBox;
+            if (!(textBox.Text == ""))
             {
                 try
                 {
-                    if (Convert.ToInt32(FullfillTransparancy.Text) < 0 || Convert.ToInt32(FullfillTransparancy.Text) > 100)
+                    if (Convert.ToInt32(textBox.Text) < 0 || Convert.ToInt32(textBox.Text) > 100)
                     {
                         throw new Exception("Прозрачность вышла за пределы диапазона");
                     }
-                    options.Transparancy = Convert.ToInt32(Convert.ToDouble(FullfillTransparancy.Text) / 100 * 255);
+                    options.Transparancy = Convert.ToInt32(Convert.ToDouble(textBox.Text) / 100 * 255);
 
                 }
                 catch (Exception ex)
@@ -678,33 +782,31 @@ namespace Watermark_Empower
                     MessageBox.Show(ex.Message);
 
                 }
-                FullfillUpdate();
+                UpdateImage();
 
             }
-
         }
-
-        private void FullfillAngle_TextChanged(object sender, EventArgs e)
+        private void AngleChange_TextChanged(object sender, EventArgs e)
         {
-            if (!(FullfillAngle.Text == "" || FullfillAngle.Text == "-"))
+            TextBox textBox = sender as TextBox;
+            if (!(textBox.Text == "" || textBox.Text == "-"))
             {
                 try
                 {
 
-                    options.Angle = Convert.ToInt32(FullfillAngle.Text);
+                    options.Angle = Convert.ToInt32(textBox.Text);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-                FullfillUpdate();
+                UpdateImage();
             }
-
         }
-
-        private void Fontfillwbtw_TextChanged(object sender, EventArgs e)
+        private void WidthbtwChange_TextChanged(object sender, EventArgs e)
         {
-            if (!(Fullfillwbtw.Text == "" || Fullfillwbtw.Text == "-"))
+            TextBox textBox = sender as TextBox;
+            if (!(textBox.Text == "" || textBox.Text == "-"))
             {
                 try
                 {
@@ -716,24 +818,24 @@ namespace Watermark_Empower
 
 
 
-                        if (Convert.ToInt32(Fullfillwbtw.Text) < -width)
+                        if (Convert.ToInt32(textBox.Text) < -width)
                         {
                             throw new Exception("Значения меньше -" + Math.Round(width, 0) + " недопустимы для данного размера текста");
                         }
-                        options.Widthbetween = Convert.ToInt32(Fullfillwbtw.Text);
+                        options.Widthbetween = Convert.ToInt32(textBox.Text);
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-                FullfillUpdate();
+                UpdateImage();
             }
         }
-
-        private void Fullfillhbtw_TextChanged(object sender, EventArgs e)
+        private void HeightbtwChange_TextChanged(object sender, EventArgs e)
         {
-            if (!(Fullfillhbtw.Text == "" || Fullfillhbtw.Text == "-"))
+            TextBox textBox = sender as TextBox;
+            if (!(textBox.Text == "" || textBox.Text == "-"))
             {
                 try
                 {
@@ -745,25 +847,24 @@ namespace Watermark_Empower
 
 
 
-                        if (Convert.ToInt32(Fullfillhbtw.Text) < -height)
+                        if (Convert.ToInt32(textBox.Text) < -height)
                         {
                             throw new Exception("Значения меньше -" + Math.Round(height, 0) + " недопустимы для данного размера текста");
                         }
-                        options.Heightbetween = Convert.ToInt32(Fullfillhbtw.Text);
+                        options.Heightbetween = Convert.ToInt32(textBox.Text);
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-                FullfillUpdate();
+                UpdateImage();
             }
         }
-
-        private void FullfillStyle_TextChanged(object sender, EventArgs e)
+        private void StyleChange_TextChanged(object sender, EventArgs e)
         {
-
-            switch (FullfillStyle.Text.ToLower())
+            TextBox textBox = sender as TextBox;
+            switch (textBox.Text.ToLower())
             {
 
                 case "regular":
@@ -785,16 +886,19 @@ namespace Watermark_Empower
 
                     break;
             }
-            FullfillUpdate();
+            UpdateImage();
         }
-
-
-        private void FullfillColorMenu_Click(object sender, EventArgs e)
+        private void ColorDisplay_Click(object sender, EventArgs e)
         {
-            if (!FullfillGradientcheckbox.Checked)
+
+            if (!options.Isgradienton)
             {
-                FullfillColorDisplay.BackColor = colorupd();
-                FullfillColorUpd(FullfillColorDisplay.BackColor);
+                Color col = colorupd();
+                FullfillColorDisplay.BackColor = col;
+                ChessColorDisplay.BackColor = col;
+                PointColorDisplay.BackColor = col;
+                ColorUpdate(FullfillColorDisplay.BackColor);
+                UpdColorDisplays();
             }
             else
             {
@@ -802,11 +906,135 @@ namespace Watermark_Empower
                 Color color2 = colorupd();
                 Color color3 = colorupd();
                 LinearGradientBrush gradientBrush = ColorPreviewUpd(color1, color2, color3);
-                FullfillColorDisplay.CreateGraphics().FillRectangle(gradientBrush, pictureBox1.ClientRectangle);
-                FullfillGradientUpd(color1, color2, color3, options.Colorstart, options.Colorend, options.Colorangle);
+               UpdColorDisplays(gradientBrush);
+                GradientUpdate(color1, color2, color3, options.Colorstart, options.Colorend, options.Colorangle);
             }
-
         }
+        private void UpdColorDisplays(LinearGradientBrush gradientBrush)
+        {
+
+            FullfillColorDisplay.CreateGraphics().FillRectangle(gradientBrush, FullfillColorDisplay.ClientRectangle);
+            ChessColorDisplay.CreateGraphics().FillRectangle(gradientBrush, ChessColorDisplay.ClientRectangle);
+            PointColorDisplay.CreateGraphics().FillRectangle(gradientBrush, PointColorDisplay.ClientRectangle);
+         
+        }
+        private void UpdColorDisplays()
+        {
+
+            LinearGradientBrush gradientBrush = ColorPreviewUpd(options.Color, options.Color2, options.Color3);
+            Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+
+            // Get the Graphics object for the Bitmap
+            Graphics g = Graphics.FromImage(bmp);
+            if (options.Isgradienton)
+            {
+
+
+                // Draw on the Bitmap
+                g.FillRectangle(gradientBrush, PointColorDisplay.ClientRectangle);
+
+                FullfillColorDisplay.CreateGraphics().FillRectangle(gradientBrush, FullfillColorDisplay.ClientRectangle);
+                ChessColorDisplay.CreateGraphics().FillRectangle(gradientBrush, ChessColorDisplay.ClientRectangle);
+                PointColorDisplay.CreateGraphics().FillRectangle(gradientBrush, PointColorDisplay.ClientRectangle);
+                FullfillColorDisplay.Image = bmp;
+                ChessColorDisplay.Image = bmp;
+                PointColorDisplay.Image = bmp;
+            }
+            else
+            {
+                Brush brush = new SolidBrush(options.Color);
+                g.FillRectangle(brush, PointColorDisplay.ClientRectangle);
+                FullfillColorDisplay.Image = bmp;
+                ChessColorDisplay.Image = bmp;
+                PointColorDisplay.Image = bmp;
+            }
+       
+        }
+        private void Gradientcheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            MyCheckBox checkBox = sender as MyCheckBox;
+            
+            if (checkBox.Checked)
+            {
+                options.Isgradienton = true;
+                UpdColorDisplays();
+                UpdateImage();
+               
+            }
+            else
+            {
+                options.Isgradienton = false;
+                UpdColorDisplays();
+                UpdateImage();
+                
+            }
+        }
+        private void GradientStartChange_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (!(textBox.Text == "" || textBox.Text == "-"))
+            {
+                try
+                {
+                    options.Colorstart = Convert.ToInt32(textBox.Text);
+                    UpdateImage();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void GradientEndChange_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (!(textBox.Text == "" || textBox.Text == "-"))
+            {
+                try
+                {
+                    options.Colorend = Convert.ToInt32(textBox.Text);
+                    UpdateImage();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+        private void GradientAngleChange_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (!(textBox.Text == "" || textBox.Text == "-"))
+            {
+                try
+                {
+                    options.Colorstart = Convert.ToInt32(textBox.Text);
+                    UpdateImage();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+        private void FontSelectBtn_Click(object sender, EventArgs e)
+        {
+            FontDialog fontDialog = new FontDialog();
+
+            // Set the font selection options
+            fontDialog.AllowScriptChange = true;
+            fontDialog.ShowEffects = true;
+            if (fontDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Update the font of the selected control
+                FullfillFont.Text = fontDialog.Font.Name.ToString();
+                ChessFont.Text = fontDialog.Font.Name.ToString();
+                PointFontTxtBox.Text = fontDialog.Font.Name.ToString();
+                options.Fontname = fontDialog.Font.Name.ToString();
+            }
+        }
+           
         private LinearGradientBrush ColorPreviewUpd(Color color1, Color color2, Color color3)
         {
 
@@ -820,30 +1048,14 @@ namespace Watermark_Empower
             return gradientBrush;
         }
 
-        private void FullfillColorDisplay_Click(object sender, EventArgs e)
-        {
-            if (!FullfillGradientcheckbox.Checked)
-            {
-                FullfillColorDisplay.BackColor = colorupd();
-                FullfillColorUpd(FullfillColorDisplay.BackColor);
-            }
-            else
-            {
-                Color color1 = colorupd();
-                Color color2 = colorupd();
-                Color color3 = colorupd();
-                LinearGradientBrush gradientBrush = ColorPreviewUpd(color1, color2, color3);
-                FullfillColorDisplay.CreateGraphics().FillRectangle(gradientBrush, pictureBox1.ClientRectangle);
-                FullfillGradientUpd(color1, color2, color3, options.Colorstart, options.Colorend, options.Colorangle);
-            }
-        }
-        private void FullfillColorUpd(Color color)
+       
+        private void ColorUpdate(Color color)
         {
 
             options.Color = color;
-            FullfillUpdate();
+            UpdateImage();
         }
-        private void FullfillGradientUpd(Color color, Color color1, Color color2, int colorstart, int colorend, int colorangle)
+        private void GradientUpdate(Color color, Color color1, Color color2, int colorstart, int colorend, int colorangle)
         {
             options.Color = color;
             options.Color2 = color1;
@@ -851,78 +1063,8 @@ namespace Watermark_Empower
             options.Colorstart = colorstart;
             options.Colorend = colorend;
             options.Colorangle = colorangle;
-            FullfillUpdate();
+            UpdateImage();
         }
-
-
-
-        private void FullfillGradientcheckbox_CheckedChanged(object sender, EventArgs e)
-        {
-
-
-
-            if (FullfillGradientcheckbox.Checked)
-            {
-                settings.Isgradienton = true;
-                FullfillUpdate();
-            }
-            else
-            {
-                settings.Isgradienton = false;
-                options.Color = Color.White;
-                FullfillUpdate();
-            }
-
-        }
-
-        private void FullfillGradientStart_TextChanged(object sender, EventArgs e)
-        {
-            if (!(FullfillGradientStart.Text == "" || FullfillGradientStart.Text == "-"))
-            {
-                try
-                {
-                    options.Colorstart = Convert.ToInt32(FullfillGradientStart.Text);
-                    FullfillUpdate();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-        }
-
-        private void FullfillGradientEnd_TextChanged(object sender, EventArgs e)
-        {
-            if (!(FullfillGradientEnd.Text == "" || FullfillGradientEnd.Text == "-"))
-            {
-                try
-                {
-                    options.Colorend = Convert.ToInt32(FullfillGradientEnd.Text);
-                    FullfillUpdate();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-        }
-
-        private void FullfillGradientAngle_TextChanged(object sender, EventArgs e)
-        {
-            if (!(FullfillGradientAngle.Text == "" || FullfillGradientAngle.Text == "-"))
-            {
-                try
-                {
-                    options.Colorstart = Convert.ToInt32(FullfillGradientAngle.Text);
-                    FullfillUpdate();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-        }
-
 
         private void EffectDialogButton_Click(object sender, EventArgs e)
         {
@@ -932,32 +1074,22 @@ namespace Watermark_Empower
                 {
                     effectsettings = effectdialog.EffectSettings;
                     FullfillEffectTextBox.Text = effectsettings.SelectedEffect;
+                    ChessEffect.Text = effectsettings.SelectedEffect;
+                    PointEffectTxtBox.Text = effectsettings.SelectedEffect;
                     options.Effect = effectsettings.SelectedEffect;
-                    FullfillUpdate();
+                    UpdateImage();
                 }
             }
         }
 
-        private void FullfillFontSelectBtn_Click(object sender, EventArgs e)
-        {
-            FontDialog fontDialog = new FontDialog();
-
-            // Set the font selection options
-            fontDialog.AllowScriptChange = true;
-            fontDialog.ShowEffects = true;
-            if (fontDialog.ShowDialog() == DialogResult.OK)
-            {
-                // Update the font of the selected control
-                FullfillFont.Text = fontDialog.Font.Name.ToString();
-                options.Fontname = fontDialog.Font.Name.ToString();
-            }
-        }
+     
 
         //WORK WITH CHESS PATTERN
         private void ChessUpdate()
         {
+            
             newoperation();
-            if (!ChessGradientCheckBox.Checked)
+            if (!options.Isgradienton)
             {
 
                 gen.GenPatternChess(options, settings, effectsettings);
@@ -973,313 +1105,171 @@ namespace Watermark_Empower
             }
 
         }
-        private void ChessText_TextChanged(object sender, EventArgs e)
+        private void PointUpdate()
         {
-            options.Text = ChessText.Text;
-            ChessUpdate();
 
-        }
-
-        private void ChessFont_TextChanged(object sender, EventArgs e)
-        {
-            options.Fontname = ChessFont.Text;
-            ChessUpdate();
-
-        }
-
-        private void ChessFontBtn_Click(object sender, EventArgs e)
-        {
-            FontDialog fontDialog = new FontDialog();
-
-            // Set the font selection options
-            fontDialog.AllowScriptChange = true;
-            fontDialog.ShowEffects = true;
-            if (fontDialog.ShowDialog() == DialogResult.OK)
+            newoperation();
+            if (!options.Isgradienton)
             {
-                // Update the font of the selected control
-                ChessFont.Text = fontDialog.Font.Name.ToString();
-                options.Fontname = fontDialog.Font.Name.ToString();
-            }
-        }
-
-        private void ChessTextSize_TextChanged(object sender, EventArgs e)
-        {
-            if (!(ChessTextSize.Text == "" || Convert.ToInt32(ChessTextSize.Text) <= 7))
-            {
-                try
-                {
-                    if (Convert.ToInt32(ChessTextSize.Text) < 0 || Convert.ToInt32(ChessTextSize.Text) > 10000)
-                    {
-                        throw new Exception("Размер шрифта вышел за диапазон");
-                    }
-                    options.Fontsize = Convert.ToInt32(ChessTextSize.Text);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                ChessUpdate();
-            }
-        }
-
-        private void ChessTransparancy_TextChanged(object sender, EventArgs e)
-        {
-            if (!(ChessTransparancy.Text == ""))
-            {
-                try
-                {
-                    if (Convert.ToInt32(ChessTransparancy.Text) < 0 || Convert.ToInt32(ChessTransparancy.Text) > 100)
-                    {
-                        throw new Exception("Прозрачность вышла за пределы диапазона");
-                    }
-                    options.Transparancy = Convert.ToInt32(Convert.ToDouble(ChessTransparancy.Text) / 100 * 255);
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-
-                }
-                ChessUpdate();
+                changePointOptions();
+                gen.DrawPoint(points);
+                MainDisplay.Image = Image.FromFile("tempinput.jpg");
 
             }
-        }
-
-        private void ChessAngle_TextChanged(object sender, EventArgs e)
-        {
-            if (!(ChessAngle.Text == "" || ChessAngle.Text == "-"))
+            else
             {
-                try
-                {
+                gen.GenPatternChessGradient(options, settings, effectsettings);
 
-                    options.Angle = Convert.ToInt32(ChessAngle.Text);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                ChessUpdate();
+                MainDisplay.Image = Image.FromFile("tempinput.jpg");
+
             }
+
         }
-
-        private void ChessWbtw_TextChanged(object sender, EventArgs e)
+        PointList points = new PointList();
+        private void AddPointBtn_Click(object sender, EventArgs e)
         {
-            if (!(ChessWbtw.Text == "" || ChessWbtw.Text == "-"))
+            string NameForPoint = options.Text;
+            string OldNameForPoint = options.Text;
+            int count = 0;
+            foreach(PointOptions chkpoint in points)
             {
-                try
+                foreach(PointOptions pointforcheck in points)
                 {
-                    using (Graphics g = Graphics.FromHwnd(IntPtr.Zero))
-                    {
-                        Font font = new Font(options.Fontname, options.Fontsize);
-                        SizeF size = g.MeasureString(options.Text, font);
-                        float width = size.Width - 5;
-
-
-
-                        if (Convert.ToInt32(ChessWbtw.Text) < -width)
+                   
+                     
+                        while (NameForPoint == pointforcheck.Name)
                         {
-                            throw new Exception("Значения меньше -" + Math.Round(width, 0) + " недопустимы для данного размера текста");
+                            NameForPoint = GenPointName(NameForPoint, OldNameForPoint, count);
+                            count++;
                         }
-                        options.Widthbetween = Convert.ToInt32(ChessWbtw.Text);
-                    }
+                    
                 }
-                catch (Exception ex)
+            }
+            PointOptions point = new PointOptions(options)
+            {
+                Name = NameForPoint,
+                X = MainDisplay.Image.Width/2,
+                Y = MainDisplay.Image.Height/2,
+                EffectsettingsForPoint = effectsettings
+            };
+            points.Add(point);
+            PointUpdate();
+            PointsList.Items.Add(point.Name);
+            
+
+        }
+        private string GenPointName(string Name, string oldname, int count)
+        {
+            Name = oldname;
+            string newName = Name.Insert(Name.Length, $" ({count})");
+            
+
+            return newName;
+        }
+        private void DelPointBtn_Click(object sender, EventArgs e)
+        {
+            if (currentPointIndex != -1)
+            {
+                points.RemoveAt(currentPointIndex);
+                PointsList.Items.RemoveAt(currentPointIndex);
+                currentPointIndex = -1;
+                PointLocationXTxtBox.Text = "";
+                PointLocationYTxtBox.Text = "";
+                PointUpdate();
+            }
+          
+        }
+        int currentPointIndex =-1;
+        private void PointsList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+            foreach (PointOptions point in points)
+            {
+                if (point.Name == PointsList.Text)
                 {
-                    MessageBox.Show(ex.Message);
+                  
+                    Options tempoptions = new Options(point.OptionsForPoint);
+                
+                    currentPointIndex = points.AllPoints.IndexOf(point);
+                   UpdatePointCords();
+                    options = tempoptions;
+                    
+                    UpdatePointTxtBoxes();
+
                 }
-                ChessUpdate();
+            }
+       
+
+        }
+        public void UpdatePointCords()
+        {
+            PointLocationXTxtBox.Text = points.AllPoints[currentPointIndex].X.ToString();
+            PointLocationYTxtBox.Text = points.AllPoints[currentPointIndex].Y.ToString();
+        }
+        public void UpdatePointTxtBoxes()
+        {
+            PointTextTxtBox.Text = options.Text;
+            PointFontTxtBox.Text = options.Fontname;
+            PointFontSizeTxtBox.Text = options.Fontsize.ToString();
+            double transparancy = (Convert.ToDouble(options.Transparancy) / 255 * 100);
+            PointOpacityTxtBox.Text = Math.Round(transparancy, 0).ToString();
+            PointStyleTxtBox.Text = options.Fontstyle.ToString();
+            PointColorDisplay.BackColor = options.Color;
+            PointGradientStartTxtBox.Text = options.Colorstart.ToString();
+            PointGradientEndTxtBox.Text = options.Colorend.ToString();
+            PointGradientAngleTxtBox.Text = options.Angle.ToString();
+            PointEffectTxtBox.Text = options.Effect.ToString();
+        }
+        public void changePointOptions()
+        {
+            if (currentPointIndex != -1)
+            {
+                points.AllPoints[currentPointIndex].UpdateOptions(options);
+            }
+           
+        }
+        private void customButtons3_Click(object sender, EventArgs e)
+        {
+            if (currentPointIndex != -1)
+            {
+                points.AllPoints[currentPointIndex].UpdateOptions(options);
+                PointUpdate();
             }
         }
 
-        private void ChessHbtw_TextChanged(object sender, EventArgs e)
+        private void PointLocationXTxtBox_TextChanged(object sender, EventArgs e)
         {
-            if (!(ChessHbtw.Text == "" || ChessHbtw.Text == "-"))
+            try
             {
-                try
+                if (currentPointIndex != -1)
                 {
-                    using (Graphics g = Graphics.FromHwnd(IntPtr.Zero))
-                    {
-                        Font font = new Font(options.Fontname, options.Fontsize);
-                        SizeF size = g.MeasureString(options.Text, font);
-                        float height = size.Height - 5;
-
-
-
-                        if (Convert.ToInt32(ChessHbtw.Text) < -height)
-                        {
-                            throw new Exception("Значения меньше -" + Math.Round(height, 0) + " недопустимы для данного размера текста");
-                        }
-                        options.Heightbetween = Convert.ToInt32(ChessHbtw.Text);
-                    }
+                    points.AllPoints[currentPointIndex].X = Convert.ToInt32(PointLocationXTxtBox.Text);
+                    PointUpdate();
                 }
-                catch (Exception ex)
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
+        }
+
+        private void PointLocationYTxtBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (currentPointIndex != -1)
                 {
-                    MessageBox.Show(ex.Message);
-                }
-                ChessUpdate();
-            }
-        }
-
-        private void ChessTextStyle_TextChanged(object sender, EventArgs e)
-        {
-            switch (ChessTextStyle.Text.ToLower())
-            {
-
-                case "regular":
-                    options.Fontstyle = FontStyle.Regular;
-                    break;
-
-                case "bold":
-                    options.Fontstyle = FontStyle.Bold;
-                    break;
-
-                case "italic":
-                    options.Fontstyle = FontStyle.Italic;
-                    break;
-
-                case "underline":
-                    options.Fontstyle = FontStyle.Underline;
-                    break;
-                default:
-
-                    break;
-            }
-            ChessUpdate();
-        }
-        private void ChessGradientUpd(Color color, Color color1, Color color2, int colorstart, int colorend, int colorangle)
-        {
-            options.Color = color;
-            options.Color2 = color1;
-            options.Color3 = color2;
-            options.Colorstart = colorstart;
-            options.Colorend = colorend;
-            options.Colorangle = colorangle;
-            ChessUpdate();
-        }
-        private void ChessColorUpd(Color color)
-        {
-
-            options.Color = color;
-            ChessUpdate();
-        }
-        private void ChessColorIcon_Click(object sender, EventArgs e)
-        {
-            if (!ChessGradientCheckBox.Checked)
-            {
-                ChessColorDisplay.BackColor = colorupd();
-                ChessColorUpd(ChessColorDisplay.BackColor);
-            }
-            else
-            {
-                Color color1 = colorupd();
-                Color color2 = colorupd();
-                Color color3 = colorupd();
-                ColorBlend blend = new ColorBlend();
-
-                LinearGradientBrush gradientBrush = ColorPreviewUpd(color1, color2, color3);
-
-                ChessColorDisplay.CreateGraphics().FillRectangle(gradientBrush, pictureBox1.ClientRectangle);
-                ChessGradientUpd(color1, color2, color3, options.Colorstart, options.Colorend, options.Colorangle);
-            }
-        }
-
-        private void ChessColorDisplay_Click(object sender, EventArgs e)
-        {
-            if (!ChessGradientCheckBox.Checked)
-            {
-                ChessColorDisplay.BackColor = colorupd();
-                ChessColorUpd(ChessColorDisplay.BackColor);
-            }
-            else
-            {
-                Color color1 = colorupd();
-                Color color2 = colorupd();
-                Color color3 = colorupd();
-                LinearGradientBrush gradientBrush = ColorPreviewUpd(color1, color2, color3);
-
-                ChessColorDisplay.CreateGraphics().FillRectangle(gradientBrush, pictureBox1.ClientRectangle);
-                ChessGradientUpd(color1, color2, color3, options.Colorstart, options.Colorend, options.Colorangle);
-            }
-        }
-
-        private void ChessGradientCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (ChessGradientCheckBox.Checked)
-            {
-                settings.Isgradienton = true;
-                ChessUpdate();
-            }
-            else
-            {
-                settings.Isgradienton = false;
-                options.Color = Color.White;
-                ChessUpdate();
-            }
-        }
-
-        private void ChessGradientStart_TextChanged(object sender, EventArgs e)
-        {
-            if (!(ChessGradientStart.Text == "" || ChessGradientStart.Text == "-"))
-            {
-                try
-                {
-                    options.Colorstart = Convert.ToInt32(ChessGradientStart.Text);
-                    ChessUpdate();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
+                    points.AllPoints[currentPointIndex].Y = Convert.ToInt32(PointLocationYTxtBox.Text);
+                    PointUpdate();
                 }
             }
-        }
-
-        private void ChessGradientEnd_TextChanged(object sender, EventArgs e)
-        {
-            if (!(ChessGradientEnd.Text == "" || ChessGradientEnd.Text == "-"))
+            catch (Exception ex)
             {
-                try
-                {
-                    options.Colorend = Convert.ToInt32(ChessGradientEnd.Text);
-                    ChessUpdate();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                MessageBox.Show(ex.Message);
             }
-        }
 
-        private void ChessGradientAngle_TextChanged(object sender, EventArgs e)
-        {
-            if (!(ChessGradientAngle.Text == "" || ChessGradientAngle.Text == "-"))
-            {
-                try
-                {
-                    options.Colorstart = Convert.ToInt32(ChessGradientAngle.Text);
-                    ChessUpdate();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
         }
-
-        private void ChessEffectBtn_Click(object sender, EventArgs e)
-        {
-            using (Form2 effectdialog = new Form2(effectsettings))
-            {
-                if (effectdialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    effectsettings = effectdialog.EffectSettings;
-                    ChessEffectBtn.Text = effectsettings.SelectedEffect;
-                    options.Effect = effectsettings.SelectedEffect;
-                    ChessUpdate();
-                }
-            }
-        }
-
-      
     }
 
 

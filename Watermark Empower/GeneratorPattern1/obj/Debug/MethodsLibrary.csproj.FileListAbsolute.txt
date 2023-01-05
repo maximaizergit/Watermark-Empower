@@ -5,3 +5,6 @@ D:\c#\course\Watermark Empower\GeneratorPattern1\obj\Debug\MethodsLibrary.csproj
 D:\c#\course\Watermark Empower\GeneratorPattern1\obj\Debug\MethodsLibrary.csproj.CoreCompileInputs.cache
 D:\c#\course\Watermark Empower\GeneratorPattern1\obj\Debug\GeneratorPattern1.exe
 D:\c#\course\Watermark Empower\GeneratorPattern1\obj\Debug\GeneratorPattern1.pdb
+D:\c#\course\Watermark Empower\GeneratorPattern1\obj\Debug\MethodsLibrary.csproj.CopyComplete
+D:\c#\course\Watermark Empower\GeneratorPattern1\bin\Debug\Magick.NET-AnyCPU.dll
+D:\c#\course\Watermark Empower\GeneratorPattern1\bin\Debug\Magick.NET-AnyCPU.xml
