@@ -22,23 +22,38 @@ namespace Watermark_Empower
         public Options thisOptions = new Options();
         public ProjectSettings thisprojectSettings = new ProjectSettings();
         public EffectSettings thiseffectSettings = new EffectSettings();
-       
-        public PresetDialog(Options options, ProjectSettings projectsettings, EffectSettings effectsettings)
+       public PointList thispoints = new PointList();
+      
+        public PresetDialog(Options options, ProjectSettings projectsettings, EffectSettings effectsettings, PointList points)
         {
             
             InitializeComponent();
             thisOptions = options;
             thisprojectSettings = projectsettings;
             thiseffectSettings = effectsettings;
+            thispoints = points;
             
         }
+        
         
         private void customButtons2_Click(object sender, EventArgs e)
         {
             XmlColor convert = new XmlColor();
+            foreach(PointOptions point in thispoints)
+            {
+                point.MaincolorR = point.OptionsForPoint.Color.R;
+                point.MaincolorG = point.OptionsForPoint.Color.G;
+                point.MaincolorB = point.OptionsForPoint.Color.B;
+                point.FirstsubcolorR = point.OptionsForPoint.Color2.R;
+                point.FirstsubcolorG = point.OptionsForPoint.Color2.G;
+                point.FirstsubcolorB = point.OptionsForPoint.Color2.B;
+                point.SecondsubcolorR = point.OptionsForPoint.Color3.R;
+                point.SecondsubcolorG = point.OptionsForPoint.Color3.G;
+                point.SecondsubcolorB = point.OptionsForPoint.Color3.B;
+            }
             convert.ToColor(thisOptions.Color, thisOptions.Color2, thisOptions.Color3, thiseffectSettings.EffectColor1, thiseffectSettings.EffectColor2, thiseffectSettings.EffectColor3);
             Wrapper savepreset = new Wrapper { WrapedOptions = thisOptions, WrapedPrjSettings = thisprojectSettings, WrapedEffectSettings = thiseffectSettings,
-                WrapedColor = convert};
+                WrapedColor = convert, WrapedPoints = thispoints};
           
             string executableDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string fileName = Path.Combine(executableDirectory, PresetNameTxtBox.Text + ".xml");

@@ -2067,6 +2067,204 @@
   <data name="&gt;&gt;None.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="AlignCenterBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="AlignCenterBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="AlignCenterBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="AlignCenterBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AlignCenterBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 866</value>
+  </data>
+  <data name="AlignCenterBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="AlignCenterBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="&gt;&gt;AlignCenterBtn.Name" xml:space="preserve">
+    <value>AlignCenterBtn</value>
+  </data>
+  <data name="&gt;&gt;AlignCenterBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AlignCenterBtn.Parent" xml:space="preserve">
+    <value>scrollableControl4</value>
+  </data>
+  <data name="&gt;&gt;AlignCenterBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="AlignBotBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="AlignBotBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="AlignBotBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="AlignBotBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AlignBotBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 900</value>
+  </data>
+  <data name="AlignBotBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="AlignBotBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="&gt;&gt;AlignBotBtn.Name" xml:space="preserve">
+    <value>AlignBotBtn</value>
+  </data>
+  <data name="&gt;&gt;AlignBotBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AlignBotBtn.Parent" xml:space="preserve">
+    <value>scrollableControl4</value>
+  </data>
+  <data name="&gt;&gt;AlignBotBtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="AlignRightBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="AlignRightBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="AlignRightBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="AlignRightBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AlignRightBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 866</value>
+  </data>
+  <data name="AlignRightBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="AlignRightBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="&gt;&gt;AlignRightBtn.Name" xml:space="preserve">
+    <value>AlignRightBtn</value>
+  </data>
+  <data name="&gt;&gt;AlignRightBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AlignRightBtn.Parent" xml:space="preserve">
+    <value>scrollableControl4</value>
+  </data>
+  <data name="&gt;&gt;AlignRightBtn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="AlignLeftBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="AlignLeftBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="AlignLeftBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
+  </data>
+  <data name="AlignLeftBtn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="AlignLeftBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AlignLeftBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 866</value>
+  </data>
+  <data name="AlignLeftBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="AlignLeftBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="AlignLeftBtn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;AlignLeftBtn.Name" xml:space="preserve">
+    <value>AlignLeftBtn</value>
+  </data>
+  <data name="&gt;&gt;AlignLeftBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AlignLeftBtn.Parent" xml:space="preserve">
+    <value>scrollableControl4</value>
+  </data>
+  <data name="&gt;&gt;AlignLeftBtn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="AlignTopBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="AlignTopBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="AlignTopBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="AlignTopBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AlignTopBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 832</value>
+  </data>
+  <data name="AlignTopBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="AlignTopBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="&gt;&gt;AlignTopBtn.Name" xml:space="preserve">
+    <value>AlignTopBtn</value>
+  </data>
+  <data name="&gt;&gt;AlignTopBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AlignTopBtn.Parent" xml:space="preserve">
+    <value>scrollableControl4</value>
+  </data>
+  <data name="&gt;&gt;AlignTopBtn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="SyncPointsChkBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SyncPointsChkBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 715</value>
+  </data>
+  <data name="SyncPointsChkBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 29</value>
+  </data>
+  <data name="SyncPointsChkBox.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="SyncPointsChkBox.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;SyncPointsChkBox.Name" xml:space="preserve">
+    <value>SyncPointsChkBox</value>
+  </data>
+  <data name="&gt;&gt;SyncPointsChkBox.Type" xml:space="preserve">
+    <value>MyCheckBox, Watermark Empower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SyncPointsChkBox.Parent" xml:space="preserve">
+    <value>scrollableControl4</value>
+  </data>
+  <data name="&gt;&gt;SyncPointsChkBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2098,7 +2296,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>6</value>
   </data>
   <data name="PointLocationYTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -2122,55 +2320,139 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointLocationYTxtBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
-  <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Source Code Pro, 10.2pt</value>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 771</value>
+  <data name="label36.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 12pt, style=Bold, Italic</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 29</value>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 866</value>
   </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 28</value>
   </data>
-  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
   </data>
-  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+  <data name="label36.Text" xml:space="preserve">
+    <value>Align</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
     <value>scrollableControl4</value>
   </data>
-  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Source Code Pro, 10.2pt</value>
+  <data name="label45.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 736</value>
+  <data name="label45.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 12pt, style=Bold, Italic</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 29</value>
+  <data name="label45.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
+  <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 836</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 28</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label45.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="label45.Text" xml:space="preserve">
+    <value>Offset</value>
+  </data>
+  <data name="&gt;&gt;label45.Name" xml:space="preserve">
+    <value>label45</value>
+  </data>
+  <data name="&gt;&gt;label45.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label45.Parent" xml:space="preserve">
     <value>scrollableControl4</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;label45.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 12pt, style=Bold, Italic</value>
+  </data>
+  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 753</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 28</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Set Name</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>scrollableControl4</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Nirmala UI, 12pt, style=Bold, Italic</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 715</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 28</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Sync. points</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>scrollableControl4</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2203,7 +2485,55 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>12</value>
+  </data>
+  <data name="PointOffsetTxtBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Source Code Pro, 10.2pt</value>
+  </data>
+  <data name="PointOffsetTxtBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 873</value>
+  </data>
+  <data name="PointOffsetTxtBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 29</value>
+  </data>
+  <data name="PointOffsetTxtBox.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="&gt;&gt;PointOffsetTxtBox.Name" xml:space="preserve">
+    <value>PointOffsetTxtBox</value>
+  </data>
+  <data name="&gt;&gt;PointOffsetTxtBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PointOffsetTxtBox.Parent" xml:space="preserve">
+    <value>scrollableControl4</value>
+  </data>
+  <data name="&gt;&gt;PointOffsetTxtBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="PointName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Source Code Pro, 10.2pt</value>
+  </data>
+  <data name="PointName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 783</value>
+  </data>
+  <data name="PointName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 29</value>
+  </data>
+  <data name="PointName.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="&gt;&gt;PointName.Name" xml:space="preserve">
+    <value>PointName</value>
+  </data>
+  <data name="&gt;&gt;PointName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PointName.Parent" xml:space="preserve">
+    <value>scrollableControl4</value>
+  </data>
+  <data name="&gt;&gt;PointName.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
   <data name="PointLocationXTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -2227,7 +2557,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointLocationXTxtBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>15</value>
   </data>
   <data name="DelPointBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2239,7 +2569,7 @@
     <value>NoControl</value>
   </data>
   <data name="DelPointBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 696</value>
+    <value>206, 678</value>
   </data>
   <data name="DelPointBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 34</value>
@@ -2260,7 +2590,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;DelPointBtn.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>16</value>
   </data>
   <data name="customButtons3.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2272,7 +2602,7 @@
     <value>NoControl</value>
   </data>
   <data name="customButtons3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 825</value>
+    <value>232, 780</value>
   </data>
   <data name="customButtons3.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 34</value>
@@ -2281,7 +2611,7 @@
     <value>80</value>
   </data>
   <data name="customButtons3.Text" xml:space="preserve">
-    <value>Add</value>
+    <value>Set</value>
   </data>
   <data name="&gt;&gt;customButtons3.Name" xml:space="preserve">
     <value>customButtons3</value>
@@ -2293,7 +2623,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;customButtons3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>17</value>
   </data>
   <data name="AddPointBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2305,7 +2635,7 @@
     <value>NoControl</value>
   </data>
   <data name="AddPointBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 696</value>
+    <value>23, 678</value>
   </data>
   <data name="AddPointBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 34</value>
@@ -2326,7 +2656,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;AddPointBtn.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>18</value>
   </data>
   <data name="PointsList.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2353,7 +2683,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointsList.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>19</value>
   </data>
   <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2377,7 +2707,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>20</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2410,7 +2740,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>21</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2443,7 +2773,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>22</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2476,7 +2806,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>23</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2509,7 +2839,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>24</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2542,7 +2872,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>25</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2575,7 +2905,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>26</value>
   </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2608,7 +2938,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>27</value>
   </data>
   <data name="label26.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2641,7 +2971,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>28</value>
   </data>
   <data name="label27.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2674,7 +3004,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>29</value>
   </data>
   <data name="label28.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2707,7 +3037,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>30</value>
   </data>
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2740,7 +3070,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>31</value>
   </data>
   <data name="PointEffectBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2773,7 +3103,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointEffectBtn.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>32</value>
   </data>
   <data name="PointEffectTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -2800,7 +3130,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointEffectTxtBox.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>33</value>
   </data>
   <data name="PointFontBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2833,7 +3163,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointFontBtn.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>34</value>
   </data>
   <data name="PointGradientAngleTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -2857,7 +3187,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointGradientAngleTxtBox.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>35</value>
   </data>
   <data name="PointGradientEndTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -2881,7 +3211,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointGradientEndTxtBox.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>36</value>
   </data>
   <data name="PointGradientStartTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -2905,7 +3235,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointGradientStartTxtBox.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>37</value>
   </data>
   <data name="PointGradientChkBox.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -2914,7 +3244,7 @@
     <value>NoControl</value>
   </data>
   <data name="PointGradientChkBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 382</value>
+    <value>163, 383</value>
   </data>
   <data name="PointGradientChkBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 26</value>
@@ -2938,7 +3268,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointGradientChkBox.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>38</value>
   </data>
   <data name="PointColorDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2962,7 +3292,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointColorDisplay.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>39</value>
   </data>
   <data name="PointColorMenu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2989,7 +3319,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointColorMenu.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>40</value>
   </data>
   <data name="PointStyleTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -3016,7 +3346,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointStyleTxtBox.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>41</value>
   </data>
   <data name="PointTextTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -3043,7 +3373,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointTextTxtBox.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>42</value>
   </data>
   <data name="PointAngleTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -3070,7 +3400,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointAngleTxtBox.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>43</value>
   </data>
   <data name="PointOpacityTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -3097,7 +3427,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointOpacityTxtBox.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>44</value>
   </data>
   <data name="PointFontSizeTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -3124,7 +3454,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointFontSizeTxtBox.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>45</value>
   </data>
   <data name="PointFontTxtBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Source Code Pro, 10.2pt</value>
@@ -3151,7 +3481,7 @@
     <value>scrollableControl4</value>
   </data>
   <data name="&gt;&gt;PointFontTxtBox.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>46</value>
   </data>
   <data name="scrollableControl4.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
@@ -3226,7 +3556,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Tools.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="FullfillSelector.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3445,7 +3775,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label23.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3499,260 +3829,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>490, 17</value>
   </metadata>
-  <data name="ZoomButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="ZoomButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="ZoomButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ZoomButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 73</value>
-  </data>
-  <data name="ZoomButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 41</value>
-  </data>
-  <data name="ZoomButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;ZoomButton.Name" xml:space="preserve">
-    <value>ZoomButton</value>
-  </data>
-  <data name="&gt;&gt;ZoomButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ZoomButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ZoomButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="CenterImageButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="CenterImageButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="CenterImageButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CenterImageButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 73</value>
-  </data>
-  <data name="CenterImageButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 41</value>
-  </data>
-  <data name="CenterImageButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;CenterImageButton.Name" xml:space="preserve">
-    <value>CenterImageButton</value>
-  </data>
-  <data name="&gt;&gt;CenterImageButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CenterImageButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CenterImageButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="AutosizeButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="AutosizeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="AutosizeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="AutosizeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 73</value>
-  </data>
-  <data name="AutosizeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 41</value>
-  </data>
-  <data name="AutosizeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;AutosizeButton.Name" xml:space="preserve">
-    <value>AutosizeButton</value>
-  </data>
-  <data name="&gt;&gt;AutosizeButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AutosizeButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;AutosizeButton.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="StretchButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="StretchButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="StretchButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="StretchButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 73</value>
-  </data>
-  <data name="StretchButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 41</value>
-  </data>
-  <data name="StretchButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;StretchButton.Name" xml:space="preserve">
-    <value>StretchButton</value>
-  </data>
-  <data name="&gt;&gt;StretchButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StretchButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;StretchButton.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="NormalSizeButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="NormalSizeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="NormalSizeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NormalSizeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 73</value>
-  </data>
-  <data name="NormalSizeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 41</value>
-  </data>
-  <data name="NormalSizeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;NormalSizeButton.Name" xml:space="preserve">
-    <value>NormalSizeButton</value>
-  </data>
-  <data name="&gt;&gt;NormalSizeButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NormalSizeButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;NormalSizeButton.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="navpanelborder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="navpanelborder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1370, 50</value>
-  </data>
-  <data name="navpanelborder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>3, 926</value>
-  </data>
-  <data name="navpanelborder.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;navpanelborder.Name" xml:space="preserve">
-    <value>navpanelborder</value>
-  </data>
-  <data name="&gt;&gt;navpanelborder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;navpanelborder.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;navpanelborder.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 50</value>
-  </data>
-  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1875, 3</value>
-  </data>
-  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
-    <value>pictureBox4</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="MainDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="MainDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 157</value>
-  </data>
-  <data name="MainDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1280, 720</value>
-  </data>
-  <data name="MainDisplay.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="MainDisplay.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;MainDisplay.Name" xml:space="preserve">
-    <value>MainDisplay</value>
-  </data>
-  <data name="&gt;&gt;MainDisplay.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MainDisplay.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MainDisplay.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 138</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1319, 759</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
   <data name="label30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -3784,31 +3865,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>850, 73</value>
-  </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 48</value>
-  </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
-    <value>pictureBox2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>3</value>
   </data>
   <data name="PresetsComboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3835,11 +3892,284 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PresetsComboBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>627, 17</value>
   </metadata>
+  <data name="ZoomButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="ZoomButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ZoomButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ZoomButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 73</value>
+  </data>
+  <data name="ZoomButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 41</value>
+  </data>
+  <data name="ZoomButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;ZoomButton.Name" xml:space="preserve">
+    <value>ZoomButton</value>
+  </data>
+  <data name="&gt;&gt;ZoomButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ZoomButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ZoomButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CenterImageButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="CenterImageButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CenterImageButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CenterImageButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 73</value>
+  </data>
+  <data name="CenterImageButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 41</value>
+  </data>
+  <data name="CenterImageButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;CenterImageButton.Name" xml:space="preserve">
+    <value>CenterImageButton</value>
+  </data>
+  <data name="&gt;&gt;CenterImageButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CenterImageButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CenterImageButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="AutosizeButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="AutosizeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="AutosizeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AutosizeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 73</value>
+  </data>
+  <data name="AutosizeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 41</value>
+  </data>
+  <data name="AutosizeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;AutosizeButton.Name" xml:space="preserve">
+    <value>AutosizeButton</value>
+  </data>
+  <data name="&gt;&gt;AutosizeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AutosizeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AutosizeButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="StretchButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="StretchButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="StretchButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="StretchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 73</value>
+  </data>
+  <data name="StretchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 41</value>
+  </data>
+  <data name="StretchButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;StretchButton.Name" xml:space="preserve">
+    <value>StretchButton</value>
+  </data>
+  <data name="&gt;&gt;StretchButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StretchButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StretchButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="NormalSizeButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="NormalSizeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="NormalSizeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NormalSizeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 73</value>
+  </data>
+  <data name="NormalSizeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 41</value>
+  </data>
+  <data name="NormalSizeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;NormalSizeButton.Name" xml:space="preserve">
+    <value>NormalSizeButton</value>
+  </data>
+  <data name="&gt;&gt;NormalSizeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NormalSizeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NormalSizeButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="navpanelborder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="navpanelborder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1370, 50</value>
+  </data>
+  <data name="navpanelborder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>3, 926</value>
+  </data>
+  <data name="navpanelborder.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;navpanelborder.Name" xml:space="preserve">
+    <value>navpanelborder</value>
+  </data>
+  <data name="&gt;&gt;navpanelborder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;navpanelborder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;navpanelborder.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pictureBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1875, 3</value>
+  </data>
+  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
+    <value>pictureBox4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="MainDisplay.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MainDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 157</value>
+  </data>
+  <data name="MainDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 720</value>
+  </data>
+  <data name="MainDisplay.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="MainDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MainDisplay.Name" xml:space="preserve">
+    <value>MainDisplay</value>
+  </data>
+  <data name="&gt;&gt;MainDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainDisplay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MainDisplay.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 138</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1319, 759</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>850, 73</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 48</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
   <data name="PresetDialogButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -3871,7 +4201,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PresetDialogButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="ProjectOptions.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -3901,7 +4231,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ProjectOptions.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="customButtons1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3928,7 +4258,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;customButtons1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="customButtons2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -3964,7 +4294,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;customButtons2.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="CloseForm.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4000,7 +4330,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CloseForm.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="Import_Image.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -4036,7 +4366,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Import_Image.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="sizingnav.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4060,7 +4390,31 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;sizingnav.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>734, 92</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<Wrapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WrapedOptions>
+    <Fontname>Arial</Fontname>
+    <Fontsize>48</Fontsize>
+    <Transparancy>128</Transparancy>
+    <Angle>25</Angle>
+    <Widthbetween>0</Widthbetween>
+    <Heightbetween>0</Heightbetween>
+    <Fontstyle>Regular</Fontstyle>
+    <Text>Watermark</Text>
+    <Color />
+    <Color2 />
+    <Color3 />
+    <Colorstart>25</Colorstart>
+    <Colorend>300</Colorend>
+    <Colorangle>50</Colorangle>
+    <Effect>None</Effect>
+    <Operation>Fullfill</Operation>
+    <Isgradienton>false</Isgradienton>
+  </WrapedOptions>
+  <WrapedPrjSettings>
+    <Rows>7</Rows>
+    <Columns>0</Columns>
+    <Xoffset>-60</Xoffset>
+    <Yoffset>-250</Yoffset>
+    <Syncpoints>false</Syncpoints>
+  </WrapedPrjSettings>
+  <WrapedEffectSettings>
+    <EffectColor1 />
+    <EffectColor2 />
+    <EffectColor3 />
+    <SelectedEffect>None</SelectedEffect>
+    <EffectXoffset>2</EffectXoffset>
+    <EffectYoffset>2</EffectYoffset>
+    <Transparancy>128</Transparancy>
+  </WrapedEffectSettings>
+  <WrapedColor>
+    <Red1>255</Red1>
+    <Green1>0</Green1>
+    <Blue1>0</Blue1>
+    <Red2>0</Red2>
+    <Green2>128</Green2>
+    <Blue2>0</Blue2>
+    <Red3>0</Red3>
+    <Green3>0</Green3>
+    <Blue3>255</Blue3>
+    <EffectRed1>255</EffectRed1>
+    <EffectGreen1>0</EffectGreen1>
+    <EffectBlue1>0</EffectBlue1>
+    <EffectRed2>0</EffectRed2>
+    <EffectGreen2>128</EffectGreen2>
+    <EffectBlue2>0</EffectBlue2>
+    <EffectRed3>0</EffectRed3>
+    <EffectGreen3>0</EffectGreen3>
+    <EffectBlue3>255</EffectBlue3>
+  </WrapedColor>
+  <WrapedPoints />
+</Wrapper>

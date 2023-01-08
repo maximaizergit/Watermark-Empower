@@ -16,7 +16,9 @@ namespace WatermarkGenerator
 
         static void Main(string[] args)
         {
-            
+            Generator gen = new Generator();
+            gen.RandomWatermarkA3("Watermark", 30, 2, true, true, 15, 0, 0);
+            Console.ReadKey();
         }
         //CLASSES
 
@@ -95,7 +97,7 @@ namespace WatermarkGenerator
             int columns = 0;
             int xoffset = -60;
             int yoffset = -250;
-
+            bool syncpoints = false;
             
 
 
@@ -103,8 +105,7 @@ namespace WatermarkGenerator
             public int Columns { get => columns; set => columns = value; }
             public int Xoffset { get => xoffset; set => xoffset = value; }
             public int Yoffset { get => yoffset; set => yoffset = value; }
-
-      
+            public bool Syncpoints { get => syncpoints; set => syncpoints = value; }
         }
         public class EffectSettings
         {
@@ -126,6 +127,20 @@ namespace WatermarkGenerator
             {
                 get => transparancy; set => transparancy = value;
 
+            }
+            public EffectSettings()
+            {
+
+            }
+            public EffectSettings(EffectSettings newsettings)
+            {
+                EffectColor1 = newsettings.EffectColor1;
+                EffectColor2 = newsettings.EffectColor2;
+                EffectColor3 = newsettings.EffectColor3;
+                EffectXoffset = newsettings.EffectXoffset;
+                EffectYoffset = newsettings.EffectYoffset;
+                Transparancy = newsettings.Transparancy;
+                selectedeffect = newsettings.selectedeffect;
             }
         }
         public class PointList : IEnumerable<PointOptions>
@@ -149,6 +164,10 @@ namespace WatermarkGenerator
             {
                 points.RemoveAt(index);
             }
+            public void Clear()
+            {
+                points.Clear();
+            }
             public int Count
     {
         get { return points.Count; }
@@ -170,6 +189,19 @@ namespace WatermarkGenerator
             string name;
             int x;
             int y;
+            string alignrightleft = "None";
+            string aligntopbot = "None";
+            bool center = false;
+            int offset = 0;
+            int maincolorR=255;
+            int maincolorG=255;
+            int maincolorB=255;
+            int firstsubcolorR = 255;
+            int firstsubcolorG = 0;
+            int firstsubcolorB = 0;
+            int secondsubcolorR = 0;
+            int secondsubcolorG = 0;
+            int secondsubcolorB = 255;
             Options options;
             EffectSettings effectsettings;
 
@@ -179,15 +211,41 @@ namespace WatermarkGenerator
             public PointOptions(Options newoptions)
             {
                 options = new Options(newoptions);
+                effectsettings = new EffectSettings();
             }
-            public void UpdateOptions(Options newoptions)
+            public PointOptions(Options newoptions, EffectSettings effectSettings)
             {
                 options = new Options(newoptions);
+                effectsettings = new EffectSettings(effectSettings);
+            }
+            public PointOptions()
+            {
+                options = new Options();
+                effectsettings = new EffectSettings();
+            }
+            public void UpdateOptions(Options newoptions, EffectSettings neweffectsettings)
+            {
+                options = new Options(newoptions);
+                effectsettings = new EffectSettings(neweffectsettings);
             }
             public EffectSettings EffectsettingsForPoint { get => effectsettings; set => effectsettings = value; }
             public string Name { get => name; set => name = value; }
-         
+            public string Alignrightleft { get => alignrightleft; set => alignrightleft = value; }
+            public string Aligntopbot { get => aligntopbot; set => aligntopbot = value; }
+            public bool Center { get => center; set => center = value; }
+            public int Offset { get => offset; set => offset = value; }
+            public int MaincolorR { get => maincolorR; set => maincolorR = value; }
+            public int MaincolorG { get => maincolorG; set => maincolorG = value; }
+            public int MaincolorB { get => maincolorB; set => maincolorB = value; }
+            public int FirstsubcolorR { get => firstsubcolorR; set => firstsubcolorR = value; }
+            public int FirstsubcolorG { get => firstsubcolorG; set => firstsubcolorG = value; }
+            public int FirstsubcolorB { get => firstsubcolorB; set => firstsubcolorB = value; }
+            public int SecondsubcolorR { get => secondsubcolorR; set => secondsubcolorR = value; }
+            public int SecondsubcolorG { get => secondsubcolorG; set => secondsubcolorG = value; }
+            public int SecondsubcolorB { get => secondsubcolorB; set => secondsubcolorB = value; }
         }
+        
+        
         public class XmlColor
         {
             public int Red1 { get; set; }
@@ -245,6 +303,13 @@ namespace WatermarkGenerator
             public ProjectSettings WrapedPrjSettings { get; set; }
             public EffectSettings WrapedEffectSettings { get; set; }
             public XmlColor WrapedColor { get; set; }
+            public PointList WrapedPoints { get;set; }
+           
+           
+           
+
+            
+            
         }
         public class Preparation
         {
@@ -303,7 +368,17 @@ namespace WatermarkGenerator
             switch (options.Effect)
             {
                 case ("None"):
-                    graphics.DrawString(options.Text, font, brush, position);
+                    if (options.Operation == "Cross")
+                    {
+                        Console.WriteLine("Cross");
+                        graphics.Transform.RotateAt(options.Angle, prepare.position);
+                        graphics.DrawString(options.Text, font, brush, position);
+                    }
+                    else
+                    {
+                        graphics.DrawString(options.Text, font, brush, position);
+                    }
+                   
                     break;
                 case ("Glitch"):
                     DrawGlitchBack(position, graphics, options.Text, font, efffectsettings);
@@ -327,8 +402,8 @@ namespace WatermarkGenerator
             prepare.brush = new SolidBrush(Color.FromArgb(options.Transparancy, options.Color));
             prepare.position = new PointF(image.Width / 2, image.Height / 2);
             prepare.transform = new Matrix();
-            prepare.transform.RotateAt(options.Angle, prepare.position);
-            graphics.Transform = prepare.transform;
+           // prepare.transform.RotateAt(options.Angle, prepare.position);
+           // graphics.Transform = prepare.transform;
             SizeF size = graphics.MeasureString(options.Text, prepare.font);
             size.Width = size.Width + options.Widthbetween;
             size.Height = size.Height + options.Heightbetween;
@@ -455,6 +530,7 @@ namespace WatermarkGenerator
                 }
             }
 
+
             // Save the output image to a file
 
             image.Save("tempinput.jpg", ImageFormat.Png);
@@ -473,26 +549,67 @@ namespace WatermarkGenerator
              
                foreach(PointOptions p in points)
                 {
-                    Console.WriteLine(p.OptionsForPoint.Fontname);
+                    
                     prepare.font = new Font(p.OptionsForPoint.Fontname, p.OptionsForPoint.Fontsize, p.OptionsForPoint.Fontstyle);
-                    Console.WriteLine(p.OptionsForPoint.Transparancy);
-                    prepare.brush = new SolidBrush(Color.FromArgb(p.OptionsForPoint.Transparancy, p.OptionsForPoint.Color));
-                    prepare.position = new PointF(image.Width / 2, image.Height / 2);
+                    if (!p.OptionsForPoint.Isgradienton)
+                    {
+                        prepare.brush = new SolidBrush(Color.FromArgb(p.OptionsForPoint.Transparancy, p.OptionsForPoint.Color));
+                    }
+                    else
+                    {
+                       
+                        ColorBlend blend = new ColorBlend();
+                        blend.Positions = new float[] { 0, 0.5f, 1 };
+                        blend.Colors = new Color[] { Color.FromArgb(p.OptionsForPoint.Transparancy, p.OptionsForPoint.Color), Color.FromArgb(p.OptionsForPoint.Transparancy, p.OptionsForPoint.Color2),
+                            Color.FromArgb(p.OptionsForPoint.Transparancy, p.OptionsForPoint.Color3) };
+                        LinearGradientBrush gradientBrush = new LinearGradientBrush(new Point(p.OptionsForPoint.Colorstart, 0), new Point(p.OptionsForPoint.Colorend, 100), Color.Red, Color.Blue);
+                        gradientBrush.InterpolationColors = blend;
+                        gradientBrush.RotateTransform(p.OptionsForPoint.Colorangle);
+                        prepare.brush = gradientBrush;
+                    }
+                   
+                   
                     prepare.transform = new Matrix();
-                    prepare.transform.RotateAt(p.OptionsForPoint.Angle, prepare.position);
-                    graphics.Transform = prepare.transform;
+                  
                     SizeF size = graphics.MeasureString(p.OptionsForPoint.Text, prepare.font);
                     size.Width = size.Width + p.OptionsForPoint.Widthbetween;
                     size.Height = size.Height + p.OptionsForPoint.Heightbetween;
-
                     // Calculate the number of rows and columns of watermarks
                     prepare.rows = (int)Math.Ceiling(image.Height / size.Height);
                     prepare.columns = (int)Math.Ceiling(image.Width / size.Width);
                     prepare.size = size;
-                    PointF position = new PointF(p.X,p.Y );
-                    graphics.Transform.RotateAt(p.OptionsForPoint.Angle, prepare.position);
                     
-                    Draw(position, -1, -1, prepare.size, prepare.font, prepare.brush, graphics, p.OptionsForPoint, tempsettings, p.EffectsettingsForPoint);
+                    if (p.Center)
+                    {
+                        p.X = image.Width / 2- Convert.ToInt32(size.Width)/2;
+                        p.Y = image.Height / 2 - Convert.ToInt32(size.Height)/2;
+                    }
+                    else
+                    {
+                        if (p.Aligntopbot == "Top")
+                        {
+                            p.Y = 0  + p.Offset;
+                        
+                        }else if (p.Aligntopbot == "Bottom")
+                        {
+                            p.Y = image.Height - Convert.ToInt32(size.Height)-p.Offset;
+                        }
+                        if (p.Alignrightleft== "Left")
+                        {
+                            p.X = 0  + p.Offset;
+                        }
+                        else if (p.Alignrightleft == "Right")
+                        {
+                            p.X = image.Width - Convert.ToInt32(size.Width)-p.Offset;
+                        }
+
+                    }
+                    PointF position = new PointF(p.X,p.Y );
+                    prepare.position = position;
+                    prepare.transform.RotateAt(p.OptionsForPoint.Angle, prepare.position);
+                    graphics.Transform = prepare.transform;
+
+                    Draw(prepare.position, -1, -1, prepare.size, prepare.font, prepare.brush, graphics, p.OptionsForPoint, tempsettings, p.EffectsettingsForPoint);
                     
                     
                 }
@@ -500,7 +617,7 @@ namespace WatermarkGenerator
             image.Save("tempinput.jpg", ImageFormat.Png);
             image.Dispose();
         }
-
+       
 
 
 

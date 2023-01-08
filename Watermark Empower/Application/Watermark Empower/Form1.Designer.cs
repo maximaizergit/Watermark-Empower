@@ -33,14 +33,17 @@
             this.Tools = new System.Windows.Forms.TabControl();
             this.fullfill = new System.Windows.Forms.TabPage();
             this.scrollableControl1 = new System.Windows.Forms.ScrollableControl();
+            this.EffectDialogButton = new Watermark_Empower.CustomButtons();
             this.label24 = new System.Windows.Forms.Label();
             this.FullfillEffectTextBox = new System.Windows.Forms.TextBox();
+            this.FullfillFontSelectBtn = new Watermark_Empower.CustomButtons();
             this.FullfillGradientAngle = new System.Windows.Forms.TextBox();
             this.FullfillGradientEnd = new System.Windows.Forms.TextBox();
             this.FullfillGradientStart = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.FullfillGradientcheckbox = new MyCheckBox();
             this.label19 = new System.Windows.Forms.Label();
             this.FullfillColorDisplay = new System.Windows.Forms.PictureBox();
             this.FullfillColorMenu = new System.Windows.Forms.PictureBox();
@@ -75,10 +78,13 @@
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.ChessEffectBtn = new Watermark_Empower.CustomButtons();
             this.ChessEffect = new System.Windows.Forms.TextBox();
+            this.ChessFontBtn = new Watermark_Empower.CustomButtons();
             this.ChessGradientAngle = new System.Windows.Forms.TextBox();
             this.ChessGradientEnd = new System.Windows.Forms.TextBox();
             this.ChessGradientStart = new System.Windows.Forms.TextBox();
+            this.ChessGradientCheckBox = new MyCheckBox();
             this.ChessColorDisplay = new System.Windows.Forms.PictureBox();
             this.ChessColorIcon = new System.Windows.Forms.PictureBox();
             this.ChessTextStyle = new System.Windows.Forms.TextBox();
@@ -93,6 +99,27 @@
             this.scrollableControl3 = new System.Windows.Forms.ScrollableControl();
             this.point = new System.Windows.Forms.TabPage();
             this.scrollableControl4 = new System.Windows.Forms.ScrollableControl();
+            this.AlignCenterBtn = new System.Windows.Forms.Button();
+            this.AlignBotBtn = new System.Windows.Forms.Button();
+            this.AlignRightBtn = new System.Windows.Forms.Button();
+            this.AlignLeftBtn = new System.Windows.Forms.Button();
+            this.AlignTopBtn = new System.Windows.Forms.Button();
+            this.SyncPointsChkBox = new MyCheckBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.PointLocationYTxtBox = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.PointOffsetTxtBox = new System.Windows.Forms.TextBox();
+            this.PointName = new System.Windows.Forms.TextBox();
+            this.PointLocationXTxtBox = new System.Windows.Forms.TextBox();
+            this.DelPointBtn = new Watermark_Empower.CustomButtons();
+            this.customButtons3 = new Watermark_Empower.CustomButtons();
+            this.AddPointBtn = new Watermark_Empower.CustomButtons();
+            this.PointsList = new System.Windows.Forms.ComboBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -104,10 +131,13 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.PointEffectBtn = new Watermark_Empower.CustomButtons();
             this.PointEffectTxtBox = new System.Windows.Forms.TextBox();
+            this.PointFontBtn = new Watermark_Empower.CustomButtons();
             this.PointGradientAngleTxtBox = new System.Windows.Forms.TextBox();
             this.PointGradientEndTxtBox = new System.Windows.Forms.TextBox();
             this.PointGradientStartTxtBox = new System.Windows.Forms.TextBox();
+            this.PointGradientChkBox = new MyCheckBox();
             this.PointColorDisplay = new System.Windows.Forms.PictureBox();
             this.PointColorMenu = new System.Windows.Forms.PictureBox();
             this.PointStyleTxtBox = new System.Windows.Forms.TextBox();
@@ -121,6 +151,7 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Nav = new Watermark_Empower.TryDoubleBufferAgain();
             this.button2 = new System.Windows.Forms.Button();
             this.PointSelector = new System.Windows.Forms.Button();
             this.ChessSelector = new System.Windows.Forms.Button();
@@ -128,6 +159,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.label30 = new System.Windows.Forms.Label();
+            this.PresetsComboBox = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.ZoomButton = new System.Windows.Forms.Button();
             this.CenterImageButton = new System.Windows.Forms.Button();
             this.AutosizeButton = new System.Windows.Forms.Button();
@@ -137,38 +171,15 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.MainDisplay = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label30 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.PresetsComboBox = new System.Windows.Forms.ComboBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.PointsList = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.PointLocationXTxtBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.PointLocationYTxtBox = new System.Windows.Forms.TextBox();
             this.PresetDialogButton = new Watermark_Empower.CustomButtons();
             this.ProjectOptions = new Watermark_Empower.CustomButtons();
             this.customButtons1 = new Watermark_Empower.CustomButtons();
             this.customButtons2 = new Watermark_Empower.CustomButtons();
             this.CloseForm = new Watermark_Empower.CustomButtons();
-            this.Nav = new Watermark_Empower.TryDoubleBufferAgain();
             this.Import_Image = new Watermark_Empower.CustomButtons();
-            this.EffectDialogButton = new Watermark_Empower.CustomButtons();
-            this.FullfillFontSelectBtn = new Watermark_Empower.CustomButtons();
-            this.FullfillGradientcheckbox = new MyCheckBox();
-            this.ChessEffectBtn = new Watermark_Empower.CustomButtons();
-            this.ChessFontBtn = new Watermark_Empower.CustomButtons();
-            this.ChessGradientCheckBox = new MyCheckBox();
-            this.DelPointBtn = new Watermark_Empower.CustomButtons();
-            this.customButtons3 = new Watermark_Empower.CustomButtons();
-            this.AddPointBtn = new Watermark_Empower.CustomButtons();
-            this.PointEffectBtn = new Watermark_Empower.CustomButtons();
-            this.PointFontBtn = new Watermark_Empower.CustomButtons();
-            this.PointGradientChkBox = new MyCheckBox();
             this.sizingnav = new Watermark_Empower.TryDoubleBufferAgain();
+            this.button1 = new System.Windows.Forms.Button();
             this.Tools.SuspendLayout();
             this.fullfill.SuspendLayout();
             this.scrollableControl1.SuspendLayout();
@@ -181,17 +192,17 @@
             this.None.SuspendLayout();
             this.point.SuspendLayout();
             this.scrollableControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PointColorDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PointColorMenu)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Nav)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navpanelborder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Nav)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).BeginInit();
             this.SuspendLayout();
             // 
@@ -249,6 +260,21 @@
             resources.ApplyResources(this.scrollableControl1, "scrollableControl1");
             this.scrollableControl1.Name = "scrollableControl1";
             // 
+            // EffectDialogButton
+            // 
+            this.EffectDialogButton.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.EffectDialogButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.EffectDialogButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.EffectDialogButton.BorderRadius = 15;
+            this.EffectDialogButton.BorderSize = 0;
+            this.EffectDialogButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.EffectDialogButton, "EffectDialogButton");
+            this.EffectDialogButton.ForeColor = System.Drawing.Color.White;
+            this.EffectDialogButton.Name = "EffectDialogButton";
+            this.EffectDialogButton.TextColor = System.Drawing.Color.White;
+            this.EffectDialogButton.UseVisualStyleBackColor = false;
+            this.EffectDialogButton.Click += new System.EventHandler(this.EffectDialogButton_Click);
+            // 
             // label24
             // 
             resources.ApplyResources(this.label24, "label24");
@@ -260,6 +286,21 @@
             resources.ApplyResources(this.FullfillEffectTextBox, "FullfillEffectTextBox");
             this.FullfillEffectTextBox.Name = "FullfillEffectTextBox";
             this.FullfillEffectTextBox.ReadOnly = true;
+            // 
+            // FullfillFontSelectBtn
+            // 
+            this.FullfillFontSelectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.FullfillFontSelectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.FullfillFontSelectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.FullfillFontSelectBtn.BorderRadius = 15;
+            this.FullfillFontSelectBtn.BorderSize = 0;
+            this.FullfillFontSelectBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.FullfillFontSelectBtn, "FullfillFontSelectBtn");
+            this.FullfillFontSelectBtn.ForeColor = System.Drawing.Color.White;
+            this.FullfillFontSelectBtn.Name = "FullfillFontSelectBtn";
+            this.FullfillFontSelectBtn.TextColor = System.Drawing.Color.White;
+            this.FullfillFontSelectBtn.UseVisualStyleBackColor = false;
+            this.FullfillFontSelectBtn.Click += new System.EventHandler(this.FontSelectBtn_Click);
             // 
             // FullfillGradientAngle
             // 
@@ -296,6 +337,13 @@
             resources.ApplyResources(this.label20, "label20");
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label20.Name = "label20";
+            // 
+            // FullfillGradientcheckbox
+            // 
+            resources.ApplyResources(this.FullfillGradientcheckbox, "FullfillGradientcheckbox");
+            this.FullfillGradientcheckbox.Name = "FullfillGradientcheckbox";
+            this.FullfillGradientcheckbox.UseVisualStyleBackColor = true;
+            this.FullfillGradientcheckbox.CheckedChanged += new System.EventHandler(this.Gradientcheckbox_CheckedChanged);
             // 
             // label19
             // 
@@ -537,11 +585,41 @@
             this.label44.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label44.Name = "label44";
             // 
+            // ChessEffectBtn
+            // 
+            this.ChessEffectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessEffectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessEffectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ChessEffectBtn.BorderRadius = 15;
+            this.ChessEffectBtn.BorderSize = 0;
+            this.ChessEffectBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.ChessEffectBtn, "ChessEffectBtn");
+            this.ChessEffectBtn.ForeColor = System.Drawing.Color.White;
+            this.ChessEffectBtn.Name = "ChessEffectBtn";
+            this.ChessEffectBtn.TextColor = System.Drawing.Color.White;
+            this.ChessEffectBtn.UseVisualStyleBackColor = false;
+            this.ChessEffectBtn.Click += new System.EventHandler(this.EffectDialogButton_Click);
+            // 
             // ChessEffect
             // 
             resources.ApplyResources(this.ChessEffect, "ChessEffect");
             this.ChessEffect.Name = "ChessEffect";
             this.ChessEffect.ReadOnly = true;
+            // 
+            // ChessFontBtn
+            // 
+            this.ChessFontBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessFontBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.ChessFontBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ChessFontBtn.BorderRadius = 15;
+            this.ChessFontBtn.BorderSize = 0;
+            this.ChessFontBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.ChessFontBtn, "ChessFontBtn");
+            this.ChessFontBtn.ForeColor = System.Drawing.Color.White;
+            this.ChessFontBtn.Name = "ChessFontBtn";
+            this.ChessFontBtn.TextColor = System.Drawing.Color.White;
+            this.ChessFontBtn.UseVisualStyleBackColor = false;
+            this.ChessFontBtn.Click += new System.EventHandler(this.FontSelectBtn_Click);
             // 
             // ChessGradientAngle
             // 
@@ -560,6 +638,13 @@
             resources.ApplyResources(this.ChessGradientStart, "ChessGradientStart");
             this.ChessGradientStart.Name = "ChessGradientStart";
             this.ChessGradientStart.TextChanged += new System.EventHandler(this.GradientStartChange_TextChanged);
+            // 
+            // ChessGradientCheckBox
+            // 
+            resources.ApplyResources(this.ChessGradientCheckBox, "ChessGradientCheckBox");
+            this.ChessGradientCheckBox.Name = "ChessGradientCheckBox";
+            this.ChessGradientCheckBox.UseVisualStyleBackColor = true;
+            this.ChessGradientCheckBox.CheckedChanged += new System.EventHandler(this.Gradientcheckbox_CheckedChanged);
             // 
             // ChessColorDisplay
             // 
@@ -649,11 +734,21 @@
             // scrollableControl4
             // 
             this.scrollableControl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.scrollableControl4.Controls.Add(this.AlignCenterBtn);
+            this.scrollableControl4.Controls.Add(this.AlignBotBtn);
+            this.scrollableControl4.Controls.Add(this.AlignRightBtn);
+            this.scrollableControl4.Controls.Add(this.AlignLeftBtn);
+            this.scrollableControl4.Controls.Add(this.AlignTopBtn);
+            this.scrollableControl4.Controls.Add(this.SyncPointsChkBox);
             this.scrollableControl4.Controls.Add(this.label15);
             this.scrollableControl4.Controls.Add(this.PointLocationYTxtBox);
-            this.scrollableControl4.Controls.Add(this.textBox2);
-            this.scrollableControl4.Controls.Add(this.textBox1);
+            this.scrollableControl4.Controls.Add(this.label36);
+            this.scrollableControl4.Controls.Add(this.label45);
+            this.scrollableControl4.Controls.Add(this.label18);
+            this.scrollableControl4.Controls.Add(this.label17);
             this.scrollableControl4.Controls.Add(this.label9);
+            this.scrollableControl4.Controls.Add(this.PointOffsetTxtBox);
+            this.scrollableControl4.Controls.Add(this.PointName);
             this.scrollableControl4.Controls.Add(this.PointLocationXTxtBox);
             this.scrollableControl4.Controls.Add(this.DelPointBtn);
             this.scrollableControl4.Controls.Add(this.customButtons3);
@@ -688,6 +783,192 @@
             this.scrollableControl4.Controls.Add(this.PointFontTxtBox);
             resources.ApplyResources(this.scrollableControl4, "scrollableControl4");
             this.scrollableControl4.Name = "scrollableControl4";
+            // 
+            // AlignCenterBtn
+            // 
+            this.AlignCenterBtn.BackColor = System.Drawing.Color.White;
+            this.AlignCenterBtn.BackgroundImage = global::Watermark_Empower.Properties.Resources.arrows_pointing_to_center;
+            resources.ApplyResources(this.AlignCenterBtn, "AlignCenterBtn");
+            this.AlignCenterBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.AlignCenterBtn.FlatAppearance.BorderSize = 2;
+            this.AlignCenterBtn.Name = "AlignCenterBtn";
+            this.AlignCenterBtn.UseVisualStyleBackColor = false;
+            this.AlignCenterBtn.Click += new System.EventHandler(this.AlignCenterBtn_Click);
+            // 
+            // AlignBotBtn
+            // 
+            this.AlignBotBtn.BackColor = System.Drawing.Color.White;
+            this.AlignBotBtn.BackgroundImage = global::Watermark_Empower.Properties.Resources.down_arrow;
+            resources.ApplyResources(this.AlignBotBtn, "AlignBotBtn");
+            this.AlignBotBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.AlignBotBtn.FlatAppearance.BorderSize = 2;
+            this.AlignBotBtn.Name = "AlignBotBtn";
+            this.AlignBotBtn.UseVisualStyleBackColor = false;
+            this.AlignBotBtn.Click += new System.EventHandler(this.AlignBotBtn_Click);
+            // 
+            // AlignRightBtn
+            // 
+            this.AlignRightBtn.BackColor = System.Drawing.Color.White;
+            this.AlignRightBtn.BackgroundImage = global::Watermark_Empower.Properties.Resources.right_arrow;
+            resources.ApplyResources(this.AlignRightBtn, "AlignRightBtn");
+            this.AlignRightBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.AlignRightBtn.FlatAppearance.BorderSize = 2;
+            this.AlignRightBtn.Name = "AlignRightBtn";
+            this.AlignRightBtn.UseVisualStyleBackColor = false;
+            this.AlignRightBtn.Click += new System.EventHandler(this.AlignRightBtn_Click);
+            // 
+            // AlignLeftBtn
+            // 
+            this.AlignLeftBtn.BackColor = System.Drawing.Color.White;
+            this.AlignLeftBtn.BackgroundImage = global::Watermark_Empower.Properties.Resources.left_arrow;
+            resources.ApplyResources(this.AlignLeftBtn, "AlignLeftBtn");
+            this.AlignLeftBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.AlignLeftBtn.FlatAppearance.BorderSize = 2;
+            this.AlignLeftBtn.Name = "AlignLeftBtn";
+            this.AlignLeftBtn.UseVisualStyleBackColor = false;
+            this.AlignLeftBtn.Click += new System.EventHandler(this.AlignLeftBtn_Click);
+            // 
+            // AlignTopBtn
+            // 
+            this.AlignTopBtn.BackColor = System.Drawing.Color.White;
+            this.AlignTopBtn.BackgroundImage = global::Watermark_Empower.Properties.Resources.arrowhead_up;
+            resources.ApplyResources(this.AlignTopBtn, "AlignTopBtn");
+            this.AlignTopBtn.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.AlignTopBtn.FlatAppearance.BorderSize = 2;
+            this.AlignTopBtn.Name = "AlignTopBtn";
+            this.AlignTopBtn.UseVisualStyleBackColor = false;
+            this.AlignTopBtn.Click += new System.EventHandler(this.AlignTopBtn_Click);
+            // 
+            // SyncPointsChkBox
+            // 
+            resources.ApplyResources(this.SyncPointsChkBox, "SyncPointsChkBox");
+            this.SyncPointsChkBox.Name = "SyncPointsChkBox";
+            this.SyncPointsChkBox.UseVisualStyleBackColor = true;
+            this.SyncPointsChkBox.CheckedChanged += new System.EventHandler(this.SyncPointsChkBox_CheckedChanged);
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label15.Name = "label15";
+            // 
+            // PointLocationYTxtBox
+            // 
+            resources.ApplyResources(this.PointLocationYTxtBox, "PointLocationYTxtBox");
+            this.PointLocationYTxtBox.Name = "PointLocationYTxtBox";
+            this.PointLocationYTxtBox.TextChanged += new System.EventHandler(this.PointLocationYTxtBox_TextChanged);
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label36.Name = "label36";
+            // 
+            // label45
+            // 
+            resources.ApplyResources(this.label45, "label45");
+            this.label45.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label45.Name = "label45";
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label18.Name = "label18";
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label17.Name = "label17";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label9.Name = "label9";
+            // 
+            // PointOffsetTxtBox
+            // 
+            resources.ApplyResources(this.PointOffsetTxtBox, "PointOffsetTxtBox");
+            this.PointOffsetTxtBox.Name = "PointOffsetTxtBox";
+            this.PointOffsetTxtBox.TextChanged += new System.EventHandler(this.PointOffsetTxtBox_TextChanged);
+            // 
+            // PointName
+            // 
+            resources.ApplyResources(this.PointName, "PointName");
+            this.PointName.Name = "PointName";
+            this.PointName.TextChanged += new System.EventHandler(this.PointLocationXTxtBox_TextChanged);
+            // 
+            // PointLocationXTxtBox
+            // 
+            resources.ApplyResources(this.PointLocationXTxtBox, "PointLocationXTxtBox");
+            this.PointLocationXTxtBox.Name = "PointLocationXTxtBox";
+            this.PointLocationXTxtBox.TextChanged += new System.EventHandler(this.PointLocationXTxtBox_TextChanged);
+            // 
+            // DelPointBtn
+            // 
+            this.DelPointBtn.BackColor = System.Drawing.Color.Gold;
+            this.DelPointBtn.BackgroundColor = System.Drawing.Color.Gold;
+            this.DelPointBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.DelPointBtn.BorderRadius = 15;
+            this.DelPointBtn.BorderSize = 0;
+            this.DelPointBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.DelPointBtn, "DelPointBtn");
+            this.DelPointBtn.ForeColor = System.Drawing.Color.Black;
+            this.DelPointBtn.Name = "DelPointBtn";
+            this.DelPointBtn.TextColor = System.Drawing.Color.Black;
+            this.DelPointBtn.UseVisualStyleBackColor = false;
+            this.DelPointBtn.Click += new System.EventHandler(this.DelPointBtn_Click);
+            // 
+            // customButtons3
+            // 
+            this.customButtons3.BackColor = System.Drawing.Color.Lime;
+            this.customButtons3.BackgroundColor = System.Drawing.Color.Lime;
+            this.customButtons3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.customButtons3.BorderRadius = 15;
+            this.customButtons3.BorderSize = 0;
+            this.customButtons3.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.customButtons3, "customButtons3");
+            this.customButtons3.ForeColor = System.Drawing.Color.Black;
+            this.customButtons3.Name = "customButtons3";
+            this.customButtons3.TextColor = System.Drawing.Color.Black;
+            this.customButtons3.UseVisualStyleBackColor = false;
+            this.customButtons3.Click += new System.EventHandler(this.customButtons3_Click);
+            // 
+            // AddPointBtn
+            // 
+            this.AddPointBtn.BackColor = System.Drawing.Color.Lime;
+            this.AddPointBtn.BackgroundColor = System.Drawing.Color.Lime;
+            this.AddPointBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.AddPointBtn.BorderRadius = 15;
+            this.AddPointBtn.BorderSize = 0;
+            this.AddPointBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.AddPointBtn, "AddPointBtn");
+            this.AddPointBtn.ForeColor = System.Drawing.Color.Black;
+            this.AddPointBtn.Name = "AddPointBtn";
+            this.AddPointBtn.TextColor = System.Drawing.Color.Black;
+            this.AddPointBtn.UseVisualStyleBackColor = false;
+            this.AddPointBtn.Click += new System.EventHandler(this.AddPointBtn_Click);
+            // 
+            // PointsList
+            // 
+            this.PointsList.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.PointsList.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.PointsList.BackColor = System.Drawing.Color.LightGray;
+            this.PointsList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.PointsList, "PointsList");
+            this.PointsList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.PointsList.FormattingEnabled = true;
+            this.PointsList.Name = "PointsList";
+            this.PointsList.SelectedIndexChanged += new System.EventHandler(this.PointsList_SelectedIndexChanged);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(44)))));
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
             // 
             // label10
             // 
@@ -755,11 +1036,43 @@
             this.label29.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label29.Name = "label29";
             // 
+            // PointEffectBtn
+            // 
+            this.PointEffectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.PointEffectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.PointEffectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.PointEffectBtn.BorderRadius = 15;
+            this.PointEffectBtn.BorderSize = 0;
+            this.PointEffectBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.PointEffectBtn, "PointEffectBtn");
+            this.PointEffectBtn.ForeColor = System.Drawing.Color.White;
+            this.PointEffectBtn.Name = "PointEffectBtn";
+            this.PointEffectBtn.TextColor = System.Drawing.Color.White;
+            this.PointEffectBtn.UseVisualStyleBackColor = false;
+            this.PointEffectBtn.TextChanged += new System.EventHandler(this.EffectDialogButton_Click);
+            this.PointEffectBtn.Click += new System.EventHandler(this.EffectDialogButton_Click);
+            // 
             // PointEffectTxtBox
             // 
             resources.ApplyResources(this.PointEffectTxtBox, "PointEffectTxtBox");
             this.PointEffectTxtBox.Name = "PointEffectTxtBox";
             this.PointEffectTxtBox.ReadOnly = true;
+            // 
+            // PointFontBtn
+            // 
+            this.PointFontBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.PointFontBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.PointFontBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.PointFontBtn.BorderRadius = 15;
+            this.PointFontBtn.BorderSize = 0;
+            this.PointFontBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.PointFontBtn, "PointFontBtn");
+            this.PointFontBtn.ForeColor = System.Drawing.Color.White;
+            this.PointFontBtn.Name = "PointFontBtn";
+            this.PointFontBtn.TextColor = System.Drawing.Color.White;
+            this.PointFontBtn.UseVisualStyleBackColor = false;
+            this.PointFontBtn.TextChanged += new System.EventHandler(this.FontSelectBtn_Click);
+            this.PointFontBtn.Click += new System.EventHandler(this.FontSelectBtn_Click);
             // 
             // PointGradientAngleTxtBox
             // 
@@ -778,6 +1091,13 @@
             resources.ApplyResources(this.PointGradientStartTxtBox, "PointGradientStartTxtBox");
             this.PointGradientStartTxtBox.Name = "PointGradientStartTxtBox";
             this.PointGradientStartTxtBox.TextChanged += new System.EventHandler(this.GradientStartChange_TextChanged);
+            // 
+            // PointGradientChkBox
+            // 
+            resources.ApplyResources(this.PointGradientChkBox, "PointGradientChkBox");
+            this.PointGradientChkBox.Name = "PointGradientChkBox";
+            this.PointGradientChkBox.UseVisualStyleBackColor = true;
+            this.PointGradientChkBox.CheckedChanged += new System.EventHandler(this.Gradientcheckbox_CheckedChanged);
             // 
             // PointColorDisplay
             // 
@@ -859,6 +1179,13 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
+            // Nav
+            // 
+            this.Nav.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.Nav, "Nav");
+            this.Nav.Name = "Nav";
+            this.Nav.TabStop = false;
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
@@ -915,6 +1242,29 @@
             resources.ApplyResources(this.label23, "label23");
             this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.label23.Name = "label23";
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label30.Name = "label30";
+            // 
+            // PresetsComboBox
+            // 
+            this.PresetsComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.PresetsComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.PresetsComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            resources.ApplyResources(this.PresetsComboBox, "PresetsComboBox");
+            this.PresetsComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.PresetsComboBox.FormattingEnabled = true;
+            this.PresetsComboBox.Name = "PresetsComboBox";
+            this.PresetsComboBox.SelectedIndexChanged += new System.EventHandler(this.PresetsComboBox_SelectedIndexChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // ZoomButton
             // 
@@ -1002,88 +1352,12 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // label30
-            // 
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label30.Name = "label30";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
-            // 
-            // PresetsComboBox
-            // 
-            this.PresetsComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.PresetsComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.PresetsComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            resources.ApplyResources(this.PresetsComboBox, "PresetsComboBox");
-            this.PresetsComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.PresetsComboBox.FormattingEnabled = true;
-            this.PresetsComboBox.Name = "PresetsComboBox";
-            this.PresetsComboBox.SelectedIndexChanged += new System.EventHandler(this.PresetsComboBox_SelectedIndexChanged);
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 50;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(44)))));
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            // 
-            // PointsList
-            // 
-            this.PointsList.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.PointsList.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.PointsList.BackColor = System.Drawing.Color.LightGray;
-            this.PointsList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.PointsList, "PointsList");
-            this.PointsList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.PointsList.FormattingEnabled = true;
-            this.PointsList.Name = "PointsList";
-            this.PointsList.SelectedIndexChanged += new System.EventHandler(this.PointsList_SelectedIndexChanged);
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Name = "label9";
-            // 
-            // PointLocationXTxtBox
-            // 
-            resources.ApplyResources(this.PointLocationXTxtBox, "PointLocationXTxtBox");
-            this.PointLocationXTxtBox.Name = "PointLocationXTxtBox";
-            this.PointLocationXTxtBox.TextChanged += new System.EventHandler(this.PointLocationXTxtBox_TextChanged);
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label15.Name = "label15";
-            // 
-            // PointLocationYTxtBox
-            // 
-            resources.ApplyResources(this.PointLocationYTxtBox, "PointLocationYTxtBox");
-            this.PointLocationYTxtBox.Name = "PointLocationYTxtBox";
-            this.PointLocationYTxtBox.TextChanged += new System.EventHandler(this.PointLocationYTxtBox_TextChanged);
             // 
             // PresetDialogButton
             // 
@@ -1160,13 +1434,6 @@
             this.CloseForm.UseVisualStyleBackColor = false;
             this.CloseForm.Click += new System.EventHandler(this.CloseForm_Click);
             // 
-            // Nav
-            // 
-            this.Nav.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.Nav, "Nav");
-            this.Nav.Name = "Nav";
-            this.Nav.TabStop = false;
-            // 
             // Import_Image
             // 
             this.Import_Image.BackColor = System.Drawing.Color.Orange;
@@ -1182,164 +1449,6 @@
             this.Import_Image.UseVisualStyleBackColor = false;
             this.Import_Image.Click += new System.EventHandler(this.Import_Image_Click);
             // 
-            // EffectDialogButton
-            // 
-            this.EffectDialogButton.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.EffectDialogButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.EffectDialogButton.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.EffectDialogButton.BorderRadius = 15;
-            this.EffectDialogButton.BorderSize = 0;
-            this.EffectDialogButton.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.EffectDialogButton, "EffectDialogButton");
-            this.EffectDialogButton.ForeColor = System.Drawing.Color.White;
-            this.EffectDialogButton.Name = "EffectDialogButton";
-            this.EffectDialogButton.TextColor = System.Drawing.Color.White;
-            this.EffectDialogButton.UseVisualStyleBackColor = false;
-            this.EffectDialogButton.Click += new System.EventHandler(this.EffectDialogButton_Click);
-            // 
-            // FullfillFontSelectBtn
-            // 
-            this.FullfillFontSelectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.FullfillFontSelectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.FullfillFontSelectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.FullfillFontSelectBtn.BorderRadius = 15;
-            this.FullfillFontSelectBtn.BorderSize = 0;
-            this.FullfillFontSelectBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.FullfillFontSelectBtn, "FullfillFontSelectBtn");
-            this.FullfillFontSelectBtn.ForeColor = System.Drawing.Color.White;
-            this.FullfillFontSelectBtn.Name = "FullfillFontSelectBtn";
-            this.FullfillFontSelectBtn.TextColor = System.Drawing.Color.White;
-            this.FullfillFontSelectBtn.UseVisualStyleBackColor = false;
-            this.FullfillFontSelectBtn.Click += new System.EventHandler(this.FontSelectBtn_Click);
-            // 
-            // FullfillGradientcheckbox
-            // 
-            resources.ApplyResources(this.FullfillGradientcheckbox, "FullfillGradientcheckbox");
-            this.FullfillGradientcheckbox.Name = "FullfillGradientcheckbox";
-            this.FullfillGradientcheckbox.UseVisualStyleBackColor = true;
-            this.FullfillGradientcheckbox.CheckedChanged += new System.EventHandler(this.Gradientcheckbox_CheckedChanged);
-            // 
-            // ChessEffectBtn
-            // 
-            this.ChessEffectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessEffectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessEffectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.ChessEffectBtn.BorderRadius = 15;
-            this.ChessEffectBtn.BorderSize = 0;
-            this.ChessEffectBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.ChessEffectBtn, "ChessEffectBtn");
-            this.ChessEffectBtn.ForeColor = System.Drawing.Color.White;
-            this.ChessEffectBtn.Name = "ChessEffectBtn";
-            this.ChessEffectBtn.TextColor = System.Drawing.Color.White;
-            this.ChessEffectBtn.UseVisualStyleBackColor = false;
-            this.ChessEffectBtn.Click += new System.EventHandler(this.EffectDialogButton_Click);
-            // 
-            // ChessFontBtn
-            // 
-            this.ChessFontBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessFontBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.ChessFontBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.ChessFontBtn.BorderRadius = 15;
-            this.ChessFontBtn.BorderSize = 0;
-            this.ChessFontBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.ChessFontBtn, "ChessFontBtn");
-            this.ChessFontBtn.ForeColor = System.Drawing.Color.White;
-            this.ChessFontBtn.Name = "ChessFontBtn";
-            this.ChessFontBtn.TextColor = System.Drawing.Color.White;
-            this.ChessFontBtn.UseVisualStyleBackColor = false;
-            this.ChessFontBtn.Click += new System.EventHandler(this.FontSelectBtn_Click);
-            // 
-            // ChessGradientCheckBox
-            // 
-            resources.ApplyResources(this.ChessGradientCheckBox, "ChessGradientCheckBox");
-            this.ChessGradientCheckBox.Name = "ChessGradientCheckBox";
-            this.ChessGradientCheckBox.UseVisualStyleBackColor = true;
-            this.ChessGradientCheckBox.CheckedChanged += new System.EventHandler(this.Gradientcheckbox_CheckedChanged);
-            // 
-            // DelPointBtn
-            // 
-            this.DelPointBtn.BackColor = System.Drawing.Color.Gold;
-            this.DelPointBtn.BackgroundColor = System.Drawing.Color.Gold;
-            this.DelPointBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.DelPointBtn.BorderRadius = 15;
-            this.DelPointBtn.BorderSize = 0;
-            this.DelPointBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.DelPointBtn, "DelPointBtn");
-            this.DelPointBtn.ForeColor = System.Drawing.Color.Black;
-            this.DelPointBtn.Name = "DelPointBtn";
-            this.DelPointBtn.TextColor = System.Drawing.Color.Black;
-            this.DelPointBtn.UseVisualStyleBackColor = false;
-            this.DelPointBtn.Click += new System.EventHandler(this.DelPointBtn_Click);
-            // 
-            // customButtons3
-            // 
-            this.customButtons3.BackColor = System.Drawing.Color.Lime;
-            this.customButtons3.BackgroundColor = System.Drawing.Color.Lime;
-            this.customButtons3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.customButtons3.BorderRadius = 15;
-            this.customButtons3.BorderSize = 0;
-            this.customButtons3.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.customButtons3, "customButtons3");
-            this.customButtons3.ForeColor = System.Drawing.Color.Black;
-            this.customButtons3.Name = "customButtons3";
-            this.customButtons3.TextColor = System.Drawing.Color.Black;
-            this.customButtons3.UseVisualStyleBackColor = false;
-            this.customButtons3.Click += new System.EventHandler(this.customButtons3_Click);
-            // 
-            // AddPointBtn
-            // 
-            this.AddPointBtn.BackColor = System.Drawing.Color.Lime;
-            this.AddPointBtn.BackgroundColor = System.Drawing.Color.Lime;
-            this.AddPointBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.AddPointBtn.BorderRadius = 15;
-            this.AddPointBtn.BorderSize = 0;
-            this.AddPointBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.AddPointBtn, "AddPointBtn");
-            this.AddPointBtn.ForeColor = System.Drawing.Color.Black;
-            this.AddPointBtn.Name = "AddPointBtn";
-            this.AddPointBtn.TextColor = System.Drawing.Color.Black;
-            this.AddPointBtn.UseVisualStyleBackColor = false;
-            this.AddPointBtn.Click += new System.EventHandler(this.AddPointBtn_Click);
-            // 
-            // PointEffectBtn
-            // 
-            this.PointEffectBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.PointEffectBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.PointEffectBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.PointEffectBtn.BorderRadius = 15;
-            this.PointEffectBtn.BorderSize = 0;
-            this.PointEffectBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.PointEffectBtn, "PointEffectBtn");
-            this.PointEffectBtn.ForeColor = System.Drawing.Color.White;
-            this.PointEffectBtn.Name = "PointEffectBtn";
-            this.PointEffectBtn.TextColor = System.Drawing.Color.White;
-            this.PointEffectBtn.UseVisualStyleBackColor = false;
-            this.PointEffectBtn.TextChanged += new System.EventHandler(this.EffectDialogButton_Click);
-            this.PointEffectBtn.Click += new System.EventHandler(this.EffectDialogButton_Click);
-            // 
-            // PointFontBtn
-            // 
-            this.PointFontBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.PointFontBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.PointFontBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.PointFontBtn.BorderRadius = 15;
-            this.PointFontBtn.BorderSize = 0;
-            this.PointFontBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.PointFontBtn, "PointFontBtn");
-            this.PointFontBtn.ForeColor = System.Drawing.Color.White;
-            this.PointFontBtn.Name = "PointFontBtn";
-            this.PointFontBtn.TextColor = System.Drawing.Color.White;
-            this.PointFontBtn.UseVisualStyleBackColor = false;
-            this.PointFontBtn.TextChanged += new System.EventHandler(this.FontSelectBtn_Click);
-            this.PointFontBtn.Click += new System.EventHandler(this.FontSelectBtn_Click);
-            // 
-            // PointGradientChkBox
-            // 
-            resources.ApplyResources(this.PointGradientChkBox, "PointGradientChkBox");
-            this.PointGradientChkBox.Name = "PointGradientChkBox";
-            this.PointGradientChkBox.UseVisualStyleBackColor = true;
-            this.PointGradientChkBox.CheckedChanged += new System.EventHandler(this.Gradientcheckbox_CheckedChanged);
-            // 
             // sizingnav
             // 
             this.sizingnav.BackColor = System.Drawing.Color.Lime;
@@ -1347,11 +1456,19 @@
             this.sizingnav.Name = "sizingnav";
             this.sizingnav.TabStop = false;
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.PresetsComboBox);
             this.Controls.Add(this.PresetDialogButton);
             this.Controls.Add(this.label30);
@@ -1397,9 +1514,11 @@
             this.point.ResumeLayout(false);
             this.scrollableControl4.ResumeLayout(false);
             this.scrollableControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PointColorDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PointColorMenu)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Nav)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navpanelborder)).EndInit();
@@ -1407,8 +1526,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.MainDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Nav)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sizingnav)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1550,11 +1667,22 @@
         private CustomButtons DelPointBtn;
         private CustomButtons AddPointBtn;
         private System.Windows.Forms.ComboBox PointsList;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private CustomButtons customButtons3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox PointLocationYTxtBox;
+        private MyCheckBox SyncPointsChkBox;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox PointName;
+        private CustomButtons customButtons3;
+        private System.Windows.Forms.Button AlignCenterBtn;
+        private System.Windows.Forms.Button AlignBotBtn;
+        private System.Windows.Forms.Button AlignRightBtn;
+        private System.Windows.Forms.Button AlignLeftBtn;
+        private System.Windows.Forms.Button AlignTopBtn;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.TextBox PointOffsetTxtBox;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -117,7 +117,7 @@ namespace Watermark_Empower
             {
                 // Stop dragging the form
                 _isDragging = false;
-                timer1.Stop();
+             
             }
         }
         private void MainDisplay_MouseUp(object sender, MouseEventArgs e)
@@ -127,6 +127,7 @@ namespace Watermark_Empower
               
                 // Stop dragging the form
                 _isDragging = false;
+                timer1.Stop();
             }
         }
         private void Form1_MouseMove(object sender, MouseEventArgs e)
@@ -152,8 +153,12 @@ namespace Watermark_Empower
                 Point delta = new Point(Cursor.Position.X - _lastCursorPosition.X, Cursor.Position.Y - _lastCursorPosition.Y);
 
                 // Update the position of the form
-                settings.Xoffset = settings.Xoffset + delta.X;
-                settings.Yoffset = settings.Yoffset + delta.Y;
+                if (options.Operation != "Point")
+                {
+                    settings.Xoffset = settings.Xoffset + delta.X;
+                    settings.Yoffset = settings.Yoffset + delta.Y;
+                }
+         
                 if (currentPointIndex != -1)
                 {
                     points.AllPoints[currentPointIndex].X += delta.X;
@@ -384,21 +389,25 @@ namespace Watermark_Empower
                 PresetsComboBox.Items.Add(Path.GetFileNameWithoutExtension(filePath));
             }
         }
-
+      
         private void PresetsComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Wrapper wrapperLoaded;
+            ChangeAlignColor("None");
+            var selectedItem = PresetsComboBox.SelectedItem;
+            string selectedPreset = AppDomain.CurrentDomain.BaseDirectory + selectedItem + ".xml";
+            Wrapper wrapperLoaded = new Wrapper();
             XmlSerializer serializer = new XmlSerializer(typeof(Wrapper));
             string[] xmlpresets = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.xml");
             // Add the file names to a combo box
-
+          
             try
             {
 
-
-                using (FileStream stream = File.OpenRead(xmlpresets[0]))
+             
+                using (FileStream stream = File.OpenRead(selectedPreset))
                 {
                     wrapperLoaded = (Wrapper)serializer.Deserialize(stream);
+                    
                 }
                 Console.WriteLine("Parameters loaded successfully.");
 
@@ -412,32 +421,40 @@ namespace Watermark_Empower
                 options.Color3 = restorecolor.GetColor(restorecolor.Red3, restorecolor.Green3, restorecolor.Blue3);
 
 
+
                 settings = wrapperLoaded.WrapedPrjSettings;
 
                 effectsettings = wrapperLoaded.WrapedEffectSettings;
                 effectsettings.EffectColor1 = restorecolor.GetColor(restorecolor.EffectRed1, restorecolor.EffectGreen1, restorecolor.EffectBlue1);
                 effectsettings.EffectColor2 = restorecolor.GetColor(restorecolor.EffectRed2, restorecolor.EffectGreen2, restorecolor.EffectBlue2);
                 effectsettings.EffectColor3 = restorecolor.GetColor(restorecolor.EffectRed3, restorecolor.EffectGreen3, restorecolor.EffectBlue3);
-
-                switch (options.Operation)
+                points = wrapperLoaded.WrapedPoints;
+                Console.WriteLine(wrapperLoaded.WrapedPoints.Count);
+               
+                PointsList.Items.Clear();
+                foreach (PointOptions point in points)
                 {
-                    case ("Fullfill"):
-                        FullfillColorDisplay.BackColor = options.Color;
-                        FullfillSelector_Click(sender, e);
-                        break;
-                    case ("Chess"):
-                        ChessColorDisplay.BackColor = options.Color;
-                        ChessSelector_Click(sender, e);
-                        break;
+                    PointsList.Items.Add(point.Name);
+                    point.OptionsForPoint.Color = Color.FromArgb(255,point.MaincolorR,point.MaincolorG,point.MaincolorB);
+                    point.OptionsForPoint.Color2 = Color.FromArgb(255, point.FirstsubcolorR, point.FirstsubcolorG, point.FirstsubcolorB);
+                    point.OptionsForPoint.Color3 = Color.FromArgb(255, point.SecondsubcolorR, point.SecondsubcolorG, point.SecondsubcolorB);
                 }
-                FullfillColorDisplay.BackColor = options.Color;
+                foreach (PointOptions point in wrapperLoaded.WrapedPoints)
+                {
+                   
+                    Console.WriteLine(point.MaincolorR+" "+ point.MaincolorG+" "+ point.MaincolorB);
+                }
+            
+                UpdateImage();
+                UpdColorDisplays();
+                
             }
-            catch (Exception ex) { MessageBox.Show(ex.Message); }
+           catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void PresetDialogButton_Click(object sender, EventArgs e)
         {
-            using (PresetDialog presetdialog = new PresetDialog(options, settings, effectsettings))
+            using (PresetDialog presetdialog = new PresetDialog(options, settings, effectsettings, points))
             {
                 if (presetdialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
@@ -1109,20 +1126,11 @@ namespace Watermark_Empower
         {
 
             newoperation();
-            if (!options.Isgradienton)
-            {
-                changePointOptions();
-                gen.DrawPoint(points);
+           changePointOptions();
+            gen.DrawPoint(points);
                 MainDisplay.Image = Image.FromFile("tempinput.jpg");
 
-            }
-            else
-            {
-                gen.GenPatternChessGradient(options, settings, effectsettings);
-
-                MainDisplay.Image = Image.FromFile("tempinput.jpg");
-
-            }
+            
 
         }
         PointList points = new PointList();
@@ -1136,7 +1144,6 @@ namespace Watermark_Empower
                 foreach(PointOptions pointforcheck in points)
                 {
                    
-                     
                         while (NameForPoint == pointforcheck.Name)
                         {
                             NameForPoint = GenPointName(NameForPoint, OldNameForPoint, count);
@@ -1145,18 +1152,19 @@ namespace Watermark_Empower
                     
                 }
             }
-            PointOptions point = new PointOptions(options)
-            {
-                Name = NameForPoint,
-                X = MainDisplay.Image.Width/2,
-                Y = MainDisplay.Image.Height/2,
-                EffectsettingsForPoint = effectsettings
-            };
-            points.Add(point);
-            PointUpdate();
-            PointsList.Items.Add(point.Name);
-            
-
+                PointOptions point = new PointOptions(options)
+                {
+                    Name = NameForPoint,
+                    X = MainDisplay.Image.Width / 2,
+                    Y = MainDisplay.Image.Height / 2,
+                    EffectsettingsForPoint = effectsettings
+                };
+                points.Add(point);
+                PointUpdate();
+                PointsList.Items.Add(point.Name);
+                PointsList.Text=(point.Name);
+                ChangeAlignColor("None");
+           
         }
         private string GenPointName(string Name, string oldname, int count)
         {
@@ -1191,10 +1199,39 @@ namespace Watermark_Empower
                     Options tempoptions = new Options(point.OptionsForPoint);
                 
                     currentPointIndex = points.AllPoints.IndexOf(point);
-                   UpdatePointCords();
+                    UpdatePointCords();
                     options = tempoptions;
                     
                     UpdatePointTxtBoxes();
+                    ChangeAlignColor("None");
+                    if (point.Center)
+                    {
+                        ChangeAlignColor("Center");
+                    }
+                    else
+                    {
+                        if (point.Aligntopbot == "Top")
+                        {
+                            ChangeAlignColor("Top");
+                        }
+                        else if (point.Aligntopbot=="Bottom")
+                        { ChangeAlignColor("Bottom"); }
+                        if (point.Alignrightleft == "Left")
+                        {
+                            ChangeAlignColor("Left");
+                        }
+                        else if (point.Alignrightleft=="Right")
+                        { ChangeAlignColor("Right"); }
+                    }
+                    PointOffsetTxtBox.Text = point.Offset.ToString();
+                    if (point.OptionsForPoint.Isgradienton)
+                    {
+                        PointGradientChkBox.Checked = true;
+                    }
+                    else
+                    {
+                        PointGradientChkBox.Checked = false;
+                    }
 
                 }
             }
@@ -1203,8 +1240,12 @@ namespace Watermark_Empower
         }
         public void UpdatePointCords()
         {
-            PointLocationXTxtBox.Text = points.AllPoints[currentPointIndex].X.ToString();
-            PointLocationYTxtBox.Text = points.AllPoints[currentPointIndex].Y.ToString();
+            if(currentPointIndex != -1)
+            {
+                PointLocationXTxtBox.Text = points.AllPoints[currentPointIndex].X.ToString();
+                PointLocationYTxtBox.Text = points.AllPoints[currentPointIndex].Y.ToString();
+            }
+       
         }
         public void UpdatePointTxtBoxes()
         {
@@ -1219,23 +1260,28 @@ namespace Watermark_Empower
             PointGradientEndTxtBox.Text = options.Colorend.ToString();
             PointGradientAngleTxtBox.Text = options.Angle.ToString();
             PointEffectTxtBox.Text = options.Effect.ToString();
+            
         }
         public void changePointOptions()
         {
-            if (currentPointIndex != -1)
+            if (!settings.Syncpoints)
             {
-                points.AllPoints[currentPointIndex].UpdateOptions(options);
+                if (currentPointIndex != -1)
+                {
+                    points.AllPoints[currentPointIndex].UpdateOptions(options,effectsettings);
+                }
+            }
+            else
+            {
+                foreach(PointOptions point in points)
+                {
+                    point.UpdateOptions(options, effectsettings);
+                }
             }
            
+           
         }
-        private void customButtons3_Click(object sender, EventArgs e)
-        {
-            if (currentPointIndex != -1)
-            {
-                points.AllPoints[currentPointIndex].UpdateOptions(options);
-                PointUpdate();
-            }
-        }
+       
 
         private void PointLocationXTxtBox_TextChanged(object sender, EventArgs e)
         {
@@ -1269,6 +1315,227 @@ namespace Watermark_Empower
                 MessageBox.Show(ex.Message);
             }
 
+        }
+
+     
+
+        private void SyncPointsChkBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (SyncPointsChkBox.Checked)
+            {
+                settings.Syncpoints = true;
+
+            }
+            else
+            {
+                settings.Syncpoints = false;
+            }
+        }
+
+        private void customButtons3_Click(object sender, EventArgs e)
+        {
+            foreach (PointOptions point in points)
+            {
+                if (point.Name == PointsList.Text)
+                {
+
+                    PointsList.Items[currentPointIndex] = PointName.Text;
+                    PointsList.Text = PointName.Text;
+                    point.Name = PointName.Text;
+
+                }
+            }
+        }
+
+        private void ChangeAlignColor(string selectedElement)
+        {
+            switch (selectedElement)
+            {
+                case ("Top"):
+                    AlignTopBtn.FlatAppearance.BorderColor = Color.Green;
+                    AlignBotBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignCenterBtn.FlatAppearance.BorderColor = Color.Red;
+                    break;
+                case ("Bottom"):
+                    AlignTopBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignBotBtn.FlatAppearance.BorderColor = Color.Green;
+                    AlignCenterBtn.FlatAppearance.BorderColor = Color.Red;
+                    break;
+                case ("Left"):
+                    AlignRightBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignLeftBtn.FlatAppearance.BorderColor = Color.Green;
+                    AlignCenterBtn.FlatAppearance.BorderColor = Color.Red;
+                    break;
+                case ("Right"):
+                    AlignRightBtn.FlatAppearance.BorderColor = Color.Green;
+                    AlignLeftBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignCenterBtn.FlatAppearance.BorderColor = Color.Red;
+                    break;
+                case ("Center"):
+                    AlignTopBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignBotBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignCenterBtn.FlatAppearance.BorderColor = Color.Green;
+                    AlignLeftBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignRightBtn.FlatAppearance.BorderColor = Color.Red;
+                    break;
+                case ("NoneTopBot"):
+                    AlignTopBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignBotBtn.FlatAppearance.BorderColor = Color.Red;
+                        
+                    break;
+                case ("NoneRightLeft"):
+                    AlignLeftBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignRightBtn.FlatAppearance.BorderColor = Color.Red;
+                    
+                    break;
+                case ("None"):
+                    AlignLeftBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignRightBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignTopBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignBotBtn.FlatAppearance.BorderColor = Color.Red;
+                    AlignCenterBtn.FlatAppearance.BorderColor = Color.Red;
+                    break;
+            }
+            PointUpdate();
+        }
+
+        private void AlignTopBtn_Click(object sender, EventArgs e)
+        {
+            foreach (PointOptions point in points)
+            {
+                if (point.Name == PointsList.Text)
+                {
+                    if (point.Aligntopbot != "Top")
+                    {
+                        point.Aligntopbot = "Top";
+                        point.Center = false;
+                        ChangeAlignColor("Top");
+                    }
+                    else
+                    {
+                        point.Aligntopbot = "None";
+                        ChangeAlignColor("NoneTopBot");
+                    }
+                 
+
+                }
+            }
+        }
+
+        private void AlignBotBtn_Click(object sender, EventArgs e)
+        {
+            foreach (PointOptions point in points)
+            {
+                if (point.Name == PointsList.Text)
+                {
+                    if (point.Aligntopbot != "Bottom")
+                    {
+                        point.Aligntopbot = "Bottom";
+                        point.Center = false;
+                        ChangeAlignColor("Bottom");
+                    }
+                    else
+                    {
+                        point.Aligntopbot = "None";
+                        ChangeAlignColor("NoneTopBot");
+                    }
+                }
+            }
+        }
+
+        private void AlignLeftBtn_Click(object sender, EventArgs e)
+        {
+            foreach (PointOptions point in points)
+            {
+                if (point.Name == PointsList.Text)
+                {
+                    if (point.Alignrightleft != "Left")
+                    {
+                        point.Alignrightleft = "Left";
+                        point.Center = false;
+                        ChangeAlignColor("Left");
+                    }
+                    else
+                    {
+                        point.Alignrightleft= "None";
+                        ChangeAlignColor("NoneRightLeft");
+                    }
+
+                }
+            }
+        }
+
+        private void AlignRightBtn_Click(object sender, EventArgs e)
+        {
+            foreach (PointOptions point in points)
+            {
+                if (point.Name == PointsList.Text)
+                {
+                    if (point.Alignrightleft != "Right")
+                    {
+                        point.Alignrightleft = "Right";
+                    point.Center = false;
+                    ChangeAlignColor("Right");
+                    }
+                    else
+                    {
+                        point.Alignrightleft = "None";
+                        ChangeAlignColor("NoneRightLeft");
+                    }
+                }
+            }
+        }
+
+        private void AlignCenterBtn_Click(object sender, EventArgs e)
+        {
+            foreach (PointOptions point in points)
+            {
+                if (point.Name == PointsList.Text)
+                {
+                    if (point.Center == false)
+                    {
+                        point.Aligntopbot = "None";
+                        point.Alignrightleft = "None";
+                        point.Center = true;
+                        ChangeAlignColor("Center");
+                    }
+                    else
+                    {
+                        point.Center = false;
+                        ChangeAlignColor("None");
+                    }
+             
+
+                }
+            }
+        }
+
+        private void PointOffsetTxtBox_TextChanged(object sender, EventArgs e)
+        {
+            foreach (PointOptions point in points)
+            {
+                if (point.Name == PointsList.Text)
+                {
+                    try
+                    {
+                        point.Offset = Convert.ToInt32(PointOffsetTxtBox.Text);
+                        PointUpdate();
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                  
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            newoperation();
+            options.Operation = "Cross";
+            gen.GenPatternCross(options, settings, effectsettings);
+            MainDisplay.Image = Image.FromFile("tempinput.jpg");
         }
     }
 

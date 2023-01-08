@@ -17,7 +17,7 @@
     <Colorangle>50</Colorangle>
     <Effect>None</Effect>
     <Operation>Point</Operation>
-    <Isgradienton>false</Isgradienton>
+    <Isgradienton>true</Isgradienton>
   </WrapedOptions>
   <WrapedPrjSettings>
     <Rows>7</Rows>
@@ -37,14 +37,14 @@
   </WrapedEffectSettings>
   <WrapedColor>
     <Red1>255</Red1>
-    <Green1>255</Green1>
-    <Blue1>255</Blue1>
-    <Red2>0</Red2>
-    <Green2>128</Green2>
+    <Green1>0</Green1>
+    <Blue1>0</Blue1>
+    <Red2>255</Red2>
+    <Green2>255</Green2>
     <Blue2>0</Blue2>
-    <Red3>0</Red3>
+    <Red3>255</Red3>
     <Green3>0</Green3>
-    <Blue3>255</Blue3>
+    <Blue3>0</Blue3>
     <EffectRed1>255</EffectRed1>
     <EffectGreen1>0</EffectGreen1>
     <EffectBlue1>0</EffectBlue1>
@@ -57,8 +57,8 @@
   </WrapedColor>
   <WrapedPoints>
     <PointOptions>
-      <X>1011</X>
-      <Y>-54</Y>
+      <X>720</X>
+      <Y>309</Y>
       <OptionsForPoint>
         <Fontname>Arial</Fontname>
         <Fontsize>48</Fontsize>
@@ -76,7 +76,7 @@
         <Colorangle>50</Colorangle>
         <Effect>None</Effect>
         <Operation>Point</Operation>
-        <Isgradienton>false</Isgradienton>
+        <Isgradienton>true</Isgradienton>
       </OptionsForPoint>
       <EffectsettingsForPoint>
         <EffectColor1 />
@@ -93,14 +93,14 @@
       <Center>false</Center>
       <Offset>0</Offset>
       <MaincolorR>255</MaincolorR>
-      <MaincolorG>255</MaincolorG>
-      <MaincolorB>255</MaincolorB>
-      <FirstsubcolorR>0</FirstsubcolorR>
-      <FirstsubcolorG>128</FirstsubcolorG>
+      <MaincolorG>0</MaincolorG>
+      <MaincolorB>0</MaincolorB>
+      <FirstsubcolorR>255</FirstsubcolorR>
+      <FirstsubcolorG>255</FirstsubcolorG>
       <FirstsubcolorB>0</FirstsubcolorB>
-      <SecondsubcolorR>0</SecondsubcolorR>
+      <SecondsubcolorR>255</SecondsubcolorR>
       <SecondsubcolorG>0</SecondsubcolorG>
-      <SecondsubcolorB>255</SecondsubcolorB>
+      <SecondsubcolorB>0</SecondsubcolorB>
     </PointOptions>
   </WrapedPoints>
 </Wrapper>
