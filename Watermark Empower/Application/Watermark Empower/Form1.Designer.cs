@@ -179,7 +179,6 @@
             this.CloseForm = new Watermark_Empower.CustomButtons();
             this.Import_Image = new Watermark_Empower.CustomButtons();
             this.sizingnav = new Watermark_Empower.TryDoubleBufferAgain();
-            this.button1 = new System.Windows.Forms.Button();
             this.Tools.SuspendLayout();
             this.fullfill.SuspendLayout();
             this.scrollableControl1.SuspendLayout();
@@ -1456,19 +1455,11 @@
             this.sizingnav.Name = "sizingnav";
             this.sizingnav.TabStop = false;
             // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.PresetsComboBox);
             this.Controls.Add(this.PresetDialogButton);
             this.Controls.Add(this.label30);
@@ -1682,7 +1673,6 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TextBox PointOffsetTxtBox;
-        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -1530,13 +1530,7 @@ namespace Watermark_Empower
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            newoperation();
-            options.Operation = "Cross";
-            gen.GenPatternCross(options, settings, effectsettings);
-            MainDisplay.Image = Image.FromFile("tempinput.jpg");
-        }
+       
     }
 
 

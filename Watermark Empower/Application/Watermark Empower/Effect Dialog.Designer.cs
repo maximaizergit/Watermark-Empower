@@ -48,9 +48,9 @@
             this.Yoffset = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.Box = new System.Windows.Forms.TabPage();
             this.customButtons2 = new Watermark_Empower.CustomButtons();
             this.customButtons1 = new Watermark_Empower.CustomButtons();
-            this.Box = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -150,7 +150,7 @@
             this.EffectSettingsControl.Controls.Add(this.None);
             this.EffectSettingsControl.Controls.Add(this.Glitch);
             this.EffectSettingsControl.Controls.Add(this.Box);
-            this.EffectSettingsControl.Location = new System.Drawing.Point(29, 149);
+            this.EffectSettingsControl.Location = new System.Drawing.Point(29, 112);
             this.EffectSettingsControl.Name = "EffectSettingsControl";
             this.EffectSettingsControl.SelectedIndex = 0;
             this.EffectSettingsControl.Size = new System.Drawing.Size(199, 330);
@@ -216,9 +216,7 @@
             // 
             // ColorMenu
             // 
-            this.ColorMenu.Image = global::Watermark_Empower.Properties.Resources.colour;
             this.ColorMenu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ColorMenu.InitialImage = global::Watermark_Empower.Properties.Resources.colour;
             this.ColorMenu.Location = new System.Drawing.Point(13, 147);
             this.ColorMenu.Name = "ColorMenu";
             this.ColorMenu.Size = new System.Drawing.Size(67, 67);
@@ -293,6 +291,16 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Y offset";
             // 
+            // Box
+            // 
+            this.Box.Location = new System.Drawing.Point(4, 25);
+            this.Box.Name = "Box";
+            this.Box.Padding = new System.Windows.Forms.Padding(3);
+            this.Box.Size = new System.Drawing.Size(191, 301);
+            this.Box.TabIndex = 2;
+            this.Box.Text = "Box";
+            this.Box.UseVisualStyleBackColor = true;
+            // 
             // customButtons2
             // 
             this.customButtons2.BackColor = System.Drawing.Color.LimeGreen;
@@ -334,16 +342,6 @@
             this.customButtons1.TextColor = System.Drawing.Color.White;
             this.customButtons1.UseVisualStyleBackColor = false;
             this.customButtons1.Click += new System.EventHandler(this.customButtons1_Click);
-            // 
-            // Box
-            // 
-            this.Box.Location = new System.Drawing.Point(4, 25);
-            this.Box.Name = "Box";
-            this.Box.Padding = new System.Windows.Forms.Padding(3);
-            this.Box.Size = new System.Drawing.Size(191, 301);
-            this.Box.TabIndex = 2;
-            this.Box.Text = "Box";
-            this.Box.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
